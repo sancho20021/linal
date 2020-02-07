@@ -1,0 +1,2 @@
+# linal
+lecture notes
