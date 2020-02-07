@@ -1,0 +1,257 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{systeme}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{bbold}
+\usepackage{enumitem}
+\usepackage{collectbox}
+\usepackage[margin=0.5in]{geometry}
+
+\title{Конспекты по линейной алгебре, 2 сем}
+\author{Пак Александр}
+
+%----ENVIRONMENTS--------------%
+\newtheorem{theorem}{Теорема}
+\newtheorem{lemma}{Лемма}
+\newtheorem{defin}{Определение}
+\newtheorem*{stat}{Утверждение}
+\newtheorem{corollary}{Следствие}[theorem]
+\renewcommand{\thecorollary}{\arabic{corollary}}
+
+\newenvironment{mylist}{\begin{enumerate}[noitemsep, nolistsep]}{\end{enumerate}}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+
+\theoremstyle{definition}
+\newtheorem*{examples}{Примеры}
+
+%-------------------------------%
+
+%------COMMANDS-----------------%
+\newcommand{\N}{\numberset{N}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\0}{\mathbb{0}}
+\newcommand{\mybox}{
+	\collectbox{
+		\setlength{\fboxsep}{1pt}
+		\fbox{\BOXCONTENT}
+	}
+}
+\newcommand{\E}{\mathcal{E}}
+%-------------------------------%
+
+\graphicspath{ {./imgs/} }
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	\setcounter{section}{6}
+	\tableofcontents
+	\newpage
+	
+	\section{Линейные отображения}
+	
+	\subsection{Основные определения}
+	\begin{defin}
+		$U, V$ -- линейные пространства над полем $K(\R/ \mathbb{C})$\\
+	Линейным отображением $A$ называется $A: U \rightarrow V$, обладающее свойством линейности:\\
+		$\forall \lambda \in K, \forall u, v \in U\\ 
+		A(u + \lambda v) = A(u) + \lambda A(v)$
+	\end{defin}
+
+	\begin{remark}\hfill
+		\begin{mylist}
+			\item Записываем не $A(u)$, а $Au$
+			\item "Поточечно" выполняются все арифметические операции, свойственные функциям
+			\item $A\0_U = \0_V$
+		\end{mylist}
+	\end{remark}
+	\begin{examples}\hfill
+		\begin{mylist}
+			\item $\0$ -- нулевое отображение $U \rightarrow V$\\
+			$\forall u \in U: \0u = \0_v$
+			\item $\mathcal{E}$ -- тождественное отображение: $V \rightarrow V$\\
+			$\forall v \in V: \mathcal{E}v = v$ 
+			\item $U = V = P_n$ -- многочлены степени до $n$
+			\\$A: V \rightarrow V$\\
+			$Ap = p'(t)$ -- дифференциальный оператор\\
+			$A(p_1 + \lambda p_2) = (p_1 + \lambda p_2)' = p_1' + \lambda p_2' = Ap_1 + \lambda Ap_2$\\
+			Линейное отображение 
+			$A = \frac{d}{dt}$
+			\item $U = \R^n \ V = \R^m\\
+			A = (a_{i j})_{m\times n}\\
+			A: x\in U \rightarrow y = Ax \in V\\
+			x_1 + \lambda x_2 \in \R^n \rightarrow y = A(x_1 + \lambda x_2) = Ax_1 + \lambda Ax_2$
+			\item $U \cong V$. То есть отображение, на котором строится изоморфизм является линейным.
+	\end{mylist}
+	\end{examples}
+	\begin{defin}$\lambda \in K \ A: U\rightarrow V$\\
+		Произведение линейного отображения на скаляр называется линейное отображение \\
+		$B = \lambda A \\
+		B: U \rightarrow V \ \forall u \in U \ Bu = \lambda Au$
+	\end{defin}
+	\begin{defin}
+		Суммой линейных отображений $A, B: U \rightarrow V$ называется $C: U \rightarrow V\\
+		\forall u \in U \ Cu = Au + Bu$
+		\mybox{
+			$C = A + B$
+		}
+	\end{defin}
+
+	\begin{defin}
+		$-A$ -- отображение противоположное $A$\\
+		$\forall u \in U \ (-A)u = -1 \cdot Au$
+	\end{defin}
+	
+	$L(U, V) = Hom_K(U, V) = Hom(U, V) = \mathcal{L}(U, V)$\\
+	$L(U, V)$ -- множество всех линейных отображений из $U$ в $V$.\\
+	Линейное отображение = гомоморфизм с операциями $\lambda A$ и $A + B$\\
+	Выполнены свойства 1--8 линейного пространства (проверить самим). \\Значит \mybox{$L(U, V)$ -- линейное пространство}
+	\begin{defin}
+	$A \in L(U, V)\\
+	KerA = \{u \in U \ | \ Au = \0_v\}$ -- ядро линейного отображения. 
+	\end{defin}
+	\begin{defin}
+		$ImA =\{v \in V = Au \ \forall u \in U\} = \\ \{v \in V \ | \  \exists u \in U \ v = Au\}$ --
+	образ линейного отображения.
+	\end{defin}
+	\includegraphics[width=250px]{1}
+	
+	Упр: $KerA$ и $ImA$ - это подпространства соответственно пространств $U$ и $V$. То есть они замкнуты относительно линейных операций. \\
+	Если $KerA$ конечномерное подпространство $U$, то \\
+	\mybox{$dim \ KerA = defA$} -- дефект линейного отображения.\\
+	Если $ImA$ конечномерное подпространство $V$, то \\
+	\mybox{$dimImA = rgA$} -- ранг линейного отображения.
+	
+	\begin{stat}
+		$A$ изоморфно между $U$ и $V \Leftrightarrow$ 
+		\begin{mylist}
+			\item $A \in L(U, V)$
+			\item $ImA = V$
+			\item $KerA = \{\0\}$ тривиально 
+		\end{mylist}
+	\end{stat}
+	\begin{proof}
+		$A$ изоморфно $\Leftrightarrow$ взаимнооднозначное соответствие + линейность -- $A\in L(U, V)$\\
+		$\0_u \leftrightarrow \0_v$, т. к. изоморфизм $\Rightarrow KerA = \{\0\}$\\
+		Пусть $KerA = \{\0\}$\\
+		Докажем инъективность $v_1 = v_2 \Leftrightarrow u_1 = u_2\\
+		v_1 = Au_1 \ v_2 = Au_2\\
+		\0 = v_1-v_2 = Au_1 - Au_2 = A(u_1 - u_2) = \0$ т. к. ядро тривиально.\\
+		Сюръективность. $ImA = V \Leftrightarrow \forall v \in V: \exists u \in U Au = v$. Последнее и означает сюръекцию.
+	\end{proof}
+	\begin{defin}
+		$A \in L(U, V)$\\
+		--инъективно, если $KerA = \{\0 \}$\\
+		--сюръективно, если $Im A = v$\\
+		--биективно $\equiv$ изоморфизм, если инъекция + сюръекция.\\
+		--эндоморфизм $\equiv$ линейный оператор, если $U \equiv V$\\
+		$End_k(V) = End(V) = L(V, V)$\\
+		--автоморфизм $\equiv$ эндоморфизм + изоморфизм. \\
+		$Aut_k(V) = Aut(V)$
+	\end{defin}
+	\begin{defin}
+		Произведением линейных отображений $A, B$ \\
+		$A \in L(W, V) \ \  B \in L(U, W) \ \
+		U \xrightarrow{B} W \xrightarrow{A} V$\\
+		называется $C \in L(U, V) : C = A\cdot B$, которое является композицией функций, определяющих отображения $A$ и $B$.\\
+		$A\cdot B = A \circ B\\
+		\forall u \in U: (AB)u = A(Bu)$\\
+		Очевидно, $C$ -- линейное отображение.
+	\end{defin}
+	$\Omega \xrightarrow{C} U \xrightarrow{B_{1, 2}} W \xrightarrow{A_{1, 2}} V$\\
+	Упр: \begin{mylist}
+		\item $A, B$ изоморфизмы $\Rightarrow A\cdot B$ изоморфизм
+		\item $(A_1 + A_2)B = A_1B + A_2B\\
+		A(B_1 + B_2) = AB_1 + AB_2$ -- дистрибутивность
+		\item $A(BC) = (AB)C$ -- ассоциативность
+		\item $\lambda AB = A \lambda B$
+	\end{mylist}
+	$End(V)$ -- ассоциативная унитарная алгебра\\
+	$\mathcal{E}$ -- единица $\mathcal{E}A = A\mathcal{E}$
+	\begin{defin}
+		$A \in L(U, V)$ изоморфно.\\
+		$\forall v \in V \exists! u \in U: v = Au\\
+		A^{-1}: V \rightarrow U$\\
+		\mybox{$A^{-1}v = u$}\\
+		Упр: $A^{-1}\in L(V, U)$\\
+		$A^{-1}A = \E_v \ \ AA^{-1} = \E_u$
+		
+	\end{defin}
+	$A\in End(U)$ -- линейный оператор
+	
+	$A^{-1}\in End(V)$ -- обратный оператор
+	\begin{defin}
+		$U_0 \subset U / / A\in L(U, V)$\\
+		Сужением линейного отображения $A$ на линейное подпространство $U_0$ называется \\
+		$A|_{U_0}: U_0 \rightarrow V \ \ \forall u \in U_0 \ A|_{U_0} u = Au$
+	\end{defin}
+\begin{stat}
+	$A$ изоморфизм $\in L(U, V) \Rightarrow  A|_{U_0}\in L(U_0, Im(A|_{U_0}))$ -- изоморфизм
+\end{stat}
+\begin{examples}
+	\hfil
+	\begin{mylist}
+	\item $\0: U\rightarrow U$ -- не сюръекция, не инъекция, эндоморфизм, не автоморфизм.
+	\item $\E: U \rightarrow U$ -- автоморфизм
+	\item 
+		$A = \frac{d}{dt}$ \  
+		$A: P_n \rightarrow P_n$ -- эндоморфизм, не инъекция, не сюръекция.
+		\item $x\in \R^n \rightarrow y = Ax \in \R^n$ -- эндоморфизм. \\
+		Сюръекция $\Leftrightarrow rgA = n \Leftrightarrow \exists A^{-1} \Leftrightarrow$ инъекция.\\
+		То есть автоморфизм.
+\end{mylist}
+\begin{theorem}[о $rg$ и $def$ линейного отображения]
+	$A\in L(U, V)$\\
+	\mybox{
+	$rgA + defA = dimU$	
+}
+\end{theorem}
+\includegraphics[width=250px]{2}
+\begin{proof}
+	$U_0 = KerA$\\
+	Дополним линейное пространство $U_1$ до пр-ва $U$:\\
+	$U = U_0 \oplus U_1 \ \ \ U_1 \cap U_0 = \{ \0 \}\\
+	\forall u \in U : u = u_0 + u_1$ (единственным образом)\\
+	$Au = Au_0 + Au_1 = Au_1 \ \ \ \ ImA = A(U_1)\\
+	A_1 = A|_{U_1}: U_1 \rightarrow ImA$ \\
+	$A_1$ -- изоморфизм? $ImA_1 = ImA$ -- сюръекция\\
+	$\left.\begin{array}{c}
+		\forall w \in KerA_1 \in U_1\\
+		KerA_1 \subset KerA = U_0
+	\end{array}\right \}
+	\Rightarrow w \in U_1 \cap U_0 = \{\0\} \Rightarrow KerA_1 = \{\0\}\Rightarrow A_1$ изоморфизм.\\
+	$U_1 \cong ImA \Leftrightarrow dimU_1 = dim(ImA)$ -- инъекция.\\
+	Т. к. $U = U_0 \oplus U_1$, то $dimU = dimU_0 + dimU_1 = \underset{defA}{dimKerA} + \underset{rgA}{dimImA}$
+\end{proof}
+\newpage
+\begin{corollary}[Характеристика изоморфизма]
+	\ \\
+	$A\in L(U, V)$ Следующие условия эквивалентны:
+	\begin{mylist}
+		\item $A$ изоморфно
+		\item $dimU = dimV = rgA$
+		\item $dimU = dimV\\
+		KerA = \{\0\} \Leftrightarrow defA = 0$
+	\end{mylist}
+\end{corollary}
+\begin{corollary}
+	$A \in End(V)$ Следующие условия эквивалентны:
+	\begin{mylist}
+		\item $A \in Aut(V)$
+		\item $dimV =rg A$
+		\item $KerA = \{\0\} \Leftrightarrow defA = 0$ 
+	\end{mylist}
+\end{corollary}
+\end{examples}
+\end{document}
