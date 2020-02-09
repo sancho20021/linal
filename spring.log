@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  9 FEB 2020 01:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  9 FEB 2020 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -976,15 +976,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 288--295
 
  []
 
-[5] (./spring.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 297--298
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 343--345
+
+ []
+
+<./imgs/3.png, id=44, 240.9pt x 207.02344pt>
+File: ./imgs/3.png Graphic file (type png)
+<use ./imgs/3.png>
+Package pdftex.def Info: ./imgs/3.png  used on input line 345.
+(pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
+<./imgs/4.png, id=45, 240.9pt x 207.02344pt>
+File: ./imgs/4.png Graphic file (type png)
+<use ./imgs/4.png>
+Package pdftex.def Info: ./imgs/4.png  used on input line 352.
+(pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
+[6 <./imgs/3.png> <./imgs/4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 420--422
+
+ []
+
+[7] (./spring.aux) ) 
 Here is how much of TeX's memory you used:
- 5817 strings out of 492982
- 78485 string characters out of 6134895
- 165133 words of memory out of 5000000
- 9245 multiletter control sequences out of 15000+600000
+ 5827 strings out of 492982
+ 78629 string characters out of 6134895
+ 170133 words of memory out of 5000000
+ 9253 multiletter control sequences out of 15000+600000
  17983 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,35p,1416b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,12n,35p,1416b,418s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 }</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/shar
@@ -996,16 +1021,17 @@ t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
 public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfti1200.pfb>
-Output written on spring.pdf (6 pages, 265485 bytes).
+y6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfti1200.pfb>
+Output written on spring.pdf (8 pages, 290204 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

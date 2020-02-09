@@ -262,8 +262,8 @@
 	\begin{multicols}{2}
 		$\A \in L(U, V)\\
 		\xi_1 \ldots \xi_n$ базис $U$\\
-		$\eta_1 \ldots \eta_n$ базис $V$\\
-		$$\forall u \in U u = \sum_{i=1}^{n} u_i\xi_i \leftrightarrow u = \left(
+		$\eta_1 \ldots \eta_m$ базис $V$\\
+		$$\forall u \in U \ u = \sum_{i=1}^{n} u_i\xi_i \leftrightarrow u = \left(
 		\begin{array}{c}
 		u_1 \\
 		\vdots\\
@@ -293,4 +293,141 @@
 	Частный случай: $\A\in End(V): \underset{e_1\ldots e_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}\\
 	A = (a_{ji})_{n\times n}$ -- матрица линейного оператора\\
 	$$A e_i = \sum_{j=1}^{n}a_{ji}e_j$$
+	\begin{examples}
+		\ \\
+		\begin{mylist}
+			\item
+			$\E:\underset{e_1 \ldots e_n}{V} \rightarrow \underset{e_1 \ldots e_n}{V} \ \ \ 
+			\E e_i = e_i \leftrightarrow
+			\left( 
+			\begin{array}{c}
+				0\\
+				0\\
+				\vdots\\
+				1\\
+				\vdots\\
+				0
+			\end{array}
+			\right)
+			\leftrightarrow E_{m\times n} = \left(
+				\begin{array}{ccc}
+					1 & \ldots & 0\\
+					\ldots & 1 & \ldots\\
+					0 & \ldots & 1
+				\end{array}
+			\right)
+			$
+			\newpage
+			\item 
+			$$\E: \underset{e'_1\ldots e'_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}$$
+			$$
+			\E e'_i =  \sum_{j = 1}^{n}t_{ji}e_j \leftrightarrow T_i = 
+			\left(
+			\begin{array}{c}
+			t_{1i}\\
+			\vdots\\
+			t_{ni}
+			\end{array}
+			\right)$$
+			$$
+			[ \E ] _e = T = 
+			\left(
+			\begin{array}{c}
+			t_{1i}\\
+			\vdots\\
+			t_{ni}
+			\end{array}
+			\right)
+			= T_{e\rightarrow e'}
+			$$
+			\item \ \\
+			\begin{multicols}{2}
+				\includegraphics[width=150px]{3}\\
+				$\A: \R^2 \rightarrow \R^2\\
+				v = \A u$\\
+				Поворот векторов в плоскости на угол $\alpha$. \\
+				Очевидно, линейный оператор.
+			\end{multicols}
+			\begin{multicols}{2}
+				\includegraphics[width=150px]{4}\\
+				$
+				\A_i = \cos\alpha i + \sin\alpha j \leftrightarrow 
+				\left(
+				\begin{array}{c}
+				\cos\alpha\\
+				\sin\alpha
+				\end{array}
+				\right)\\
+				\A_j = -\sin\alpha i \cos\alpha j \leftrightarrow
+				\left(
+				\begin{array}{c}
+				-\sin\alpha\\
+				\cos\alpha
+				\end{array}
+				\right)\\
+				\A \leftrightarrow A = 
+				\left(
+				\begin{array}{cc}
+				\cos\alpha & -\sin\alpha\\
+				\sin\alpha & \cos\alpha
+				\end{array}
+				\right)
+				$
+			\end{multicols}
+			\item 
+			\begin{multicols}{2}
+			$\A: \overset{1, t, t^2}{p_2} \rightarrow  \overset{1, t, t^2}{p_2}\\
+			\A = \frac{d}{dt}\\
+			\A1 = 1' = 0 \leftrightarrow 
+			\begin{pmatrix}
+				0\\0\\0
+			\end{pmatrix}
+			\\
+			\A t = t' = 1 \leftrightarrow
+			\begin{pmatrix}
+				1\\0\\0
+			\end{pmatrix}
+			\\
+			\A t^2 = (t^2)' = 2t \leftrightarrow 
+			\begin{pmatrix}
+				0\\2\\0
+			\end{pmatrix}\\
+			\A \underset{(1, t, t^2)}{\leftrightarrow}
+			\begin{pmatrix}
+				0 & 1 & 0\\
+				0 & 0 & 2\\
+				0 & 0 & 0
+			\end{pmatrix}
+			$
+			\end{multicols}
+			$\A: \underset{1, t, t^2}{p_2} \rightarrow \underset{1, t}{p_1}\\
+			\A = \frac{d}{dt} \leftrightarrow A = \begin{pmatrix}
+				0 & 1 & 0\\
+				0 & 0 & 2
+			\end{pmatrix}$
+	\end{mylist}
+	\end{examples}
+	\newpage
+	\begin{stat}
+		$L(U, V) \cong M_{m\times n}$\\
+		(Линейное пространство матриц с вещ.(компл.) элементами размерности $m\times n$. 
+	\end{stat}	
+	\begin{proof}
+		Изоморфизм $\equiv$ биекция + линейность.\\
+		Биекция. $\A \rightarrow A_{m\times n}$ -- поняли, как сопоставлять.\\
+		Теперь обратно. Пусть $A_{m\times n} = (a_{ij})$
+		\begin{multicols}{2}
+			$U \ \xi_1\ldots \xi_n$ базис.\\
+			$V \ \eta_1\ldots \eta_m$ базис\\
+			$$\A: U\rightarrow V \ \ \ \\
+			\A\xi_i = \sum_{j=1}^{m}a_{ji}\eta_j \in V$$
+		\end{multicols}
+		$$
+		\forall u \in U \ u = \sum_{i = 1}^{n}u_i\xi_i
+		$$
+		$$
+		\A u = \sum_{i = 1}^{n}u_i\A\xi_i \in V \Rightarrow \A \in L(U, V)
+		$$
+		TODO
+	\end{proof}
 \end{document}
