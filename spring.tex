@@ -12,6 +12,7 @@
 \usepackage{collectbox}
 \usepackage{multicol}
 \usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
 
 \title{Конспекты по линейной алгебре, 2 сем}
 \author{Пак Александр}
@@ -52,6 +53,7 @@
 %-------------------------------%
 
 \graphicspath{ {./imgs/} }
+\setlength{\parindent}{0ex}
 
 \begin{document}
 	\pagenumbering{gobble}
@@ -259,22 +261,20 @@
 	\end{corollary}
 	
 	\subsection{Матрица линейного отображения. Изоморфизм алгебр. Преобразование матрицы линейного отображения при замене базиса.}
-	\begin{multicols}{2}
 		$\A \in L(U, V)\\
 		\xi_1 \ldots \xi_n$ базис $U$\\
 		$\eta_1 \ldots \eta_m$ базис $V$\\
-		$$\forall u \in U \ u = \sum_{i=1}^{n} u_i\xi_i \leftrightarrow u = \left(
+		$\forall u \in U \ u = \sum\limits_{i=1}^{n} u_i\xi_i \leftrightarrow u = \left(
 		\begin{array}{c}
 		u_1 \\
 		\vdots\\
 		u_n 
 		\end{array} \right)
-		\in \R^n(\mathbb{C}^n)$$
-	\end{multicols}
-	\begin{multicols}{2}
-		$$\A u = \A(\sum_{i = 1}^{n}u_i\xi_i) = \sum_{i=1}^{n}u_i\A\xi_i$$\\
+		\in \R^n(\mathbb{C}^n)$\\
+	\begin{tabular}{cc}
+		$\A u = \A(\sum\limits_{i = 1}^{n}u_i\xi_i) = \sum\limits_{i=1}^{n}u_i\A\xi_i$ &
 		Достаточно знать, как $\A$ работает на базисных векторах $\xi_1\ldots\xi_n$
-	\end{multicols}
+	\end{tabular}\\ \\
 	$Im\A = span(\A\xi_1, \A\xi_2, \ldots, \A\xi_n)$\\
 	$$\A\xi_i \in V = \sum_{j=1}^{m}a_{ji}\eta_j \leftrightarrow A_i = \left(
 		\begin{array}{c}
@@ -289,10 +289,10 @@
 	\mybox{
 		$A = (A_1 \ldots A_i \ldots A_n) = (a_{ij})_{m\times n}$
 	}
-	матрица линейного отображения $\A$ относительно базисов $(\xi, \eta)$\\
+	матрица линейного отображения $\A$ относительно базисов $(\xi, \eta)$\\\\
 	Частный случай: $\A\in End(V): \underset{e_1\ldots e_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}\\
 	A = (a_{ji})_{n\times n}$ -- матрица линейного оператора\\
-	$$A e_i = \sum_{j=1}^{n}a_{ji}e_j$$
+	$A e_i = \sum\limits_{j=1}^{n}a_{ji}e_j$
 	\begin{examples}
 		\ \\
 		\begin{mylist}
@@ -415,19 +415,61 @@
 	\begin{proof}
 		Изоморфизм $\equiv$ биекция + линейность.\\
 		Биекция. $\A \rightarrow A_{m\times n}$ -- поняли, как сопоставлять.\\
-		Теперь обратно. Пусть $A_{m\times n} = (a_{ij})$
-		\begin{multicols}{2}
-			$U \ \xi_1\ldots \xi_n$ базис.\\
-			$V \ \eta_1\ldots \eta_m$ базис\\
-			$$\A: U\rightarrow V \ \ \ \\
-			\A\xi_i = \sum_{j=1}^{m}a_{ji}\eta_j \in V$$
-		\end{multicols}
-		$$
-		\forall u \in U \ u = \sum_{i = 1}^{n}u_i\xi_i
-		$$
-		$$
-		\A u = \sum_{i = 1}^{n}u_i\A\xi_i \in V \Rightarrow \A \in L(U, V)
-		$$
-		TODO
+		Теперь обратно. Пусть $A_{m\times n} = (a_{ij})$\\
+		\begin{tabular*}{\textwidth}{c @{\extracolsep{100pt}} c}
+			$U \ \xi_1\ldots \xi_n$ базис & $\A: U\rightarrow V$\\
+			$V \ \eta_1\ldots \eta_m$ базис &
+			$\A\xi_i = \sum\limits_{j=1}^{m}a_{ji}\eta_j \in V$
+		\end{tabular*}\\
+		$
+		\forall u \in U \ u = \sum\limits_{i = 1}^{n}u_i\xi_i
+		\\
+		\A u = \sum\limits_{i = 1}^{n}u_i\A\xi_i \in V \Rightarrow \A \in L(U, V)
+		$
+		$\A, \B \leftrightarrow A, B\\
+		\forall \lambda \in K \ \A + \lambda\B \overset{?}{\leftrightarrow} A + \lambda B$\\
+		$$ (\A + \lambda\B)\xi_i = \A\xi_i + \lambda\B\xi_i = \sum_{j = 1}^{m}a_{ji}n_j + \lambda
+		\sum_{j = 1}^{m}b_{ji}\eta_j = \sum_{j=1}^{m}(a_{ji} + \lambda b_{ji})\eta_j \leftrightarrow
+		c_i = A_i + \lambda B_i \leftrightarrow A + \lambda B \Rightarrow$$ линейность $\Rightarrow$ изоморфизм.
 	\end{proof}
+	$\A + \lambda \B \leftrightarrow A + \lambda B\\
+	\A\B \leftrightarrow A\cdot B\\
+	\A, \A^{-1} \leftrightarrow A, A^{-1}\\
+	End(V) \cong M_{n\times n}$ -- ассоциативные унитарные алгебры. (Координатный изоморфизм).\\
+	Алгебры изоморфны, т.к. сохраняются свойства дистрибутивности, ассоциативности и т. д.
+	\\
+	
+	\textit{Я не особо понял, что мы дальше делаем, но у меня это записано}\\
+	\begin{tabular}{cc}
+		$U \xi_1\ldots\xi_n$ & $\forall u \in U \leftrightarrow u = \begin{pmatrix}
+		u_1\\
+		\vdots\\
+		u_n
+		\end{pmatrix}$\\
+		$V \eta_1\ldots\eta_m$ &
+		$u = \sum\limits_{i=1}^{n}u_i\xi_i$
+	\end{tabular}
+	
+	$\forall v\in V \leftrightarrow v = \begin{pmatrix}
+		v_1\\
+		\vdots\\
+		v_m
+	\end{pmatrix}\\	
+	v = \sum\limits_{j=1}^{m}v_j\eta_j\\
+	\A\in L(U, V) \underset{\xi, \eta}{\leftrightarrow} A\\
+	\sum\limits_{j=1}^m v_j\eta_j = v = \A u = \sum\limits_{i=1}^n u_i\A\xi_i = \sum\limits_{i=1}^n u_i
+	\sum\limits_{j=1}^m a_{ji}\eta_j = \sum\limits_{j=1}^m (\sum\limits_{i=1}^n u_i a_{ji})\eta_j$\\
+	Так как координаты определяются единственным образом:\\
+	\mybox{ 
+		$ v_j = \sum\limits_{i=1}^n a_{ji}u_i $ 
+	} 
+	$\leftrightarrow$ 
+	\mybox{$v = Au$} $\leftrightarrow v = \A u$
+	\newpage
+	\begin{examples}
+		\begin{mylist}
+			\item 
+			
+		\end{mylist}
+	\end{examples}
 \end{document}
