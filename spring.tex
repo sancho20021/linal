@@ -13,6 +13,7 @@
 \usepackage{multicol}
 \usepackage[margin=0.5in]{geometry}
 \usepackage{tabularx}
+\usepackage[scr=boondoxo,scrscaled=1.05]{mathalfa}
 
 \title{Конспекты по линейной алгебре, 2 сем}
 \author{Пак Александр}
@@ -466,10 +467,76 @@
 	$\leftrightarrow$ 
 	\mybox{$v = Au$} $\leftrightarrow v = \A u$
 	\newpage
-	\begin{examples}
+	\begin{examples}\ \\
 		\begin{mylist}
 			\item 
-			
+			$\A$ поворот на угол $\alpha$\\
+			$(i, j) \leftrightarrow A = \begin{pmatrix}
+				\cos\alpha & -\sin\alpha\\\sin\alpha & \cos\alpha
+			\end{pmatrix}$
+			\\
+			\begin{tabular}{lcc}
+				\includegraphics[width=200px]{5} &
+				$\alpha=45^{\circ}$ &
+				$A = \begin{pmatrix}
+				\frac{\sqrt2}{2} & -\frac{\sqrt2}{2}\\
+				\frac{\sqrt2}{2} & \frac{\sqrt2}{2}\end{pmatrix}$\\
+			$\mathscr{u} \leftrightarrow u = \begin{pmatrix}2\\1\end{pmatrix}$
+			\end{tabular}
+			\\
+			$\mathscr{v} = \A \mathscr{u} \leftrightarrow v = Au = \begin{pmatrix}
+				\frac{\sqrt2}{2} & -\frac{\sqrt2}{2}\\
+				\frac{\sqrt2}{2} & \frac{\sqrt2}{2}
+			\end{pmatrix}\begin{pmatrix}2\\1\end{pmatrix} = \begin{pmatrix}
+				\frac{\sqrt 2}{2}\\
+				\frac{3\sqrt 2}{2}
+			\end{pmatrix}$\\
+			\begin{multicols}{2}
+				$i \leftrightarrow \begin{pmatrix}
+				1\\0
+				\end{pmatrix}$\\
+				$\A i \leftrightarrow \begin{pmatrix}
+					\frac{\sqrt 2}{2}\\
+					\frac{\sqrt 2}{2}
+				\end{pmatrix}$\\
+				\includegraphics[width=100px]{6}\\
+			\end{multicols}
+			\item 
+			$\A = \frac{d}{dt}: \underset{1, t, t^2}{p_2} \rightarrow \underset{1, t, t^2}{p_2}\\
+			A = \begin{pmatrix}
+				0 & 1 & 0\\
+				0 & 0 & 2\\
+				0 & 0&0
+			\end{pmatrix}\\
+			(\overbrace{3t^3 + 6t + 4}^{u(t)})' = 6t + 6\\
+			3t^2 + 6t + 4 = \begin{pmatrix}
+				4\\6\\3
+			\end{pmatrix}\\
+			\A\mathscr{u} \leftrightarrow \begin{pmatrix}
+				0&1&0\\0&0&2\\
+				0&0&0
+			\end{pmatrix}\cdot
+			\begin{pmatrix}
+				4\\6\\3
+			\end{pmatrix}
+			= \begin{pmatrix}
+				6\\6\\0
+			\end{pmatrix} \leftrightarrow 6 + 6t$
 		\end{mylist}
-	\end{examples}
+	\end{examples}\newpage
+	\begin{theorem}[Преобразование матрицы линейного отображения при замене базиса]
+		$\A \in L(U, V)$\\
+		\begin{tabular}{lll}
+			$U$ & $\xi = (\xi_1\ldots\xi_n)$ & -- базисы  $\ \ \ \ \A \xrightarrow{(\xi, \eta)} A$\\
+			& $\xi' = (\xi'_1\ldots\xi'_n)$
+		\end{tabular}\\
+		$T_{\eta\rightarrow\eta'}$ -- матрица перехода\\
+		\begin{tabular}{lll}
+			$V$ & $\eta = (\eta_1\ldots\eta_m)$ & -- базисы  $\ \ \ \ \A \xrightarrow{(\xi', \eta')} A'$\\
+			& $\eta' = (\eta'_1\ldots\eta'_m)$
+		\end{tabular}\\
+		\mybox{
+			$\A' = T^{-1}_{\eta\rightarrow\eta'} \cdot A \cdot T_{\xi\rightarrow\xi'}$	
+		}
+	\end{theorem}
 \end{document}
