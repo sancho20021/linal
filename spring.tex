@@ -14,14 +14,18 @@
 \usepackage[margin=0.5in]{geometry}
 \usepackage{tabularx}
 \usepackage[scr=boondoxo,scrscaled=1.05]{mathalfa}
+\usepackage{stackengine}
 
 \title{Конспекты по линейной алгебре, 2 сем}
 \author{Пак Александр}
 
 %----ENVIRONMENTS--------------%
-\newtheorem{theorem}{Теорема}
-\newtheorem{lemma}{Лемма}
-\newtheorem{defin}{Определение}
+\newtheorem{theorem}{Теорема}[subsection]
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\newtheorem{lemma}{Лемма}[subsection]
+\renewcommand{\thelemma}{\arabic{lemma}}
+\newtheorem{defin}{Определение}[subsection]
+\renewcommand{\thedefin}{\arabic{defin}}
 \newtheorem*{stat}{Утверждение}
 \newtheorem{corollary}{Следствие}[theorem]
 \renewcommand{\thecorollary}{\arabic{corollary}}
@@ -539,4 +543,95 @@
 			$\A' = T^{-1}_{\eta\rightarrow\eta'} \cdot A \cdot T_{\xi\rightarrow\xi'}$	
 		}
 	\end{theorem}
+	Ну видимо сейчас доказательство, но я не уверен.
+	\begin{proof}\ \\
+		\begin{tabular}{c c c}
+ 			$\underset{\xi_1\ldots\xi_n}{U}$ & \stackanchor{$\xrightarrow{\A}$}{$\rightharpoonup$} & $\underset{\eta_1\ldots\eta_m}{V}$\\
+			$\E_u \uparrow \upharpoonright$ & & $\downharpoonleft \uparrow \E_v$\\
+			$\underset{\xi'_1\ldots\xi'_n}{U}$ & $\xrightarrow{\A}$ & $\underset{\eta'_1\ldots\eta'_m}{V}$
+		\end{tabular}
+		\\\\
+		$\A = \E^{-1}_v\A\E_u\leftrightarrow A' = T^{-1}_{\eta\rightarrow\eta'}AT_{\xi\rightarrow\xi'}\\
+		\A\B \leftrightarrow AB\\
+		\A^{-1}\leftrightarrow A^{-1}\\
+		\E^{-1}_v \leftrightarrow T^{-1}_{\eta\rightarrow\eta'}$ Смотри пример 2
+	\end{proof}
+	\begin{corollary}
+		\ \\
+		$\A\in End(V) \ \ \ \A: \underset{e_1\ldots e_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}\\
+		e_1\ldots e_n$ базис $V \leftrightarrow A\\
+		e'_1\ldots e'_n$ базис $\leftrightarrow A'\\
+		\A: \underset{e'_1\ldots e'_n}{V} \xrightarrow{A'} \underset{e'_1\ldots e'_n}{V}\\
+		T = T_{e\rightarrow e'}$\\
+		\mybox{$A' = T^{-1}AT$}
+	\end{corollary}
+	\begin{remark}
+		В условиях теоремы $v = \A u \begin{array}{c}
+			\xleftrightarrow{(\xi, \eta)} v = Au\\
+			\xleftrightarrow{(\xi', \eta')} v' = A'u
+		\end{array}\\
+		V = T_{\eta\rightarrow\eta'} V'\\
+		U = T_{\xi\rightarrow\xi'} U'\\
+		T_{\eta\rightarrow\eta'}v' = AT_{\xi\rightarrow\xi'}u'\\
+		v' = \underset{A'}{\boxed{T^{-1}_{\eta\rightarrow\eta'}AT_{\xi\rightarrow\xi'}}u'}
+		$
+	\end{remark}
+	\subsection{Инварианты линейного отображения}
+	\textbf{Инвариант - свойство, которое сохраняется при некоторых определенных преобразованиях}\\
+	$\mathscr{v} = \A\mathscr{u} \leftrightarrow v = Au$\\
+	Форма записи действия линейного отображения на вектор инвариантна относительно замены базиса.\\
+	$v' = A'u'$\newpage
+	\begin{defin}
+		$A_{m\times n}$\\
+		$ImA = span(A_1, A_2,\ldots A_n) = \{\sum\limits_{i = 1}^n \alpha_i A_i|\alpha_i\in K\} = \\
+		\{y = Ax \in \R^m(\mathbb{C}^m)| x\in \R^n(\mathbb{C}^n)\}$\\
+		$x = \begin{pmatrix}
+			\alpha_1\\\vdots\\\alpha_n
+		\end{pmatrix}\\
+		rgA = dimImA$ --- ранг матрицы\\
+		$KerA = \{x\in\R^n(\mathbb{C}^n)|Ax = \0 \} =$ \{множество решений СЛОУ \} --- ядро матрицы\\
+		$dimKerA = n-rgA = defA$ --- дефект матрицы\\
+		$\boxed{rgA + defA = n}$ --- аналогично теореме о ранге и дефекте
+	\end{defin}
+	\begin{theorem}
+		$\forall \A \in L(U, V)$\\
+		\fbox{
+			\parbox{73px}{
+				$rg\A = rg A$\\
+				$def\A = def A$
+			}
+		}, \\
+		где матрица $A$ -- матрица линейного отображения в некоторых базисах пространств $U$ и $V$.\\
+		$rg\A$, $def\A$ инвариантны относительно выбора базиса.
+	\end{theorem}
+	\begin{proof}
+		$\A\leftrightarrow\underset{(\xi, \eta)}{A} \xi = (\xi_1\ldots\xi_n)$ базис $U$\\
+		$\eta = (\eta_1\ldots\eta_m)$ базис $V$\\
+		$Im\A = span(\A\xi_1\ldots\A\xi_n)\\
+		\A\xi_i$\stackanchor{$\leftrightarrow$}{$\cong$}$A_i$\\
+		Координатный изоморфизм.\\
+		Пусть $rgA = k \Rightarrow k$ столбцов линейно независимы, а остальные -- их линейная комбинация.\\
+		По свойствам изоморфизма это означает, то из $\A\xi_1\ldots\A\xi_n \ \  k$ линейно независимые, а остальные -- их линейная комбинация $\Rightarrow rg\A = dimIm\A = k\\$
+		\belowbaseline[-10pt]{$\begin{matrix}
+			dimU\\
+			\parallel\\
+			n
+		\end{matrix}$
+		} = \belowbaseline[-10pt]{
+			$\begin{matrix}
+				rg\A\\
+				\parallel\\
+				rgA\\
+				\parallel\\
+				k
+			\end{matrix}$
+		} $+ def\A\\
+		def\A = n-rgA = n-k = dim$ пространства решений $Ax=0 = defA$ 
+	\end{proof}
+	\begin{corollary}
+		$\A$ изоморфизм $\Leftrightarrow A$ невырожденная ($\exists A^{-1}$), где $A$ матрица в некотором базисе.
+	\end{corollary}
+	\begin{proof}
+		Изоморфизм $\Leftrightarrow$ \stackanchor{$defA = 0$}{$dimU = dimV$} $\Leftrightarrow rgA = n \Leftrightarrow A$ невырожденная. 
+	\end{proof}
 \end{document}
