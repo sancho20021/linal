@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  15 FEB 2020 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  20 FEB 2020 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -869,46 +869,54 @@ sep char (CT)
 \@centerbox=\box59
 \c@ROWcellindex@=\count126
 )
-\c@theorem=\count127
-\c@lemma=\count128
-\c@defin=\count129
-\c@corollary=\count130
-
-(./spring.aux
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen149
+\WF@size=\dimen150
+\c@WF@wrappedlines=\count127
+\WF@box=\box60
+\WF@everypar=\toks37
+Package: wrapfig 2003/01/31  v 3.6
+)
+\c@theorem=\count128
+\c@lemma=\count129
+\c@defin=\count130
+\c@corollary=\count131
+ (./spring.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
- (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `spring.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count131
-\scratchdimen=\dimen149
-\scratchbox=\box60
-\nofMPsegments=\count132
-\nofMParguments=\count133
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count134
-\MPscratchDim=\dimen150
-\MPnumerator=\count135
-\makeMPintoPDFobject=\count136
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count132
+\scratchdimen=\dimen151
+\scratchbox=\box61
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen152
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks39
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -995,11 +1003,11 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1010,54 +1018,54 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `spring.toc'.
 
  [1]
-LaTeX Font Info:    Try loading font information for U+bbold on input line 76.
+LaTeX Font Info:    Try loading font information for U+bbold on input line 79.
 
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
-<./imgs/1.png, id=14, 507.39563pt x 211.54031pt>
+(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [2]
+<./imgs/1.png, id=26, 507.39563pt x 211.54031pt>
 File: ./imgs/1.png Graphic file (type png)
 <use ./imgs/1.png>
-Package pdftex.def Info: ./imgs/1.png  used on input line 138.
+Package pdftex.def Info: ./imgs/1.png  used on input line 141.
 (pdftex.def)             Requested size: 250.93842pt x 104.61754pt.
- [2] [3 <./imgs/1.png>]
-<./imgs/2.png, id=34, 483.30562pt x 201.75375pt>
+ [3 <./imgs/1.png>]
+<./imgs/2.png, id=32, 483.30562pt x 201.75375pt>
 File: ./imgs/2.png Graphic file (type png)
 <use ./imgs/2.png>
-Package pdftex.def Info: ./imgs/2.png  used on input line 231.
+Package pdftex.def Info: ./imgs/2.png  used on input line 234.
 (pdftex.def)             Requested size: 250.93842pt x 104.75246pt.
  [4 <./imgs/2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 269--284
+Underfull \hbox (badness 10000) in paragraph at lines 271--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--284
+Underfull \hbox (badness 10000) in paragraph at lines 271--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--301
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 302--303
+Underfull \hbox (badness 10000) in paragraph at lines 295--303
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 348--350
+Underfull \hbox (badness 10000) in paragraph at lines 304--305
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--351
 
  []
 
 <./imgs/3.png, id=44, 240.9pt x 207.02344pt>
 File: ./imgs/3.png Graphic file (type png)
 <use ./imgs/3.png>
-Package pdftex.def Info: ./imgs/3.png  used on input line 350.
+Package pdftex.def Info: ./imgs/3.png  used on input line 351.
 (pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
 <./imgs/4.png, id=45, 240.9pt x 207.02344pt>
 File: ./imgs/4.png Graphic file (type png)
 <use ./imgs/4.png>
-Package pdftex.def Info: ./imgs/4.png  used on input line 357.
+Package pdftex.def Info: ./imgs/4.png  used on input line 358.
 (pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
 [6 <./imgs/3.png> <./imgs/4.png>]
 Underfull \hbox (badness 10000) in alignment at lines 424--428
@@ -1110,39 +1118,126 @@ Underfull \hbox (badness 10000) in paragraph at lines 547--558
 
  []
 
-[9] [10] (./spring.aux) ) 
+[9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 641--658
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 706--708
+
+ []
+
+<./imgs/7.png, id=75, 278.54062pt x 222.07968pt>
+File: ./imgs/7.png Graphic file (type png)
+<use ./imgs/7.png>
+Package pdftex.def Info: ./imgs/7.png  used on input line 708.
+(pdftex.def)             Requested size: 150.56305pt x 120.04662pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 714--717
+
+ []
+
+
+Overfull \hbox (34.58737pt too wide) in paragraph at lines 719--739
+[]$ $[]$ $[]$
+ []
+
+[12 <./imgs/7.png>]
+<./imgs/8.png, id=81, 298.86656pt x 222.07968pt>
+File: ./imgs/8.png Graphic file (type png)
+<use ./imgs/8.png>
+Package pdftex.def Info: ./imgs/8.png  used on input line 764.
+(pdftex.def)             Requested size: 135.50624pt x 100.6906pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--785
+
+ []
+
+
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 741--785
+[]$ $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 741--785
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 792--794
+
+ []
+
+
+Overfull \hbox (2.0144pt too wide) detected at line 797
+\OML/cmm/m/it/12 trB \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 
+= [] [] \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 AC\OT1/cmr/m/n/12
+ )[] = [] [] [] \OML/cmm/m/it/12 C[]a[]C[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/i
+t/12 a[] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = \OML/cm
+m/m/it/12 trA
+ []
+
+[13 <./imgs/8.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 808--809
+
+ []
+
+<./imgs/9.png, id=86, 145.29282pt x 207.77625pt>
+File: ./imgs/9.png Graphic file (type png)
+<use ./imgs/9.png>
+Package pdftex.def Info: ./imgs/9.png  used on input line 813.
+(pdftex.def)             Requested size: 145.29245pt x 207.77573pt.
+<./imgs/10.png, id=87, 155.07938pt x 207.77625pt>
+File: ./imgs/10.png Graphic file (type png)
+<use ./imgs/10.png>
+Package pdftex.def Info: ./imgs/10.png  used on input line 822.
+(pdftex.def)             Requested size: 155.07898pt x 207.77573pt.
+
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 811--830
+[]$ $[]$ 
+ []
+
+
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 811--830
+[]$ $[]$ 
+ []
+
+[14 <./imgs/9.png> <./imgs/10.png>] [15] [16] (./spring.aux) ) 
 Here is how much of TeX's memory you used:
- 6744 strings out of 492982
- 90979 string characters out of 6134895
- 190389 words of memory out of 5000000
- 10132 multiletter control sequences out of 15000+600000
- 19205 words of font info for 59 fonts, out of 8000000 for 9000
+ 6840 strings out of 492982
+ 92229 string characters out of 6134895
+ 192582 words of memory out of 5000000
+ 10216 multiletter control sequences out of 15000+600000
+ 22559 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,20n,40p,1416b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2
-a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.
-pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texm
-f/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox
-/zxxrw8a.pfb>
-Output written on spring.pdf (11 pages, 330002 bytes).
+{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts
+/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/bbold-type1/bbold7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zx
+xrw8a.pfb>
+Output written on spring.pdf (17 pages, 410032 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 174 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
