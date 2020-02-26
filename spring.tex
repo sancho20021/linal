@@ -919,5 +919,67 @@
 		\text{Т.к. }L_i $ инвариантна $\Rightarrow \A u_i \in L_i \Rightarrow v_i \in L_i$, но $L_i$ дизъюнктны $\nwarrow \Rightarrow \forall i : v_i = \0\\
 		\Rightarrow Im \A|_{L_i}$ дизъюнктны $\Rightarrow \bigoplus$
 	\end{proof}
-	
+	\subsection{Собственные числа и собственные вектора линейного оператора.}
+	$\A\in End(v) \ \ \ \ V$ линейное пространство над $K$
+	\begin{defin}
+		$\lambda\in K \text{ -- \textbf{собственное число} (c.ч.) линейного оператора }\A$, если $\\
+		\exists \ \boxed {v\in V \neq \0}$, который называется \textbf{собственным вектором} (с.в.), такой что $\boxed{\A v = \lambda v}$
+	\end{defin}
+	Пусть $v: \A v = \lambda v \Leftrightarrow (\A-\lambda\E)v = 0 \Leftrightarrow v\in Ker(\A-\lambda\E)$
+	\begin{defin}
+		$V_\lambda = Ker(\A-\lambda\E) = \{\text{с.в. }v \text{ и }\0\}$ называется собственным подпространством.\\
+		$\boxed{\gamma(\lambda):= \dim V_\lambda} $ -- геометрическая кратность с.ч.
+	\end{defin}
+	$\gamma\geq 1\\
+	V_\lambda$ и $\gamma(\lambda)$ -- инварианты относительно выбора базиса.\\
+	$v\in V_\lambda \ \ \A v = \lambda v\overset{?}{\in} V_\lambda\\
+	\A(\lambda v) = \lambda\A v = \lambda^2 v = \lambda(\lambda v)$
+	\begin{examples}
+		\ \\
+		\begin{mylist}
+			\item 
+			$\A$ -- оператор подобия:\\
+			$\A v = \mu \cdot v \ \ \ \mu \in K\\
+			\mu$ с.ч. $\ \ V_\lambda = V$
+			\item 
+			$\A$ -- оператор поворота на плоскости на угол $\alpha$\\
+			\begin{minipage}{0.2\textwidth}
+				\includegraphics[width=100px]{11}
+			\end{minipage}
+			\begin{minipage}{0.8\textwidth}
+				$\alpha \neq \pi k \Rightarrow$ нет с.в.
+			\end{minipage} \\
+			\item 
+			Пусть $\lambda$ с.ч.$=0 \ \ \ \A v = \0 \ $с.в. $\neq \0 \ \ \Leftrightarrow\\
+			\Leftrightarrow Ker\A$ нетривиально $\Leftrightarrow \A$ не автоморфизм $\Leftrightarrow \A$ необратимо $\Leftrightarrow det\A = 0$ 
+			\item $\A: V\rightarrow V\\
+			v_1\ldots v_n$ базис, т.ч. $A = \begin{pmatrix}
+				\lambda_1 & \ldots & 0\\
+				\ldots & \ldots & \ldots\\
+				0 & \ldots & \lambda_n
+			\end{pmatrix} = diag(\lambda_1\ldots\lambda_n) = \Lambda$\\
+			Базис состоит из с.в. отвечающих с.ч. $\lambda_1 \ldots \lambda_n\\
+			\A v_i = \lambda_i v_i \ \ \ A_i = \begin{pmatrix}
+				0\\0\\\lambda_i\\\vdots\\0
+			\end{pmatrix}\\
+			\lambda$ -- с.ч. $v$ с.в. $\neq \0 \Leftrightarrow Ker(\A-\lambda\E)$ нетривиально $\Leftrightarrow det(\A - \lambda\E) = 0$
+		\end{mylist}
+	\end{examples}
+	\begin{defin}
+		$\chi_\A (t) = det(\A-t\E)$ -- характеристический многочлен оператора $\A, t\in K$
+	\end{defin}
+
+		$V e_1\ldots e_n $ базис $\ \ \A\leftrightarrow A\\
+		\chi_\A(t) = det(\A-t\E) = det(A-tE)$ т.к. $det$ оператора инвариантен относительно выбора базиса.\\
+		$\chi_\A(t) = det(A-tE) = \left|\begin{matrix}
+			(a_{11}-t) & a_{12} & \ldots & a_{1n}\\
+			a_{21} & (a_{22}-t) & \ldots & \ldots\\
+			\ldots & \ldots & \ldots & \ldots\\
+			a_{n1} & \ldots & \ldots & (a_{nn}-t)
+		\end{matrix}\right| = \\
+		= (-1)^n t^n + (-1)^{n-1}(\underset{tr A = tr\A}{a_{11} + \ldots + a_{nn}})t^{n-1} + \ldots + \underset{det\A}{detA}$\\\\
+		По теореме Виета: $det\A = \underset{\text{корни }\chi_\A(t)}{\lambda_1 \ldots \lambda_n}\\\\
+		\underline{\underline{\lambda\in K}}$ с.ч. $\Leftrightarrow \chi_\A(\lambda) = 0 \ \ (\underline{\underline{\lambda\in K}})$\\
+		$\lambda$ корень характеристического многочлена.\\
+		
 \end{document}
