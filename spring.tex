@@ -981,5 +981,201 @@
 		По теореме Виета: $det\A = \underset{\text{корни }\chi_\A(t)}{\lambda_1 \ldots \lambda_n}\\\\
 		\underline{\underline{\lambda\in K}}$ с.ч. $\Leftrightarrow \chi_\A(\lambda) = 0 \ \ (\underline{\underline{\lambda\in K}})$\\
 		$\lambda$ корень характеристического многочлена.\\
+		$k = \mathbb{C} \Rightarrow n$ с.ч. с учетом кратности корней характеристического многочлена.\\
+		$k = \R \Rightarrow$ только вещественные корни $\chi_A$ будут с.ч.\\
+		$\chi_\A(t) = (-1)^n \prod\limits_{\lambda \text{ корень}} (t-\lambda)^{\alpha(\lambda)}\\
+			\alpha(\lambda)$ называется алгебраической кратностью с.ч. $\lambda$ (если $\lambda \in K$)
+	\begin{defin}
+		Множество всех с.ч. с учетом алгебраической кратности называется \textbf{спектром} линейного оператора. ($\lambda, \alpha(\lambda)$)\\
+		Спектр -- простой, если все с.ч. попарно-различны.\\
+		$\alpha(\lambda) = 1 \ \forall \ \lambda$
+	\end{defin}
+	\textbf{Немножко про алгебраическую кратность}\\
+	$f(t) = a_nt^n + a_{n-1}t^{n-1} + \ldots + a_1t + a_0 = a_n\prod\limits_{a \text{--корень}}(t-a)^{m_a}\\
+	a\text{--корень } f \Leftrightarrow f(a) = 0 \Leftrightarrow f\ \vdots\ (t-a)\\
+	a$ -- корень $f$ \textbf{кратности} $m \Leftrightarrow \begin{matrix}
+		f \mid (t-a)^m\\
+		f \nmid (t-a)^{m+1}
+	\end{matrix}\\
+	\Leftrightarrow f(t) = (t-a)^m g(t)\\
+	a_0$ -- произведение всех корней с учетом кратности = $(-1)^n \prod a \ \ \ \ \ a$--корень с учетом кратности
+	\\\\
+	$\det\A = \lambda_1 \ldots \lambda_n\\
+	(-1)^n t^n + \ldots = (-1)^n (t-a_1)(t-a_2)\ldots(t-a_n)\\
+	\chi_\A (t) = (-1)^n t^n + \ldots = (-1)^n (t-\lambda_1) \ldots (t-\lambda_n)\\
+	\det\A = \lambda_1\ldots\lambda_n = 0 \Leftrightarrow \lambda = 0 $ с.ч.
+	\begin{examples}
+		$\A$ -- поворот на угол $\alpha$\\
+		\begin{minipage}{0.3\textwidth}
+			\includegraphics[width=\textwidth]{11}
+		\end{minipage}
+		\begin{minipage}{0.7\textwidth}
+			$\vec{i}\ \vec{j}\\
+			\A \leftrightarrow A = \begin{pmatrix}
+				\cos\alpha & -\sin\alpha\\
+				\sin\alpha & \cos\alpha
+			\end{pmatrix}$
+		\end{minipage}
+		$\chi_\A(t) = det \begin{pmatrix}
+			\cos\alpha-t & -\sin\alpha\\
+			\sin\alpha & \cos\alpha-t
+		\end{pmatrix} = \\
+		\cos^2\alpha - 2\cos\alpha t + t^2 + sin^2\alpha = t^2 - 2\cos\alpha t + 1\\
+		D = 4\cos^2\alpha - 4 < 0 \ \ \ \alpha\neq \pi k$\\
+		нет вещ. корней $\Rightarrow$ нет с.ч.\\
+		$K = \R$
+	\end{examples}
+	\begin{theorem}
+		$\lambda$ с.ч. $\A \Rightarrow \boxed{1\leq \gamma(\lambda) \leq \alpha (\lambda)}$
+	\end{theorem}
+	\begin{proof}
+		Пусть $\gamma(\lambda) = k = dimV_\lambda = span(\underset{\text{базис}}{v_1\ldots v_k})\\
+		V_\lambda$ инвариантно относительно $\A\Rightarrow \exists $ базис: матрица оператора будет иметь вид:\\
+		\textit{(инвариантное линейное подпространство. Смотри Теорему пункта 7.3}\\
+		$A = \begin{pmatrix}
+			A^1 & \vline & A^2\\
+			\hline
+			0  & \vline & A^3	
+		\end{pmatrix}
+		= \left(\begin{array}{c|c}
+			\begin{array}{cc}
+				\lambda & 0\\
+				0 & \lambda
+			\end{array} & A^2\\
+			\hline
+			0  & A^3
+		\end{array}\right) \ \ A^1_{k\times k}$\\
 		
+		Базис = $v_1\ldots v_k v_{k+1} \ldots v_n\\
+		\A \underset{i = 1\ldots k}{v_i} \in V_\lambda = \lambda v_i \leftrightarrow A^1_i = \begin{pmatrix}0\\0\\\lambda\\0\\0\\0\end{pmatrix}$\\
+		$\chi_\A(t) = det \left(
+		\begin{array}{c|c}
+			\begin{matrix}
+				\lambda-t & 0\\0 & \lambda - t
+			\end{matrix} & A^2\\
+			\hline
+			0 & A^3 - tE_{n-k}
+		\end{array}\right) \underset{\text{св-ва } det}{=} \begin{vmatrix}
+			\lambda - t & 0\\0 & \lambda-t
+		\end{vmatrix}|A^3-t E_{n-k}| = (\lambda-t)^k\chi_{\A^3}(t)$\\
+		Очевидно, $\lambda$ корень $\chi_\A(t)$ кратности не меньше, чем $k \Rightarrow\alpha(\lambda) \geq k = \gamma(\lambda)$
+	\end{proof}
+	\begin{theorem}
+		$\lambda_1\ldots\lambda_m $ -- различные с.ч. $\A\\
+		v_1\ldots v_m$ соответствующие им с.в. $\Rightarrow\\
+		\Rightarrow v_1\ldots v_m$ линейно независимы.
+	\end{theorem}
+	\begin{proof} Метод математической индукции
+		\begin{mylist}
+			\item База. $m=1 \ \ \ \lambda_1 v_1$ с.в. -- линейно независимы, т.к. $v_1\neq \0$
+			\item Индукционное предположение. Пусть верно для $m-1$
+			\item Индукционный переход. Докажем, что верно для $m$\\
+			От противного. Пусть $\lambda_1\ldots \lambda_m $ попарно различные с.ч. $\A$,\\
+			а $v_1\ldots v_m$ линейно зависимы.\\
+			Пусть $v_m = \sum\limits_{i=1}^{m}\alpha_i v_i\\
+			\begin{array}{l}
+				\A_{v_m} = \sum\limits_{i=1}^{m-1}\alpha_i \A_{v_i} = \sum\limits_{i=1}^{m-1} \alpha_i \lambda_i v_i\\
+				
+					||
+				\\
+				\lambda_m v_m = \sum\limits_{i=1}^{m-1} \alpha_i \lambda_m v_i
+			\end{array}$\\
+			$\sum\limits_{i=1}^{m-1}\alpha_i(\underset{\stackrel{0}{\nparallel}}{\lambda_i - \lambda_m})v_i = \0 \ \ v_i$ линейно независим по инд. предположению\\
+			$\Leftrightarrow \alpha_i = 0 \ \ \forall \ i=1\ldots m-1 \Rightarrow\\
+			\Rightarrow v_m = \0$ --- Противоречие, т.к. $v_m$ с.в. и значит не может быть $\0$
+		\end{mylist}
+	\end{proof}
+	\begin{corollary}
+		$\lambda_1\ldots\lambda_m$ различные с.ч. $\A
+		\Rightarrow  V_{\lambda_1}\ldots V_{\lambda_m}$ дизъюнктны.
+		$\left(\bigoplus\limits_{\stackrel{\lambda}{\text{с.ч.}}} V_\lambda\right)$ 
+	\end{corollary}
+	\begin{proof}
+		$v_1 + \ldots +v_m = \0 \ \ v_i\ \in V_{\lambda_i}$\\
+		Если хотя бы 1 слагаемое $\neq \0 \Rightarrow$ это слагаемое с.в. $\Rightarrow$ противоречие с линейной независимостью с.в., отвечающих различным с.ч. $\Rightarrow \forall \ i: v_i = \0 \Rightarrow$ дизъюнктны. 
+	\end{proof}
+	\begin{theorem}
+		$V = \bigoplus\limits_{i=1}^m L_i \ \ L_i$ инвариантно относительно $\A\\
+		\A_i = \A|_{L_i} : L_i \rightarrow L_i
+		\Rightarrow \boxed{\chi_\A(t) = \prod_{i=1}^{m}\chi_{\A_i}(t)}$
+	\end{theorem}
+	\begin{proof}
+		см. теорему - следствие п. 7.3\\
+		Базис $V$ -- объединение базисов $L_i\\
+		\A \leftrightarrow A = \begin{pmatrix}
+			\boxed{A^1} & & 0\\
+						& \boxed{A^2} & \\
+			0 & & \boxed{A^m}
+		\end{pmatrix}\\
+		\A_i \leftrightarrow A^i \ \ \ \ \; A_{k_i\times k_i}\\
+		\chi_\A(t) = |A-tE| \underset{\text{свойства }det}{=} |A^1-tE_{k_1}||A^2-tE_{k_2}|\ldots|A^m-tE_{k_m}| = \\
+		\begin{matrix}
+			\chi_{A^1}(t) & \chi_{A^2}(t) & \ldots & \chi_{A^m}(t)\\
+			|| & || & & ||\\
+			\A_1 & \A_2 & & \A^m
+		\end{matrix}
+	$
+	\end{proof}
+	Все свойства с.ч. и с.в. доказанные для оператора верны для числовых матриц пространств $\R^m, \mathbb{C}^m$.\\
+	$A_{n\times n} \  \ \; \lambda$ с.ч. $A: \exists x\in \R^n \neq \0 \ \; \ Ax = \lambda x\\
+	y = \underset{\stackrel{\uparrow}{\text{линейный оператор}}}{Ax}$
+	\begin{examples}
+		$A = \begin{pmatrix}
+			4 & -5 & 2\\
+			5 & -7 & 3\\
+			6 & -9 & 4
+		\end{pmatrix}$\\
+		с.ч., с.в.?  $\alpha(\lambda), \gamma(\lambda)$?\\
+		$\chi_{\A}(t) = \chi(t) = \begin{vmatrix}
+			4-t & -5 & 2\\
+			5 & -7-t & 3\\
+			6 & -9 & 4-t
+		\end{vmatrix} = \begin{vmatrix}
+			4-t & 1-t & 2\\
+			5 & 1-t & 3\\
+			6 & 1-t & 4-t
+		\end{vmatrix} = (1-t)\begin{vmatrix}
+			4-t & 1 & 2\\
+			5 & 1 & 3\\
+			6 & 1 & 4-t
+		\end{vmatrix}
+		= (1-t)t^2\\
+		t_1 = 0 \; \;\alpha(0) = 2\\
+		t_2 = 1 \; \;\alpha(1) = 1\\
+		\\
+		V_\lambda = Ker(A-\lambda E) \ \ \ \ \ A = \begin{pmatrix}
+			4 & -5 & 2\\
+			5 & -7 & 3\\
+			6 & -9 & 4
+		\end{pmatrix}\\
+		\lambda_1 = 0 \ \ \ \begin{pmatrix}
+			4 & -5 & 2 \ \vline & 0\\
+			5 & -7 & 3 \ \vline & 0\\
+			6 & -9 & 4 \ \vline & 0
+		\end{pmatrix} \sim \ldots \begin{pmatrix}
+			x_1\\x_2\\x_3
+		\end{pmatrix} = \alpha\begin{pmatrix}
+		1\\2\\3
+		\end{pmatrix}\ \ \ \alpha\in]R\\
+		V_{\lambda_1} = 0 = span\begin{pmatrix}
+		1\\2\\3
+		\end{pmatrix}\\
+		\gamma(0) = 1 < \alpha(0)\\
+		\lambda_2 \ \ 1\leq\gamma \leq\alpha = 1\\
+		\begin{pmatrix}
+		3 & -5 & 2 \ \vline & 0\\
+		5 & -8 & 3 \ \vline & 0\\
+		6 & -9 & 3 \ \vline & 0
+		\end{pmatrix} \sim \ldots \begin{pmatrix}
+		x_1\\x_2\\x_3
+		\end{pmatrix} = \alpha\begin{pmatrix}
+		1\\1\\1
+		\end{pmatrix}
+		\ \ \alpha\in\R\\
+		V_{\lambda_2} = span\begin{pmatrix}
+		1\\1\\1
+		\end{pmatrix}\\
+		\gamma(1) = 1
+		$
+	\end{examples}
 \end{document}
