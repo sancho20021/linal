@@ -16,6 +16,8 @@
 \usepackage[scr=boondoxo,scrscaled=1.05]{mathalfa}
 \usepackage{stackengine}
 \usepackage{wrapfig}
+\usepackage{relsize}
+\usepackage{latexsym}
 
 \title{Конспекты по линейной алгебре, 2 сем}
 \author{Пак Александр}
@@ -30,7 +32,6 @@
 \newtheorem*{stat}{Утверждение}
 \newtheorem{corollary}{Следствие}[theorem]
 \renewcommand{\thecorollary}{\arabic{corollary}}
-\let\vec\overline
 
 \newenvironment{mylist}{\begin{enumerate}[noitemsep, nolistsep]}{\end{enumerate}}
 
@@ -57,6 +58,8 @@
 \newcommand{\E}{\mathcal{E}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\B}{\mathcal{B}}
+\let\vec\overline
+\newcommand{\p}{\mathcal{P}}
 %-------------------------------%
 
 \graphicspath{ {./imgs/} }
@@ -1176,6 +1179,336 @@
 		1\\1\\1
 		\end{pmatrix}\\
 		\gamma(1) = 1
+		$
+	\end{examples}
+	\subsection{Оператор простой структуры. (о.п.с.) \\
+		Проекторы. Спектральное разложение о.п.с.
+		\\ Функция от матрицы.}
+	\begin{defin}
+		$\A\in End(V)\\$
+		$\A$ называется о.п.с., если $\exists$ базис пространтсва $V$, т.ч. матрица оператора в этом базисе имеет диагональный вид $\Lambda = diag(\lambda_1\ldots\lambda_n) = \begin{pmatrix}
+			\lambda_1 & 0\\ 0 & \lambda_n
+		\end{pmatrix} \Leftrightarrow \exists$ базис $V$ из с.ч. $\A \Leftrightarrow V = \bigoplus\limits_{\lambda \text{с.ч. } \A} V_\lambda\\
+		V = span(v_1\ldots v_n)$
+	\end{defin}
+	\begin{theorem}
+		Пусть $\sum\limits_{\lambda \text{с.ч. }\A} \alpha(\lambda) = n = dim V\\
+		\Leftrightarrow $все корни $\chi(t) \in K \Leftrightarrow$ все корни $\chi(t)$ являются с.ч. $\A$\\
+		$\boxed{\A\text{о.п.с.}\Leftrightarrow \forall\text{с.ч.} \lambda \ \ \ 1\leq \gamma(\lambda) \leq \alpha(\lambda)}$
+	\end{theorem}
+	\begin{proof}
+		$\A$ о.п.с. $\Leftrightarrow V = \bigoplus\limits_{\lambda \text{с.ч.}}V_\lambda \Leftrightarrow \\
+		\Leftrightarrow n = dim V = \sum\limits_{\lambda \text{с.ч.}}\gamma(\lambda) \underset{\nearrow}{=} \sum\limits_{\lambda\text{с.ч.}}\alpha(\lambda)\\
+		1\leq \gamma(\lambda) \leq \alpha(\lambda) \ \ \ \ \; \; \; \nearrow\\
+		\sum\limits_{\lambda\text{с.ч.}}\alpha(\lambda) = n\ \  \rightarrow \ \ \nearrow
+		\Rightarrow \forall\lambda: \boxed{\gamma(\lambda) = \alpha(\lambda)}$
+	\end{proof}
+	\begin{corollary}
+		$\sum\limits_{\lambda\text{с.ч.}}\alpha(\lambda) = n = dim V\\
+		\A $о.п.с. $\Leftarrow $ спектр -- простой.\\
+		($n$ попарно различных с.ч. $\forall \lambda \gamma(\lambda) = \alpha(\lambda) = 1$)
+	\end{corollary}
+	\begin{defin}
+		$A_{n\times m}$ называется диагонализируемой, если $\exists$ невырожденная $T_{n\times n}$, т.ч.\\ $T^{-1}AT = \Lambda = diag(\lambda_1\ldots\lambda_n)$\\
+		("$A$ подобна диагональной матрице")
+	\end{defin}
+	\begin{corollary}
+		Если матрица $A_{n\times n}$ -- матрица некоторого о.п.с. $\A$, то она \textbf{диагонализируема}. И обратно, любая диагонализируемая матрица является матрицей о.п.с. в некотором базисе.
+	\end{corollary}
+	\begin{proof}\ \\
+		\begin{tabular}{clccc}
+			$\A$ & о.п.с. & $\Leftrightarrow$ & $\exists$ базис & $\underset{\text{с.в.}}{v_1\ldots v_n}$\\
+			$\updownarrow$ & $\underset{\text{базис}}{(e_1\ldots e_n)}V$ & & & $\underset{\text{с.ч.}}{\lambda_1\ldots \lambda_n}$\\
+			$A$ & & & & $\updownarrow$\\
+			& & & &$\Lambda = \begin{pmatrix}
+				\lambda_1 & 0\\ 0 & \lambda_n
+			\end{pmatrix}$
+		\end{tabular}\\
+		$T = T_{e\rightarrow \mathscr{v}}$ невырожденная.\\
+		$\Lambda = T^{-1} A T\\
+		A = T \Lambda T^{-1}$
+	\end{proof}
+	$\boxed{
+		\begin{array}{r}
+		A \text{ диагонализируема }\Leftrightarrow \sum\limits_{\lambda\text{с.ч.}}\alpha(\lambda) = n\\
+		\forall \ \lambda \text{ с.ч.} \ \gamma(\lambda) = \alpha (\lambda)
+		\end{array}
+	}$
+	\begin{defin}\ \\
+		$\begin{array}{ccc}
+			V = \bigoplus\limits_{i=1}^m L_i & & \mathscr{p}_i : V\rightarrow L_i \subset V\\
+			\nwarrow\Leftarrow & \Leftrightarrow & \Rightarrow\searrow\\
+			\underset{\text{линейное подпр.}}{L_i \subset V} & & \forall v \in V \  \exists ! : v = \sum\limits_{i=1}^m v_i \in L_i
+		\end{array}$\\
+		$\boxed{\forall \ v\in V \ \ \ \p_i v \overset{def}{:=}v_i} \ \ \ \ \ \ \; i = 1\ldots m$
+	\end{defin}
+	\textbf{Оператор проектирования (проектор)}\\
+	$\p_i \overset{?}{\in} End(V)\\
+	\p_i (u + \lambda v) = u_i + \lambda v_i = \p_i u + \lambda \p_i v \ \ \ \Rightarrow \ \ \ \p_i $ линейный оператор.\\
+	$u + \lambda V = \sum\limits_{i=1}^m u_i \in L_i + \lambda \sum\limits_{i=1}^m v_i \in L_i = \sum\limits_{i=1}^m (\underbrace{u_i + \lambda v_i}_{\in L_i})\\
+	u_i = \p_i u \ \ \ \ v_i = \p_i v
+	$
+	\newpage
+	\textbf{Свойства проекторов:}
+	\begin{mylist}
+		\item $\forall \ i \neq j \ \ \p_i \p_ij = \0$
+		\item $
+		\forall i: \p_i^2 = \p_i \ \ (\Rightarrow \forall k\in \mathbb{N} \o_i^k = \p_i)
+		$
+		\item $\sum\limits_{i=1}^m \p_i = \E$
+		\item $Ker\p_i = \sum\limits_{j\neq i} L_j \ \ \forall i = 1\ldots m\\
+		Im\p_i = L_i$
+	\end{mylist}
+	\begin{proof}\ \\
+		\begin{mylist}
+			\item $\forall v \in V \ \ \p_i\p_ij(v) = \p_i v_j \in L_j = \0 \Rightarrow \p_i\p_ij = \0$\\
+			Т.к. $L_i$ дизъюнктны \\
+			$v = v_1 + v_i + \underset{\text{Ед. образом}}{v_j} + \ldots + v_n\\
+			v_j = v_j + \0$
+			\item $\forall v\in V \ \ \p_i \underbracket{\p_i(v)}_{v_i\in L_i}=v_i = \p_i v$\\
+			Т.к. верно $\forall v\in V$, то верно и для базиса $\Rightarrow$ операторы совпадают. $\p_i\p_i = \p_i$
+			\item $\forall v \in V (\sum\limits_{i=1}^m \p_i)v = \sum\limits_{i=1}^m \p_i v = \sum\limits_{i=1}^m v_i = v = \E v \Rightarrow \ldots \Rightarrow \sum\limits_{i=1}^m = \E$
+			\item 
+			$\p_i(\underset{\mathlarger{= \sum\limits_{j \neq i} \underbrace{\p_i v_j}_{\0}}}{v_1 + \ldots + v_{i-1} + v_{i+1} + \ldots + v_m}) + \0\\
+			\boxed{
+				\begin{matrix}
+				\sum\limits_{j\neq i} L_j \subset Ker\ \p_i\\
+				\text{т.к. }v = \bigoplus\limits_{j\neq i} L_j \oplus L_i
+				\end{matrix}
+			} \Rightarrow Ker\ \p_i = \bigoplus\limits_{j\neq i} L_j\\\\
+			Im \ \p_i = L_i \text{ по }def \ \ "\subset"$\\
+			Верно "$\supset$" $\ \forall v_i \in L_i \leadsto v_i \in V = \p v_i = v_i$
+		\end{mylist}
+	\end{proof}
+	\begin{stat}
+		$\underset{i=1\ldots m}{\p_i \in End(V)} : V\rightarrow V$ и выполнены свойства 1, 3 $\Rightarrow\\
+		\Rightarrow V = \bigoplus\limits_{i=1}^m Im\p_i $  (т.е. $\p_i$ проекторы на $L_i = Im\p_i$)
+	\end{stat}
+	\begin{proof}
+		\ \\
+		\begin{mylist}
+			\item Если выполнены 1, 3, то верно 2\\
+			$\p_i \p_i \overset{?}{=}\p_i\\
+			\p_i = \p_i\E = p_i \sum\limits_{j=1}^m \p_j = \sum\limits_{j=1}^m \underset{\begin{matrix}
+				\stackrel{||}{\stackrel{\0}{i\neq j}}
+				\end{matrix}}{\p_i\p_j} = \p_i^2$
+			\item 
+			$v_1 + v_2 + \ldots + v_m = \0\\
+			v_i \in Im\p_i \ $ дизъюнктно?\\
+			$v_i = \p_i w_i \ w_i\in V\\
+			v_i = \p_i w_i \underset{\uparrow}{=} \p_i (\underbrace{\sum\limits_{j=1}^m \underbracket{\p_j w_j}_{v_j}}_{=\0}) = \0\\
+			\sum\limits_{j=1}^m \underbrace{\p_i ( p_j}_{=\0 \ i\neq j} w_j) = \p_i^2 w_i = \p_i w_i\\
+			\forall \ v\in V \ \E v = v = \sum\limits_{j=1}^m \underset{\mathlarger{\stackrel{||}{v_j \in Im \p_j}}}{\p_j v}
+			\Rightarrow v = \sum\limits_{j=1}^m Im \p_j$
+		\end{mylist}
+	\end{proof}
+	\begin{theorem}[О спектральном разложении о.п.с.]
+		$v = \bigoplus\limits_{\lambda\text{с.ч.}}V_\lambda \ \ \ \ \ \underset{\text{проекторы}}{\p_\lambda: 
+		V \rightarrow V_\lambda}\\
+		\A \text{ о.п.с.} \Leftrightarrow \A = \sum\limits_{\lambda\text{с.ч.}}\lambda\p_\lambda \leftarrow $спектральные проекторы
+	\end{theorem}
+	\begin{proof}
+		\ \\
+		\begin{mylist}
+			\item 
+			$\p_\lambda\p_\mu = \0$
+			\item $\p^2_\lambda = \p_\lambda$
+			\item $\sum\limits_{\lambda \text{с.ч.}}\p_\lambda = \E$
+		\end{mylist}
+		$\forall v\in V\\
+		\A v \underset{\stackrel{\uparrow}{V = \bigoplus\limits_{\lambda} V_\lambda}}{=}
+		\A(\sum\limits_{\lambda}v_\lambda\in V_\lambda) = \sum\limits_{\lambda\text{с.ч.}}\underbracket{\A v_\lambda}_{= \lambda v_\lambda} = \\
+		\sum\limits_{\lambda\text{с.ч.}}\lambda v_\lambda = \sum\limits_{\lambda\text{с.ч.}}\lambda \p_\lambda v$\\
+		Доказательство верно $\forall$ векторного про-ва $V$. В частности для базиса $\Rightarrow \boxed{\A = \sum\limits_{\lambda \text{с.ч.}}\lambda \p_\lambda}$
+	\end{proof}
+	\begin{corollary}
+		\textbf{$A_{n\times n}$ диагонализируема} $\Leftrightarrow$ 
+			\belowbaseline[-10pt]{$\begin{array}{c}
+				\exists \ \underset{\text{проекторы}}{\p_{\lambda \ n\times n}} \ \ \ 1^\circ\ 2^\circ\ 3^\circ\\
+				A = \sum\limits_{\lambda\text{с.ч.}}\lambda \p_\lambda
+			\end{array}$}
+	\end{corollary}
+	\begin{examples}
+		$A = $\belowbaseline[-10pt]{$\begin{pmatrix}
+				7 &  -12 & 6\\
+				10 & -19 & 10\\
+				12 & -23 & 13
+			\end{pmatrix}$}\\
+		$\lambda_1 = 1 \ \alpha(\lambda_1) = \gamma(\alpha_1) = 2\\
+		V_{\lambda_1} = span\begin{pmatrix}
+			2\\1\\0
+		\end{pmatrix}\begin{pmatrix}
+			1\\0\\-1
+		\end{pmatrix} = span(v_1, v_2)\\
+		\lambda_2 = -1 \ \alpha(\lambda_2) = \gamma(\lambda
+		_2) = 1\\
+		V_{\lambda_2} = span \begin{pmatrix}
+			3\\5\\6
+		\end{pmatrix} = span \ V_3\\
+		\Rightarrow \text{о.п.с. }V = V_{\lambda_1}\oplus V_{\lambda_2} = span(V_1, V_2, V_3)\\
+		T_{e\rightarrow v} = \begin{pmatrix}
+			2 & 1 & 3\\
+			1 & 0 & 5\\
+			0 & -1 & 6
+		\end{pmatrix}\\
+		T^{-1}AT = \begin{pmatrix}
+			1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 & 0 & -1
+		\end{pmatrix} = \Lambda \ \ \ \boxed{AT = T\Lambda}\\
+		\p_1: V\rightarrow V_{\lambda_1}\subset{V} \\
+		\p_2: V\rightarrow V_{\lambda_2} \subset{V}\\
+		\p_1' \text{ матрица }\p_1 \text{ в базисе } v = \begin{pmatrix}
+			1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 & 0 & 0
+		\end{pmatrix}\\
+		\p_1, \p_2 $-- матрицы проекторов в базисе $e$(канонич.)\\
+		$\p_1 v_i = \left[\begin{array}{l}
+			v_i, i = 1, 2\\
+			\0, i = 3
+		\end{array}\right.\\
+		1^\circ \ 2^\circ \ 3^\circ\\
+		\p_1' + \p_2' = E\\
+		\p_1'\p_2' = \0 \ldots\\
+		\p_2'$ матрица $\p_2$ в базисе $v = \begin{pmatrix}
+			0 & 0 & 0\\
+			0 & 0 & 0\\
+			0 & 0 & 1
+		\end{pmatrix}$
+	\end{examples}
+	\begin{examples}
+		\belowbaseline[-10pt]{
+			$A = \begin{pmatrix}
+				7 & -12 & 6\\
+				10 & -19 & 10\\
+				12 & -24 & 13
+			\end{pmatrix}$}\\
+		    $\p_i' = T^{-1}\p_i T \ \ \ \ \ i = 1, 2\\
+			\p_i = T\p_i'T^{-1} \ \ \ \begin{array}{c}
+				\p_1, \p_2 = \0\\
+				\p_1^2 = \p_1
+			\end{array}\\
+			\p_1 = \begin{pmatrix}
+				4 & -6 & 3\\
+				6 & -9 & 5\\
+				6 & -12 & 7
+			\end{pmatrix} \ \ \p_2 = \begin{pmatrix}
+				-3 & 6 & -3\\
+				-5 & 10 & -5\\
+				-6 & 12 & -6
+			\end{pmatrix} = E - \p_1\\
+			$
+	\end{examples}
+	\begin{defin}
+		$(A_k) = ((a^k_{ij}))^\infty_{k=1}$ -- последовательность матриц\\
+		$\exists \lim\limits_{k\rightarrow\infty}A_k = A = (a_{ij}) \Leftrightarrow \forall \ i, j \ \exists a_{ij} = \lim\limits_{k\rightarrow\infty} a^k_{ij}$\\
+		$$S = \underbracket{\sum\limits_{m=1}^\infty A_m}_{\stackrel{\text{\textlarger[2]{Ряд.}}}{\text{Сумма ряда.}}} \overset{\exists}{=} \lim\limits_{N\rightarrow\infty}\underbracket{\sum\limits_{m=1}^N A_m}_{\stackrel{S_N \text{ \textlarger[2]{частичная}}}{\text{ сумма ряда}}}\\
+		$$
+		$$
+		f(x)\text{ аналитическая в }|x|<R \Leftrightarrow f(x) = \sum_{m=0}^\infty C_m(x)^m \ \ \ C_m = \frac{f^{(m)}(0)}{m!}
+		$$
+	\end{defin}
+	Ряд Тейлора.\\
+	$\mathlarger{e^x = \sum\limits_{m=0}^\infty \frac{x^m}{m!} \ R = \infty \ \cos x = \sum\limits_{m=1}^\infty \frac{(-1)^m x^{2m}}{(2m)!} \ \ \ R = \infty}\\
+	\mathlarger{
+	\ln(1+x) = \sum\limits_{m=1}^\infty \frac{(-1)^{m-1} x^m}{m} \ \ |x| < 1 \ \ \ \text{либо } x = 1}$
+	\begin{defin}
+		Функция от матрицы.\\
+		$A_{n\times n}\\
+		f(A) = \sum\limits_{m=0}^\infty C_m A^m$, где $\boxed{\begin{array}{rcl}
+			C_m & = & \frac{f^{(m)}(0)}{m!}\\
+			f(x) & = & \sum\limits_{m=0}^\infty C_m x^m
+		\end{array}}$
+	\end{defin}
+	$e^A = \sum\limits_{m=0}^\infty \frac{A^m}{m!}\\
+	\cos A = \sum\limits_{m=0}^\infty \frac{(-1)^m}{(2m)!}A^{2m}$
+	\begin{theorem}
+		$f$ аналитическая в $|x| < R\\
+		A_{n\times n} \ \ $ все с.ч. $|\lambda| < R$\\
+		\textbf{$A$ диагонализируемая} То есть:\\
+		$\exists \underset{\text{невырожд.}}{T}: \Lambda = T^{-1}A T\\
+			\exists \p_\lambda: A = \sum\limits_{\lambda}\lambda \p_\lambda$\\
+		$\Downarrow$
+		\begin{mylist}
+			\item 
+			$\underset{f(A)}{\exists} = T\begin{pmatrix}
+				f(\lambda_1) & \ldots & 0\\
+				\vdots & \ddots & \vdots\\
+				0 & \ldots & f(\lambda_n)
+			\end{pmatrix} T^{-1}$
+			\item 
+			$\underset{f(A)}{\exists} = \sum\limits_{\lambda\text{с.ч.}}f(\lambda)\p_\lambda$
+		\end{mylist}
+	\end{theorem}	
+	\begin{proof}
+		\ \\
+		\begin{mylist}
+			\item 
+			\belowbaseline[-10pt]{
+			\begin{minipage}{0.3\textwidth}
+				$f(A) = \sum\limits_{m=0}^\infty C_m A^m\\
+				A^m = (T\Lambda T^{-1})^m = $
+			\end{minipage}
+			\begin{minipage}{0.4\textwidth}
+				$\boxed{\begin{array}{l}f(x) = \sum\limits_{m=0}^\infty C_m x^m\\
+				|x|<R
+				\end{array}}$
+			\end{minipage}}\\\\
+			$= T\Lambda \underbrace{T^{-1} T}_{E} \Lambda T^{-1}\ldots T \Lambda T^-1 = \\
+			= T\Lambda^m T^{-1} = T\begin{pmatrix}
+			\lambda_1^m & 0\\
+			0 && \lambda_n^m
+			\end{pmatrix} T^{-1}\\
+			f(A) = \sum\limits_{m=0}^\infty C_m T\Lambda^m T^{-1} = T(\sum\limits_{m=0}^\infty C_m\Lambda^m) T^{-1} = \\
+			= T\begin{pmatrix}
+				\sum\limits_{m=0}^\infty C_m \lambda^m_1 & \ldots & 0\\
+				\vdots & \ddots & \vdots\\
+				0 & \ldots & \sum\limits_{m=0}^\infty C_m\lambda^m_n
+			\end{pmatrix} T^{-1} =
+			 T\begin{pmatrix}
+				 f(\lambda_1) & 0\\
+				 0 & f(\lambda_n)
+			 \end{pmatrix} T^{-1}\\
+			 |\lambda_i| < R
+			$
+		\item 
+		$A^m = (\sum\limits_{\lambda\text{с.ч.}}\lambda\p_\lambda)^m \underset{\stackrel{\mathlarger{\lambda\neq \mu}}{\p_\lambda \p_\mu - \0}}{=} \sum\limits_{\lambda}\lambda^m\p^m_\lambda = \sum\limits_{\lambda}\lambda^m \p_\lambda\\
+		f(A) = \sum\limits_{m=0}^\infty C_m(\sum\limits_\lambda \lambda^m \p_\lambda
+		) = \sum\limits_\lambda (\underset{|\lambda| < R}{\sum\limits_{m=0}^{\infty}C_m\lambda^m = f(\lambda)})\p_\lambda = \sum\limits_\lambda f(\lambda) \p_\lambda$
+	\end{mylist}
+	\end{proof}
+	\begin{remark}
+		$A$ диагон. $\Leftrightarrow A = T\Lambda T^{-1}\\
+		\Leftrightarrow A = \sum\limits_{\lambda\text{с.ч.}}\lambda\p_\lambda\\
+		f(x) = \sum\limits_{m=0}^\infty c_m x^m\\
+		f(A) = T\begin{pmatrix}
+			f(\lambda_1) & 0\\
+			0 & f(\lambda_n)
+		\end{pmatrix} T^{-1}\\
+		f(A) = \sum\limits_{\lambda\text{с.ч.}}f(\lambda)\p_\lambda\\
+		t\in \R\\
+		f(At) = \sum\limits_{m=0}^\infty C_m A^m t^m\\
+		t^m A^m = t^m T\Lambda^m T^{-1} = T\begin{pmatrix}
+			(\lambda_1 t)^m & 0\\
+			0 & f(\lambda_n t)
+		\end{pmatrix} T^{-1}\\
+		\boxed{
+			f(At) = T\begin{pmatrix}
+				f(\lambda_1 t) & 0\\
+				0 & f(\lambda_n t)
+			\end{pmatrix}T^{-1}
+		}\\\\
+		t^m A^m = \sum\limits_{\lambda\text{с.ч.}}t^m\lambda^m \p_\lambda\\
+		\boxed{f(At) = \sum\limits_{\lambda\text{с.ч.}}f(t\lambda)\p_\lambda}$
+	\end{remark}
+	\begin{examples}
+		$e^{At}\\
+		A = \begin{pmatrix}
+			7 & -12 & 6\\
+			10 & -19 & 10\\
+			12 & -24 & 13
+		\end{pmatrix}\\
 		$
 	\end{examples}
 \end{document}

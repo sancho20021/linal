@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  29 FEB 2020 23:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  5 MAR 2020 03:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -877,6 +877,15 @@ sep char (CT)
 \WF@everypar=\toks37
 Package: wrapfig 2003/01/31  v 3.6
 )
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2013/03/29 ver 4.1
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
 \c@theorem=\count128
 \c@lemma=\count129
 \c@defin=\count130
@@ -889,20 +898,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `spring.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 69.
+LaTeX Font Info:    ... okay on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1003,14 +1012,19 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 71.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 71.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 71.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./spring.toc)
@@ -1018,128 +1032,128 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout4 = `spring.toc'.
 
  [1]
-LaTeX Font Info:    Try loading font information for U+bbold on input line 79.
+LaTeX Font Info:    Try loading font information for U+bbold on input line 82.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [2]
 <./imgs/1.png, id=26, 507.39563pt x 211.54031pt>
 File: ./imgs/1.png Graphic file (type png)
 <use ./imgs/1.png>
-Package pdftex.def Info: ./imgs/1.png  used on input line 141.
+Package pdftex.def Info: ./imgs/1.png  used on input line 144.
 (pdftex.def)             Requested size: 250.93842pt x 104.61754pt.
  [3 <./imgs/1.png>]
 <./imgs/2.png, id=32, 483.30562pt x 201.75375pt>
 File: ./imgs/2.png Graphic file (type png)
 <use ./imgs/2.png>
-Package pdftex.def Info: ./imgs/2.png  used on input line 234.
+Package pdftex.def Info: ./imgs/2.png  used on input line 237.
 (pdftex.def)             Requested size: 250.93842pt x 104.75246pt.
  [4 <./imgs/2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 271--286
+Underfull \hbox (badness 10000) in paragraph at lines 274--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 271--286
+Underfull \hbox (badness 10000) in paragraph at lines 274--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 295--303
+Underfull \hbox (badness 10000) in paragraph at lines 298--306
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 304--305
+Underfull \hbox (badness 10000) in paragraph at lines 307--308
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 349--351
+Underfull \hbox (badness 10000) in paragraph at lines 352--354
 
  []
 
 <./imgs/3.png, id=44, 240.9pt x 207.02344pt>
 File: ./imgs/3.png Graphic file (type png)
 <use ./imgs/3.png>
-Package pdftex.def Info: ./imgs/3.png  used on input line 351.
+Package pdftex.def Info: ./imgs/3.png  used on input line 354.
 (pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
 <./imgs/4.png, id=45, 240.9pt x 207.02344pt>
 File: ./imgs/4.png Graphic file (type png)
 <use ./imgs/4.png>
-Package pdftex.def Info: ./imgs/4.png  used on input line 358.
+Package pdftex.def Info: ./imgs/4.png  used on input line 361.
 (pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
 [6 <./imgs/3.png> <./imgs/4.png>]
-Underfull \hbox (badness 10000) in alignment at lines 424--428
+Underfull \hbox (badness 10000) in alignment at lines 427--431
 [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--436
+Underfull \hbox (badness 10000) in paragraph at lines 424--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--446
+Underfull \hbox (badness 10000) in paragraph at lines 443--449
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 474--475
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
 <./imgs/5.png, id=56, 471.32608pt x 401.15086pt>
 File: ./imgs/5.png Graphic file (type png)
 <use ./imgs/5.png>
-Package pdftex.def Info: ./imgs/5.png  used on input line 483.
+Package pdftex.def Info: ./imgs/5.png  used on input line 486.
 (pdftex.def)             Requested size: 200.75073pt x 170.8633pt.
 LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 488.
+(Font)              scaled to size 12.60004pt on input line 491.
 LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 488.
+(Font)              scaled to size 8.40002pt on input line 491.
 LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 6.30002pt on input line 488.
+(Font)              scaled to size 6.30002pt on input line 491.
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--499
+Underfull \hbox (badness 10000) in paragraph at lines 480--502
 
  []
 
 <./imgs/6.png, id=57, 246.13696pt x 201.09914pt>
 File: ./imgs/6.png Graphic file (type png)
 <use ./imgs/6.png>
-Package pdftex.def Info: ./imgs/6.png  used on input line 506.
+Package pdftex.def Info: ./imgs/6.png  used on input line 509.
 (pdftex.def)             Requested size: 100.37537pt x 82.00931pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--507
+Underfull \hbox (badness 10000) in paragraph at lines 502--510
 
  []
 
 [8 <./imgs/5.png> <./imgs/6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 547--558
+Underfull \hbox (badness 10000) in paragraph at lines 550--561
 
  []
 
 [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 641--658
+Underfull \hbox (badness 10000) in paragraph at lines 644--661
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 706--708
+Underfull \hbox (badness 10000) in paragraph at lines 709--711
 
  []
 
 <./imgs/7.png, id=75, 278.54062pt x 222.07968pt>
 File: ./imgs/7.png Graphic file (type png)
 <use ./imgs/7.png>
-Package pdftex.def Info: ./imgs/7.png  used on input line 708.
+Package pdftex.def Info: ./imgs/7.png  used on input line 711.
 (pdftex.def)             Requested size: 150.56305pt x 120.04662pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 714--717
+Underfull \hbox (badness 10000) in paragraph at lines 717--720
 
  []
 
 
-Overfull \hbox (34.58737pt too wide) in paragraph at lines 719--739
+Overfull \hbox (34.58737pt too wide) in paragraph at lines 722--742
 []$ $[]$ $[]$
  []
 
@@ -1147,30 +1161,30 @@ Overfull \hbox (34.58737pt too wide) in paragraph at lines 719--739
 <./imgs/8.png, id=81, 298.86656pt x 222.07968pt>
 File: ./imgs/8.png Graphic file (type png)
 <use ./imgs/8.png>
-Package pdftex.def Info: ./imgs/8.png  used on input line 764.
+Package pdftex.def Info: ./imgs/8.png  used on input line 767.
 (pdftex.def)             Requested size: 135.50624pt x 100.6906pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--785
+Underfull \hbox (badness 10000) in paragraph at lines 744--788
 
  []
 
 
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 741--785
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 744--788
 []$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 741--785
+Underfull \hbox (badness 10000) in paragraph at lines 744--788
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--794
+Underfull \hbox (badness 10000) in paragraph at lines 795--797
 
  []
 
 
-Overfull \hbox (2.0144pt too wide) detected at line 797
+Overfull \hbox (2.0144pt too wide) detected at line 800
 \OML/cmm/m/it/12 trB \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 
 = [] [] \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 AC\OT1/cmr/m/n/12
  )[] = [] [] [] \OML/cmm/m/it/12 C[]a[]C[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/i
@@ -1179,111 +1193,166 @@ m/m/it/12 trA
  []
 
 [13 <./imgs/8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
+Underfull \hbox (badness 10000) in paragraph at lines 811--812
 
  []
 
 <./imgs/9.png, id=86, 145.29282pt x 207.77625pt>
 File: ./imgs/9.png Graphic file (type png)
 <use ./imgs/9.png>
-Package pdftex.def Info: ./imgs/9.png  used on input line 813.
+Package pdftex.def Info: ./imgs/9.png  used on input line 816.
 (pdftex.def)             Requested size: 145.29245pt x 207.77573pt.
 <./imgs/10.png, id=87, 155.07938pt x 207.77625pt>
 File: ./imgs/10.png Graphic file (type png)
 <use ./imgs/10.png>
-Package pdftex.def Info: ./imgs/10.png  used on input line 822.
+Package pdftex.def Info: ./imgs/10.png  used on input line 825.
 (pdftex.def)             Requested size: 155.07898pt x 207.77573pt.
 
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 811--830
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 814--833
 []$ $[]$ 
  []
 
 
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 811--830
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 814--833
 []$ $[]$ 
  []
 
 [14 <./imgs/9.png> <./imgs/10.png>] [15]
-Underfull \hbox (badness 10000) in paragraph at lines 938--939
+Underfull \hbox (badness 10000) in paragraph at lines 941--942
 
  []
 
 <./imgs/11.png, id=97, 222.07968pt x 134.75343pt>
 File: ./imgs/11.png Graphic file (type png)
 <use ./imgs/11.png>
-Package pdftex.def Info: ./imgs/11.png  used on input line 947.
+Package pdftex.def Info: ./imgs/11.png  used on input line 950.
 (pdftex.def)             Requested size: 100.37537pt x 60.90578pt.
 
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 945--953
+Overfull \hbox (31.98517pt too wide) in paragraph at lines 948--956
 []$ $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 945--953
+Underfull \hbox (badness 10000) in paragraph at lines 948--956
 
  []
 
 [16 <./imgs/11.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 972--988
+Underfull \hbox (badness 10000) in paragraph at lines 975--991
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 993--1007
+Underfull \hbox (badness 10000) in paragraph at lines 996--1010
 
  []
 
 [17]
 File: ./imgs/11.png Graphic file (type png)
 <use ./imgs/11.png>
-Package pdftex.def Info: ./imgs/11.png  used on input line 1010.
+Package pdftex.def Info: ./imgs/11.png  used on input line 1013.
 (pdftex.def)             Requested size: 162.60915pt x 98.66733pt.
 
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 1008--1027
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 1011--1030
 []$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1032--1048
+Underfull \hbox (badness 10000) in paragraph at lines 1035--1051
 
  []
 
-[18] [19] [20] (./spring.aux) ) 
+[18] [19] [20] [21]
+
+LaTeX Warning: Command \o invalid in math mode on input line 1256.
+
+
+LaTeX Warning: Command \o invalid in math mode on input line 1256.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1263
+
+ []
+
+LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
+(Font)              scaled to size 15.12003pt on input line 1272.
+LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
+(Font)              scaled to size 10.50003pt on input line 1272.
+LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
+(Font)              scaled to size 7.35002pt on input line 1272.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1288--1289
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1402
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1404--1406
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 1445--1446
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1476
+
+ []
+
+[25]
+Underfull \hbox (badness 10000) in paragraph at lines 1506--1513
+
+ []
+
+[26] (./spring.aux) ) 
 Here is how much of TeX's memory you used:
- 6851 strings out of 492982
- 92376 string characters out of 6134895
- 196582 words of memory out of 5000000
- 10223 multiletter control sequences out of 15000+600000
- 25225 words of font info for 66 fonts, out of 8000000 for 9000
+ 6953 strings out of 492982
+ 93918 string characters out of 6134895
+ 197617 words of memory out of 5000000
+ 10304 multiletter control sequences out of 15000+600000
+ 30122 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,20n,40p,1416b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-su
-per-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold
-10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
-sam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm20
-74.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/boondox/zxxrw8a.pfb>
-Output written on spring.pdf (21 pages, 455732 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/boondox/zxxrw8a.pfb>
+Output written on spring.pdf (27 pages, 501728 bytes).
 PDF statistics:
- 197 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 224 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
