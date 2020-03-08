@@ -60,6 +60,7 @@
 \newcommand{\B}{\mathcal{B}}
 \let\vec\overline
 \newcommand{\p}{\mathcal{P}}
+\newcommand{\pu}{\sqsupset}
 %-------------------------------%
 
 \graphicspath{ {./imgs/} }
@@ -1194,7 +1195,7 @@
 	\begin{theorem}
 		Пусть $\sum\limits_{\lambda \text{с.ч. }\A} \alpha(\lambda) = n = dim V\\
 		\Leftrightarrow $все корни $\chi(t) \in K \Leftrightarrow$ все корни $\chi(t)$ являются с.ч. $\A$\\
-		$\boxed{\A\text{о.п.с.}\Leftrightarrow \forall\text{с.ч.} \lambda \ \ \ 1\leq \gamma(\lambda) \leq \alpha(\lambda)}$
+		$\boxed{\A\text{о.п.с.}\Leftrightarrow \forall\text{с.ч.} \lambda \ \ \ 1 \leq \gamma(\lambda) = \alpha(\lambda)}$
 	\end{theorem}
 	\begin{proof}
 		$\A$ о.п.с. $\Leftrightarrow V = \bigoplus\limits_{\lambda \text{с.ч.}}V_\lambda \Leftrightarrow \\
@@ -1509,6 +1510,387 @@
 			10 & -19 & 10\\
 			12 & -24 & 13
 		\end{pmatrix}\\
+		\chi(t) = det(A-tE) = (t-1)^2(t+1)\\
+		\lambda_1 = 1 \ \ \alpha(\lambda_1) = 2\\
+		\lambda_2 = -1 \ \ \alpha(\lambda_2) = 1\\
+		V_{\lambda_1}: \begin{pmatrix}
+			6 & -12 & 6 & \vline \ 0\\
+			10 & -20 & 10 & \vline \ 0\\
+			12 & -24 & 12 & \vline \ 0
+		\end{pmatrix}
+		\\
+		V_{\lambda_1} = span \underset{v_1}{\begin{pmatrix}
+				2\\1\\0
+			\end{pmatrix}} \underset{v_2}{\begin{pmatrix}
+				1\\0\\-1
+			\end{pmatrix}} \ \ \gamma(\lambda_1) = 2\\
+		V_{\lambda_2}: \left(\begin{array}{ccc|c}
+			8 & -12 & 6 & 0\\
+			10 & -18 & 10 & 0\\
+			12 & -24 & 14 & 0
+		\end{array}\right)\\
+		V_{\lambda_2} = span\underset{v_3}{\begin{pmatrix}
+				3\\5\\6
+			\end{pmatrix}} \ \ \gamma(\lambda_2) = 1\\
+		\forall \ \lambda: \left.\begin{array}{rcl}
+			\alpha(\lambda) & = & \gamma(\lambda)\\
+			\sum\limits_\lambda \alpha(\lambda) & = & 3	
+		\end{array}\right\} \Rightarrow A \text{ диагонализируемая}\\
+		T_{e\rightarrow v} = (v_1 v_2 v_3) = \begin{pmatrix}
+			2 & 1 & 3\\
+			1 & 0 & 5\\
+			0 & -1 & 6
+		\end{pmatrix}\\
+		A = T\begin{pmatrix}
+			1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 & 0 & 1
+		\end{pmatrix} T^{-1}\\
+		e^{At} = T\begin{pmatrix}
+			e^t & 0 & 0\\
+			0 & e^t & 0\\
+			0 & 0 & e^t
+		\end{pmatrix} T^{-1}
+		= \begin{pmatrix}
+			4e^t - 3e^{-t} & -6e^t + 6e^{-t} & 3e^t-3e^{-t}\\
+			5e^t - 5e^{-t} & -9e^t + 10e^{-t} & 5e^t - 5e^{-t}\\
+			6e^t - 6e^{-t} & -12 e^t + 12e^{-t} & 7e^t - 6e^{-t}
+		\end{pmatrix}\\
+		\p_i : V\underset{i = 1, 2}{\rightarrow} V_{\lambda_i} \subset V\\
+		\p_1 = T\left(\begin{array}{cc|c}
+			1 & 0 &0\\
+			0 & 1 &0\\
+			\cline{1-2}
+			0 &\multicolumn{1}{c}{0} & 0
+		\end{array}\right)T^{-1} = \begin{pmatrix}
+			4 & -6 & 3\\
+			5 & -9 & 5\\
+			6 & -12 & 7
+		\end{pmatrix} \ \ Im\p_1 = span(v_1, v_2) = V_{\lambda_1}\\
+		\p_2 = T\left(\begin{array}{cc|c}
+			0 & \multicolumn{1}{c}{0} & 0\\
+			0 & \multicolumn{1}{c}{0} & 0\\
+			\cline{3-3}
+			0 & 0 & 1
+		\end{array}\right) T^{-1} = \begin{pmatrix}
+			-3 & 6 & -3\\
+			-5 & 10 & -5\\
+			-6 & 12 & -6
+		\end{pmatrix} \ \ Im\p_2 = span(v_3) = V_{\lambda_2}\\
+		A = 1\cdot\begin{pmatrix}
+			4 & -6 & 3\\
+			5 & -9 & 5\\
+			6 & -12 & 7
+		\end{pmatrix} + (-1)\cdot\begin{pmatrix}
+			-3 & 6 & -3\\
+			-5 & 10 & -5\\
+			-6 & 12 & -6
+		\end{pmatrix}\\
+		e^{At} = e^t\cdot\begin{pmatrix}
+		4 & -6 & 3\\
+		5 & -9 & 5\\
+		6 & -12 & 7
+		\end{pmatrix} + e^{-t}\cdot\begin{pmatrix}
+		-3 & 6 & -3\\
+		-5 & 10 & -5\\
+		-6 & 12 & -6
+		\end{pmatrix}\\
+		A_{n\times n} \ \ \ \ x = \begin{pmatrix}
+			x_1(t)\\\vdots\\ x_n(t)
+		\end{pmatrix} \ \ \ \dot x \text{ -- производная}\\
+		\dot{x} = \begin{pmatrix}
+			\dot x_1 (t)\\
+			\dot x_2(t)\\
+			\vdots\\
+			\dot x_n(t)
+		\end{pmatrix}\\
+		\boxed{\dot x = Ax} \ \ \ \; \ \ \ x = e^{At}C \ \ \ C = \begin{pmatrix}
+			c_1\\
+			\vdots\\
+			c_n
+		\end{pmatrix}\\
+		\text{с.л.д.у. с постоянным коэффициентом однородности} \ \ \begin{array}{c}(e^{At})' = Ae^{At}\\e^{A\cdot 0} = E\end{array}\\
+		e^{At} = \left(\sum\limits_{\lambda\text{с.ч.}} e^{\lambda t} \p_\lambda\right)' = \underline{\underline{\sum\limits_{\lambda\text{ с.ч.}} \lambda e^{\lambda t} \p_\lambda}}\\\\
+		A\cdot e^{At} = \sum\limits_{\mu} \mu \p_\mu \cdot \sum\limits_\lambda e^{\lambda t} \p_\lambda \underset{\mu = \lambda}{=}\underline{\underline{\sum\limits_\lambda \lambda e^{\lambda t}\p_\lambda}}$
+	\end{examples}\newpage
+	\begin{remark}
+		$\exists \ A^{-1} \Leftrightarrow detA \neq 0 \Leftrightarrow$ \belowbaseline[-12pt]{$\begin{array}{l}
+				\text{все с.ч. } \lambda\neq 0\\
+				\text{(все корни хар. многочлена)}
+			\end{array}$
+		}
+	\end{remark}
+	$\pu A$ диагонализируема. Все с.ч. $\lambda\neq 0\\
+	A^{-1} = T\Lambda^{-1} T^{-1} = T\begin{pmatrix}
+		\frac{1}{\lambda_1} & 0\\
+		0 & \frac{1}{lambda_n}
+	\end{pmatrix}T^{-1}\\
+	\Lambda\Lambda^{-1} = E\\
+	AA^{-1} = \underbracket{T\underbracket{\Lambda \underbracket{T^{-1}T}_E\Lambda^{-1}}_E T^{-1}}_E = E\\
+	A^{-1} = \sum\limits_{\lambda\text{с.ч.}}\frac{1}{\lambda}\p_\lambda\\
+	(AA^{-1} = E \text{ \underline{упр.}})\\
+	\sqrt[m]{A} = T\sqrt[m]{\Lambda} T^{-1} = T\begin{pmatrix}
+		\sqrt[n]{\lambda_1} & \ldots & 0\\
+		\vdots & \ddots & \vdots\\
+		0 & \ldots & \sqrt[m]{\lambda_n}
+	\end{pmatrix} T^{-1}\\
+	\pu \text{все }\lambda_i \geq 0\\
+	(m\text{ нечет }\Rightarrow \lambda \text{ любого знака})\\
+	(\sqrt[m]{\Lambda})^m = \Lambda\\
+	(\sqrt[m]{A})^m = T\underbracket{ \sqrt[m]{\Lambda} \underbracket{T^{-1}T}_E \sqrt[m]{\Lambda} 
+	\underbracket{T^{-1} \ldots T}_E \sqrt[m]{\Lambda} }_\Lambda T^{-1} = T\Lambda T^{-1} = A\\
+	\boxed{\sqrt[m]{A} = \sum\limits_{\lambda\text{с.ч.}}\sqrt[m]{\lambda} \p_\lambda}\\
+	(\text{упр.: }(\sqrt[m]{A})^m = A)
+	$
+	\begin{examples}
+		$A = \begin{pmatrix}
+			7 & -12 & 6\\
+			10 & -19 & 10\\
+			12 & -24 & 13
+		\end{pmatrix}\\
+		\begin{matrix}\lambda_1 = 1\\\lambda_2 = -1\end{matrix} \ \ A^{-1} = T\begin{pmatrix}
+			1 & 0 & 0\\
+			0 & 1 & 0\\
+			0 & 0 & -1
+		\end{pmatrix}T^{-1}\\
+		A^{-1} = \mathlarger{\frac{1}{1}}\p_1 + \mathlarger{\frac{1}{(-1)}}\p_2 = \p_1 -\p_2 = A\\
+		A^2 = E$
+	\end{examples}
+	\subsection{Комплексификаци линейного вещ. пространства. Продолжение вещ. линейного оператора.}
+	$\A \in End(V) \ \ \ V $ над полем $K$\\
+	$\begin{array}{lll}
+		\multicolumn{3}{c}{\chi(\lambda) \underset{\lambda \text{ корень}}{= 0}}\\
+		\multicolumn{2}{c}{\swarrow} & \searrow \text{III}\\
+		\multicolumn{2}{c}{
+			\begin{array}{l}
+				K = \R/\mathbb{C}\\
+				\text{Все корни }\lambda\in K\\
+				\text{Т.е. каждый корень с.ч. }\\
+				\sum\limits_{\lambda\text{с.ч}} \alpha(\lambda) = n = dim V
+			\end{array}
+		}
+		& \begin{array}{l}
+		K = \R\\
+		\text{Не все корни вещ.}\\
+		\text{т.е. }\exists \lambda \not\in K = \R\\
+		\sum\limits_{\text{вещ.} \lambda \text{с.ч.}}\alpha(\lambda) < n = dim V\\
+		\A \rightarrow A ?
+		\end{array}\\
+		\multicolumn{2}{c}{
+			\begin{array}{rl}
+				\begin{array}{r}
+					\text{I}\swarrow\\
+					\forall \ \lambda: \gamma(\lambda) = \alpha(\lambda)\\
+					\A \text{ -- о.п.с.} \rightarrow A \text{ диагонализир.}
+				\end{array} & 
+				\begin{array}{l}\\
+					\searrow \text{II}\\
+					\exists \ \lambda: \gamma (\lambda) < \alpha(\lambda)\\
+					\A \text{ не о.п.с.} \\
+					\rightarrow A \text{ приводится к Жордановой форме}
+				\end{array}
+			\end{array}
+		}
+	\end{array}$
+	\begin{defin}
+		$V$ -- линейное пространство над $\R\\
+		\forall \ x, y \in V \ \ \ v:= x + iy \ \in V_\mathbb{C}\\
+		\forall \ v, v' \in V_\mathbb{C}: \ \ \ \ \ \ \ \begin{matrix}
+			x = Re \ v\\
+			y = Im \ v
+		\end{matrix}\\
+		\text{Определим}$
+		\begin{mylist}
+			\item $v = v' \Leftrightarrow \left[\begin{matrix}
+				x = x' \in V\\
+				y = y'
+			\end{matrix}\right.$
+			\item 
+			$v + v' = \omega = a + bi \in V_\mathbb{C}\Leftrightarrow \left[ \begin{matrix}
+				a = x + x' \in V\\
+				b = y + y'
+			\end{matrix}\right.$
+			\item 
+			$\forall\ \lambda = \alpha + i\beta \in \mathbb{C}, \ \ \ \alpha, \beta \in \R\\
+			a + bi = \omega = \lambda\cdot v \Leftrightarrow(\alpha + i\beta)(x + iy) = \underbrace{\overbrace{\alpha x - \beta y}^{\mathlarger{a \in V}} + i\overbrace{\beta x + \alpha y}^{\mathlarger{b \in V}}}_{\mathlarger{\in V_\mathbb{C}}}
+			$
+			\item 
+			$\forall \ x\in V \leftrightarrow x + i\0 \in V_{\mathbb{C}}\\
+			V \subset V_\mathbb{C}\\
+			\0 \leftrightarrow \0 + i\0$
+		\end{mylist}
+	\underline{Упр.:} $V_\mathbb{C}$ -- линейное пространство над $\mathbb{C}$\\
+	$\boxed{V_\mathbb{C} \text{ -- комплексификация линейного вещественного пространства } V}$
+	\end{defin}
+	\begin{stat}
+		$e_1\ldots e_n$ базис $V \Rightarrow e_1 \ldots e_n$ базис $V_\mathbb{C}$\\
+		Т.е. $dim V = dim V_\mathbb{C} = n\\
+		V \subset V_\mathbb{C}\ \ \ \ \ $ структуры над \underline{разными} полями.
+	\end{stat}
+	\begin{proof}
+		$e_1\ldots e_n$ базис $V_\mathbb{C}?$\\
+			-- порождающая?\\
+			-- линейно независимая?\\
+		\begin{mylist}
+			\item 
+			$\forall \ v\in V_\mathbb{C} \ \ v = x\in V + iy\in V = \sum\limits_{j=1}^n x_j e_j + i\sum\limits_{j=1}^n y_j e_j = \\
+			\sum\limits_{j=1}^n \underset{\alpha_j \in \mathbb{C}}{\boxed{x_j + iy_j}}e_j \Rightarrow e_1\ldots e_n $ порождающая.
+			\item
+			$\sum\limits_{j=1}^n \gamma_j e_j = \0 \ \ \ \begin{matrix}
+				\gamma_j \in \mathbb{C}\\
+				\gamma_j = \alpha_j + i\beta_j
+			\end{matrix}\\
+			||\\
+			\underbracket{\sum\limits_{j=1}^n\overset{\text{вещ.}}{\alpha_j}e_j}_x +
+			i \underbrace{\sum\limits_{j=1}^n \overset{\text{вещ.}}{\beta_j}e_j}_y = \0\\
+			\Leftrightarrow \left\{
+				\begin{array}{lcc}
+					x = \0 = & \sum\limits_{j=1}^n\overset{\text{вещ.}}{\alpha_j}e_j & \Leftrightarrow\\
+					y = \0 = & \sum\limits_{j=1}^n \overset{\text{вещ.}}{\beta_j}e_j &\overset{\mathlarger{e_1\ldots e_n\text{ линейно независ.}}}{\Leftrightarrow}
+				\end{array}
+			\right.
+			\left\{\begin{array}{c}
+				\forall \ j \ \alpha_j = 0\\
+				\forall \ j \ \beta_j = 0
+			\end{array}\right. 
+			\Leftrightarrow \forall j\ \gamma_j = 0\\\\
+			\Rightarrow \underset{\mathlarger{\text{лин. незав.}}}{e_1\ldots e_n}$ в $V_\mathbb{C}$
+		\end{mylist}
+	\end{proof}
+	\begin{defin}
+		$z = x + iy \ \ x, y\in V$\\
+		\begin{minipage}{0.5\textwidth}
+			\textbf{вектор сопряженный к $z$:}\\
+			$\vec{z} = x-iy$\\
+			$(\vec{\vec z} = z, (\vec{z_1 + z_2}) = \vec z_1 + \vec z_2, \vec{(\lambda z)} = \vec \lambda \vec z)$\\
+			\vfill
+		\end{minipage}
+		\begin{minipage}{0.5\textwidth}
+			$z = \begin{pmatrix}
+				z_1\\\vdots\\z_n
+			\end{pmatrix}\\
+			\vec{z} = \begin{pmatrix}
+				\vec z_1\\\vec z_2 \\ \vdots \\ \vec z_n
+			\end{pmatrix}$
+		\end{minipage}\\
+	\end{defin}
+	\begin{stat}
+		$v_1\ldots v_m $ линейно незав. в $V_\mathbb C \Rightarrow \vec v_1\ldots \vec v_m$ линейно независимы в $V_\mathbb C$\\
+		Очевидно, $v_1\ldots v_m$ линейно зависимы $\Rightarrow \vec v_1 \ldots \vec v_m$ линейно зависимы.
+	\end{stat}
+	\begin{proof}\ \\
+		$\left.\begin{array}{ll}
+			\vec{\sum\limits_{j=1}^m \gamma_j \vec v_j} & = \vec \0 = \0\\
+			||\\
+			\sum\limits_{j=1}^m \vec \gamma_j \vec{\vec v_j}& = \sum\limits_{j=1}^m \underset{\text{линейно незав.}}{\gamma'_j v_j}
+		\end{array}\right| \Leftrightarrow \forall j \ \gamma'_j = 0 = \vec \gamma_j \Leftrightarrow \gamma_j = 0 \\\\
+		\Rightarrow$ линейно независим.
+	\end{proof}
+	$\boxed{rg(v_1\ldots v_m) = rg(\vec v_1 \ldots \vec v_m)}$
+	\begin{defin}
+		$\A \in End(V)\\
+		V_\mathbb{C}\\
+		\forall v = x\in V + i\underset{\in V}{y} \in V_\mathbb{C} \ \ \ \A_\mathbb{C} v = \A x \in V + i\underset{\in V }{\A y} \in V_\mathbb{C}\\
+		\A_\mathbb{C}: V_\mathbb{C}\rightarrow V_\mathbb{C}\\
+		\A_\mathbb{C} \in End(V_\mathbb{C})$\\
+		Линейность?
+		\begin{mylist}
+			\item 
+			Аддитивность. $\A_\mathbb{C}(v_1 + v_2) = \A_\mathbb{C} v_1 + \A_\mathbb{C} v_2$\\
+			Очевидно, из аддитивности $\A\\
+			v_1 + v_2 = (x_1 + x_2) + i(y_1 + y_2)$
+			\item Однородность\\
+			 $\forall \lambda = \alpha + i\beta \in \mathbb{C} \ \ \ \alpha, \beta \in \R\\
+			 \A_\mathbb{C}(\lambda v) = \A_\mathbb{C}((\alpha + i\beta)(x + iy)) = \\
+			 = \A_\mathbb{C}((\alpha x - \beta y) + i(\alpha y + \beta x))= \\
+			 = \A (\alpha x - \beta y) + i \A(\alpha y + \beta x) = \\
+			 = \alpha \A x - \beta \A y + i \alpha \A y + i \beta \A x = \\
+			 = (\alpha + i \beta) \A x + i(\alpha + i\beta) \A y = \lambda \A x + i \lambda \A y =\\
+			 = \lambda(\A x + i \A y) = \lambda \A_\mathbb{C}v$
+		\end{mylist}
+		$\A_\mathbb{C}$ -- \textbf{продолжение линейного вещ. оператора $\A$}\\
+		с пространства $V$ на его комплексификацию $V_\mathbb{C}$
+	\end{defin}
+	\textbf{Свойства $\A_\mathbb{C}$:}
+	\begin{mylist}
+		\item 
+		\belowbaseline[-12pt]{
+		$\left.
+			\begin{array}{c}
+				\underset{\text{веществ.}}{e_1\ldots e_n}$ базис $V(V_\mathbb{C})\\
+				\A \leftrightarrow A\\
+				\A_\mathbb{C} \leftrightarrow A_\mathbb{C}
+			\end{array}
+		\right\} \Rightarrow A_\mathbb{C} = A$}\\
+		Т.е. $\A_\mathbb{C}$ в вещ. базисе имеет вещ. матрицу, совпадающую с матр. $\A$
+		\item $\forall z \in V_\mathbb{C} \ \ \vec{\A_\mathbb{C} z} = \A_\mathbb{C}\vec z\\
+		z = x + iy \ \ \vec{\A_\mathbb{C} z} = \vec{\underset{\text{вещ.}}{\A x} + i \underset{\text{вещ.}}{\A y}} = \A x - i \A y = \\
+		= \A x + i \A (-y) = \A_\mathbb{C}(x-iy) = \A_\mathbb{C} \vec z$
+		\item
+		\belowbaseline[-12pt]{
+		$ 
+		\begin{array}{cccc}
+			\chi_\A(t) & =&  \chi_{\A_\mathbb{C}}(t) & \pu e_1\ldots e_n \text{базис} V\\
+			|| & & || & \A \leftrightarrow A\\
+			det(A-tE) & & det(A_\mathbb{C}-tE) & \A_\mathbb{C} \leftrightarrow A_\mathbb{C} = A
+		\end{array}$}\\
+		Все корни характеристического многочлена $\chi_\A$ являются собственными числами $\A_\mathbb{C}$
+		\item 
+		$\chi_\A(\lambda) = \chi_{\A_\mathbb{C}}(\lambda) = 0$\\
+		Т.к. многочлен с вещ. коэф. $\Rightarrow \vec \lambda$ тоже корень.\\
+		$\lambda = \alpha + i\beta \ \ \text{корень } \chi_{\A_\mathbb{C}} \ \ \ \ \chi_{\A_\mathbb{C}}(\vec \lambda) = 0\\
+		v \text{ соотв. с.в.}\\
+		\Rightarrow \vec v \text { с.в. для }\vec \lambda = \alpha - i\beta\\
+		\boxed{\text{для }\A_{\mathbb{C}}: 
+			\begin{matrix}dim V_\lambda = dim V_{\vec \lambda} (\text{из утв. 2})\\
+			\gamma(\lambda) = \gamma(\vec \lambda)
+			\end{matrix}}\\\\
+		\A_\mathbb{C} \vec v \underset{\text{св-во 2}}{=} \vec{\A_\mathbb{C} \underset{\stackrel{\uparrow}{\text{с.в. для }\lambda}}{v}} = \vec{\lambda v} = \vec \lambda \vec v \Rightarrow \vec v \text{ с.в. для } \vec \lambda$
+	\end{mylist}\ \\
+	\textbf{"III": }$\A\in End(V)\\
+	V$ над $\R$\\
+	$\sum\limits_{\lambda\text{с.ч.}}\alpha(\lambda) < n = dim V$\\
+	Т.е. не все корни $\chi_\A$ \textbf{вещ.}\\
+	$\rightarrow \text{строим} \A_\mathbb{C}\in End(V_\mathbb{C}) \ \ \ A_\mathbb{C} = A$\\
+	Все корни с.ч. $\Rightarrow$ матрица для $A_\mathbb{C}$ будет сведена либо к I, либо к II\\
+	\begin{examples}
+		\belowbaseline[-12pt]{$A = \begin{pmatrix}
+			4 & -5 & 7\\
+			1 & -4 & 9\\
+			-4 & 0 & 5
+			\end{pmatrix}$}\\
+		$\chi_A(t) = det(A-tE) = -(t-1)(t^2-4t + 13)\\
+		D = -36 < 0\\
+		\lambda_1 = 1 \text{ с.ч. }\alpha(\lambda_1) = 1 \ \ \ \ \ \lambda_{2, 3} = 2+\pm i3 \ \alpha(2, 3) = 1\\
+		A_\mathbb{C} = A: \lambda_{2, 3} = 2\pm i\\
+		\lambda_1 = 1 \ \ V_{\lambda_1} ] span\begin{pmatrix}
+			1\\2\\1
+		\end{pmatrix}\\
+		\lambda_2 = 2+3i \ \ \ \ \ \; 1\leq \gamma(\lambda_2) \leq \alpha(\lambda_2) = 1 \Rightarrow \gamma(\lambda_2) = 1$\\
+		Решаем СЛОУ методом Гаусса точно так же, как мы решали для вещ. чисел.\\ Только теперь арифметические операции с комплексными.\\
+		$V_{\lambda_2} = span\begin{pmatrix}
+			3-3i\\
+			5-3i\\
+			4
+		\end{pmatrix}\\
+		\lambda_3 = 2-3i \ \ \; \; V_{\lambda_3} = span\begin{pmatrix}
+			3+3i\\
+			5+3i\\
+			4
+		\end{pmatrix} = v_3\\
+		\forall \lambda: \ \gamma(\lambda) = \alpha(\lambda) \Rightarrow A_\mathbb{C} = A \text{ диагонализир.}\\
+		T_{e\rightarrow v} = \begin{pmatrix}
+			1 & 3-3i & 3+3i\\
+			2 & 5-3i & 5+3i\\
+			1 & 4 & 4
+		\end{pmatrix}\\
+		T^{-1} A T = \begin{pmatrix}
+			1 & 0 & 0\\
+			0 & 2+3i & 0\\
+			0 & 0 & 2-3i
+		\end{pmatrix}T^{-1} = \ldots
 		$
 	\end{examples}
+	\subsection{Минимальный многочлен. Теорема Кэли-Гамильтона}
+	
 \end{document}
