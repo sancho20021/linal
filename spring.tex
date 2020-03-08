@@ -1892,5 +1892,217 @@
 		$
 	\end{examples}
 	\subsection{Минимальный многочлен. Теорема Кэли-Гамильтона}
+	\begin{defin}
+		Нормализованный (старший коэф. = 1) многочлен $\psi(t)$ называется \\\textbf{аннулятором элемента $v\in V$}, если $\psi(\A) v = \0$
+	\end{defin}
+	$\psi(t) = t^m + a_{m-1}t^{m-1} + \ldots + a_1 t + a_0\\
+	\psi(\A) = \A^t + a_{m-1}\A^{m-1} + \ldots + a_1 \A + a_0 \E \in End(V)\\
+	\A^0 = \E\\
+	\psi(t) = \prod\limits_{\lambda \text{ корень}}(t-\lambda)^{m(\lambda)}\\
+	(\A-\lambda\E)^{m(\lambda)} \cdot (\A - \mu\E)^{m(\mu)} = (\A-\mu\E)^{m(\mu)} \cdot (\A -\lambda\E)^{m(\lambda)}\\
+	\A^k\E^r = \E^r\A^k$\\
+	Т.е. перестановочны.
+	\begin{defin}
+		$\psi(t)$ аннулятор элемента $v\in V $ наименьшший возможной степени \\называется \textbf{минимальным аннулятором элемента $v$}
+	\end{defin}
+	\begin{theorem}[О минимальном аннуляторе элемента]\ \\
+		$\A\in End(V)$
+		\begin{mylist}
+			\item $\forall v \in V\  \exists! $ минимальный аннулятор $v$
+			\item $\forall$ аннулятор элемента делится на его минимальный.
+		\end{mylist}
+	\end{theorem}
+	\begin{proof}\ \\
+		\begin{mylist}
+			\item 
+			\begin{mylist}
+				\item 
+				$\pu v = \0 \ \ \ \; \psi(t) = 1 \ \ \ \ \ \; $ Очевидно, минимальный аннулятор.\\
+				$\psi(\A) v = \E v = \0$
+				\item 
+				$\pu v \neq \0\\
+				\underbracket{\underbracket{(\E)v, \A v, \A^2 v, \ldots, \A^{m-1} v,}_{\text{\normalsize{линейно независимая система}}} \A^m v}_{\text{\normalsize{линейно зависимая система}}}$\\\\
+				$dim V = n\\
+				m\leq n+1\\
+				\A^m v = \sum\limits_{k=0}^{m-1} a_k \A^k v\\
+				\0 = \A^m v - \sum\limits_{k=0}^{m-1} a_k \A^k v = (\A^m - \sum\limits_{k-0}^{m-1}a_k\A^k)v \leftarrow \text{ Алгоритм}\\
+				\psi(t) = t^m - \sum\limits_{k=0}^{m-1} a_k t^k$\\
+				Очевидно, по построению это минимальный аннулятор элемента $v$
+			\end{mylist}
+			\item 
+			$\psi_1$ -- аннулятор $v\\
+			\psi_1(t) = a(t) \psi(t) + r(t)\\
+			deg \ r(t) < deg \ \psi (t)\\
+			\0 = \psi_1(\A) v = (a(\A)\psi(\A) + r(\A))v
+			= a(\A) \underbracket{\psi(\A)v}_{=\0} + r(\A) v = r(\A) v\Rightarrow \\
+			\Rightarrow \left.\begin{matrix}
+				r(t) \text{ аннулятор } v\\deg \ r < deg \ \psi
+			\end{matrix}\right\} \Rightarrow \text{Противоречие с минимальностью }\psi \Rightarrow\\
+			\Rightarrow r(t) \equiv 0 \Rightarrow \psi_1 \vdots \psi$
+		\end{mylist}
+	\end{proof}
+	\begin{defin}
+		Нормализованный многочлен $\phi(t)$ \textbf{называется аннулятором } $\A$,\\ если $\phi(\A) = 0\\
+		(\Leftrightarrow \forall v \in V \ \ \phi(\A) v = \0)$\\
+		Аннулятор $\A$ минимальной степени называется \textbf{минимальный многочленом}
+	\end{defin}
 	
+	\begin{theorem}[о минимальном многочлене]
+		$\A \in End(V)$
+		\begin{mylist}
+			\item $\forall \A \ \exists ! $ минимальный многочлен
+			\item $\forall$ аннулятор $\A$ делится на минимальный многочлен
+		\end{mylist}
+	\end{theorem}
+	\begin{proof}\ \\
+		$e_1\ldots e_n$ базис $V\\
+		\Rightarrow $ по Теореме 1 для $\forall e_j \ \exists! \ \psi_j $ минимальный аннулятор $e_j\\
+		\psi_j(\A) e_j = \0\\
+		\psi(t) = $ Н.О.К. ($\psi_1\ldots\psi_n$)\\
+		$\forall v \in V \ \ \phi(\A) v = \phi(\A) \sum\limits_{i=1}^n v_i e_i = \sum\limits_{i=1}^n v_i \phi(\A) e_i = \\
+		= \sum\limits_{i=1}^n v_i \xi_i(\A) \underbracket{\psi_i (\A) e_i}_{=\0} = \0\\
+		\phi\vdots \psi_j \Leftrightarrow \phi(t) = \xi_j(t)\psi_j(t)\\\\
+		\Rightarrow \phi(\A) = \0 \Rightarrow \phi$ аннулятор $\A$\\
+		Давайте покажем, что у $\phi$ степень минимальная.\\
+		От противного.\\
+		$\exists \phi_1 $  аннулятор $\A \ \ \ \ \pu deg \ \phi_1 < deg \ \phi\\
+		\forall e_j : \phi_1(\A) e_j = \0 \Rightarrow \phi_1 $ аннулятор элемента $e_j\overset{\text{по Теореме 1}}{\Rightarrow}\\
+		\Rightarrow \underset{\text{аннулятор }e_j}{\phi_1}\vdots \underset{\text{минимальный аннулятор }e_j}{\psi_j} \Rightarrow \phi_1 \vdots \phi \Rightarrow deg \ \phi_1 \geq deg \ \phi$. Противоречие $\Rightarrow\\
+		\Rightarrow deg \ \phi$ минимальный $\Rightarrow $ п.2 доказан, т.к. $\forall$ аннулятор $\A\vdots\phi$\\
+		\textbf{Единственность?}\\
+		$\pu \underset{\begin{matrix}
+				\nwarrow \nearrow\\
+				\text{нормализов.} \Rightarrow \text{ ст. коэф. 1}
+			\end{matrix}}{\phi_1, \phi}$ минимальные аннуляторы одной степени.\\
+		$deg(\phi_1 - \phi) < deg(\phi) = deg(\phi_1)\\
+		\forall v \in V \ \ \ (\phi_1 - \phi)(\A) v = \underset{=\0}{\phi_1(\A)}v - \underset{=\0}{\phi(\A)}v = \0 \Rightarrow \\
+		\Rightarrow \phi_1 - \phi$ аннулятор $\A$ меньшей степени $\Rightarrow$ противоречие \underline{минимальн.} 
+	\end{proof}
+	\begin{examples}
+		$A = \begin{pmatrix}
+			0 & 1 & 0\\
+			-4 & 4 & 0\\
+			-2 & 1 & 2
+		\end{pmatrix}\ \ \ \; \ \phi = ? \text{  минимальный многочлен}\\
+		e_1  = \begin{pmatrix}
+			1\\0\\0
+		\end{pmatrix} \ \ \; \ \phi_1 ?\\
+		e_1 = \underbracket{\underbracket{\begin{pmatrix}
+				1\\0\\0
+				\end{pmatrix} \ \ \; \A e_1 = \begin{pmatrix}
+					0\\-4\\2
+				\end{pmatrix}}_{\text{\normalsize{линейно независ.}}} \ \ \; \ \A^2e_1 = \begin{pmatrix}
+					-4\\-16\\-8
+				\end{pmatrix}}_{\text{\normalsize{линейно завис.}}}\\
+		\A^2 e_1 = -4e_1 + 4\A e_1\\
+		\psi_1(t) = t^2 - 4t + 4 = (t-2)^2\\
+		e_2 = \underbracket{\underbracket{\begin{pmatrix}
+				0\\1\\0
+				\end{pmatrix} \ \ \; \A e_2 = \begin{pmatrix}
+				1\\4\\1
+				\end{pmatrix}}_{\text{\normalsize{линейно независ.}}} \ \ \; \ \A^2e_2 = \begin{pmatrix}
+			4\\12\\-4
+			\end{pmatrix}}_{\text{\normalsize{линейно завис.}}}\\
+		\A^2 e_2 = 4\A e_2 - 4 e_2\\
+		\psi_2(t) = t^2 - 4t + 4 = (t-2)^2\\
+		\underbracket{e_2 = \underbracket{\begin{pmatrix}
+				0\\0\\1
+				\end{pmatrix}}_{\text{\normalsize{лин. нез.}}} \ \ \; \A e_3 = \begin{pmatrix}
+				0\\0\\2
+		\end{pmatrix}}_{\text{\normalsize{линейно завис.}}}\\
+		\A e_3 = 2e_3\\
+		\psi_3(t) = t-2\\
+		\phi(t) = \text{Н.О.К. }((t-2)^2, (t-2)) = (t-2)^2
+		$
+	\end{examples}
+	\begin{theorem}[Кэли-Гамильтона]
+		$\A \in End(V)\\
+		\underset{\text{характерист. многочлен}}{\chi(t)} = det(\A-t\E) $ -- аннулятор $\A$
+	\end{theorem}
+	\begin{proof}
+		$\chi(\A) = det(\A - \A) = \0$
+	\end{proof}
+	Я так и не понял это норм доказательство или нет. В любом случае далее идет длинное док-во.
+	\begin{proof}
+		$\mu$ -- не корень $\chi(t)\\
+		det (\A - \mu \E) \neq 0\\
+		\Leftrightarrow \exists (\A -\mu \E)^{-1}\\
+		e_1\ldots e_n$ базис $v$. $\A \leftrightarrow A\\
+		(A-\mu E)^{-1} = \mathlarger{\frac{1}{det(A-\mu E)}}B \leftarrow$ союзная матрица (прис-ная)\\
+		$B = (b_{ij}) \ \ \; \ b_{ij} = (-1)^{ij}M_{ij} \leftarrow $ определиитель $(n-1)$-го порядкка $A-\mu E$\\
+		Т.е. мн-н степени $n-1$ относительно $\mu$\\
+		$B = B_{n-1} \mu^{n-1} + B_{n-2} \mu^{n-2} + \ldots + B_1 \mu + B_0 \\
+		\begin{array}{lc}
+			det(A-\mu E) \cdot E = & (A-\mu E) (B_{n-1} \mu^{n-1} + \ldots + B_1 \mu + B_0)\\
+			|| & \\
+			\chi(\mu)\cdot E & \\
+			|| & \\
+			\sum\limits_{k=0}^n \alpha_k\mu^k \cdot E &
+		\end{array}\\
+		\begin{array}{rl|l}
+			\mu^0: & \alpha_0 E = AB_0 & A^0\\
+			\mu^1: & \alpha_1 E = AB_1 - B_0 & A^1\\
+			\mu^2: & \alpha_2 E = AB_2 - B_1 & A^2\\
+			\ldots & &\\
+			\mu^{n-1}: & \alpha_{n-1} E = AB_{n-1} - B_{n-2} & A^{n-1}\\
+			\mu^n: & \alpha_n E = -B_{n-1} & A^n
+		\end{array}\\
+		\chi(\A) = \chi(A) = \sum\limits_{k=0}^n \alpha_k A^k = AB_0 + A^2 B_1 - AB_0 + A^3 B_2 - A^2 B_1 + \ldots + A^n B_{n-1}\\ - A^{n-1} B_{n-2} - A^n B_{n-1} = \0\\
+		\chi$ -- аннулятор $\A$
+	\end{proof}\newpage
+	\begin{theorem}
+		$\A\in End(V)$\\
+		Множество корнеq характеристического многочлена $\A$ совпадает с \\множеством корней минимального многочлена $\A$ (без учета кратности)
+	\end{theorem}
+	\begin{proof}
+		$\chi(t)$ -- характерист., $\phi(t)$ -- минимальный многочлен.\\
+		$"\Leftarrow" \; \; \pu \phi(\lambda) = 0\ \Rightarrow $ т.к. $\chi$ аннулятор $\A$, то по Т-ме 2 $\chi \vdots \phi \Rightarrow \chi(\lambda) = 0\\
+		"\Rightarrow" \; \; \pu \chi(\lambda) = 0$
+		\begin{mylist}
+			\item $\pu \lambda\in K \Rightarrow \lambda$ с.ч. $\A \ \ \ \; \; \exists v\neq \0: \A v = \lambda V \Rightarrow\\
+			\Rightarrow (\A-\lambda\E) v = \0 \Rightarrow \psi(t) = (t-\lambda)$ минимальный аннулятор $v$\\
+			Т.к. $\phi\vdots\psi \Rightarrow \lambda $ корень $\phi\\
+			\phi(\lambda) = 0$
+			\item $\lambda \not \in K$ т.е. III случай: $K = \R$\\
+			$\exists$ комплексные корни характерист. многочлена.\\
+			$V\rightarrow V_\mathbb{C} \ \ \ \; e_1\ldots e_n $ базис $V \rightarrow$ базис $V_\mathbb{C}\\
+			\A \rightarrow \A_\mathbb{C} \ \ \ \; \A_\mathbb{C} e_j = \A e_j + i \A \0 = \A e_j\\
+			e_j = e_j + i\0\\
+			\Rightarrow \forall k \ \A^k_\mathbb{C} e_j = \A^k e_j$ \\
+			$\Rightarrow$ Применим алгоритм построения минимального многочлена (Теоремы 1, 2). \\
+			Получим, что минимальные многочлены $\A_\mathbb{C}$ и $\A$ совпадают. \\
+			$\left.\begin{array}{c}
+				\text{Т.е. }\phi \text{ мин. мн-н для } \A_\mathbb{C}\\
+				\chi_{\A_\mathbb{C}} = \chi_\A
+			\end{array}\right\} \Rightarrow \text{Применим случай а) для }\A_\mathbb{C}\\
+			\Rightarrow \lambda \text{ с.ч.} \ \lambda \text{ корень } \phi$
+		\end{mylist}
+	\end{proof}
+	\begin{examples}
+		$A = \begin{pmatrix}
+			0 & 1 & 0\\
+			-4 & 4 & 0\\
+			-2 & 1 & 2
+		\end{pmatrix}\\
+		\chi(t) = \left|\begin{array}{cc|c}
+			-t & 1 & 0\\
+			-4 & 4-t & 0\\
+			\cline{1-2}
+			-2 & \multicolumn{1}{c}{1} & 2-t
+		\end{array}\right| = (2-t)(t^2 - 4t + 4) = -(t-2)^3$\\
+		Корни $\chi: 2$\\
+		Корни $\phi: 2$\\
+		$\leadsto$ еще один способ найти с.ч. -- \textbf{найти корни многочлена.}
+	\end{examples}
+	\begin{corollary}\
+		\begin{mylist}
+			\item $\underset{\text{\normalsize{характер. (аннулятор)}}}{\psi}\vdots\underset{\text{\normalsize{минимальный (аннулятор мин.)}}}{\phi}$
+			\item $deg \ \phi = n = dim V \Rightarrow (-1)^n \chi = \phi\\
+			\boxed{\begin{array}{rcl}
+					\chi(t) & = & \prod\limits_\lambda (t-\lambda)^{\alpha(\lambda)}\\
+					\phi(t) & = & \prod\limits_\lambda(t-\lambda)^{m(\lambda)}
+				\end{array} \ 1\leq m(\lambda) \leq \alpha(\lambda)}$
+		\end{mylist}
+	\end{corollary}
+	\subsection{Операторное разложение единицы. Корневые подпространства.}
 \end{document}
