@@ -2105,4 +2105,54 @@
 		\end{mylist}
 	\end{corollary}
 	\subsection{Операторное разложение единицы. Корневые подпространства.}
+	\begin{minipage}{0.5\textwidth}
+		$\phi(t) = \prod\limits_\lambda (t-\lambda)^{m(\lambda)}$
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		$\sum\limits_\lambda m(\lambda) = m\\
+		deg \ \phi = m$
+	\end{minipage}\\
+	$P_{m-1}$ -- линейное пространство многочленов степени не выше $m-1\\
+	dimP_{m-1} = m\\
+	\phi(t) = \underset{\overset{\mathlarger{\nwarrow \nearrow}}{\text{вз. просты}}}{(t-\lambda)^{m(\lambda)}\phi_\lambda(t)} \ \ \; 
+	\begin{matrix}
+		\phi_\lambda(t) = \prod\limits_{\mu\neq \lambda} (t-\mu)^{m(\mu)}\\
+		\phi_\lambda(\lambda) \neq 0\\
+		\phi_\lambda(\mu) = 0\\
+		\mu \neq \lambda
+	\end{matrix}$
+	\begin{defin}
+		$I_\lambda = \{p\in P_{m-1} | p\vdots \phi_\lambda\}$\\
+		\textbf{Главный идеал}, порожденный многочленом $\phi_\lambda = \\
+		= \{f\in P_{m(\lambda)-1}|p = f_\lambda \phi_\lambda  \}\\
+		I_\lambda$ -- линейное подпространство $P_{m-1}\\
+		p_{1, 2}\vdots \phi_\lambda \Rightarrow (p_1 + \alpha p_2)\vdots\phi_\lambda$
+	\end{defin}
+	\begin{theorem}
+		$P_{m-1} = \bigoplus\limits_\lambda I_\lambda$
+	\end{theorem}
+	\begin{proof}\
+		\begin{mylist}
+			\item Дизъюнктность.\\
+			$\0 = \sum\limits_\lambda \underbrace{f_\lambda\phi_\lambda}_{\in I_\lambda}  = 
+			f_\lambda\cdot \phi_\lambda + \underbrace{\sum\limits_{\mu\neq \lambda}f_\mu \underbrace{\phi_\mu}_{\vdots (t-\lambda)^{m(\lambda)}}}_{\vdots (t-\lambda)^{m(\lambda)}}\\
+			\Rightarrow f_\lambda \cdot \underset{\text{вз. просты}}{\phi_\lambda \vdots (t-\lambda)^{m(\lambda)}} \Rightarrow \underset{\stackrel{\uparrow}{deg \ f_\lambda = m(\lambda)-1}}{f_\lambda} \vdots (t-\lambda)^{m(\lambda)} \Rightarrow f_\lambda \equiv 0 \\
+			\Rightarrow \forall \lambda \ \ \ f_\lambda \equiv 0 \Rightarrow f_\lambda \phi_\lambda \equiv \0 \Rightarrow \text{Дизъюнктны}$
+			\item
+			\belowbaseline[-12pt]{
+			$\begin{array}{lcl}
+				dim P_{m-1} & = & m\\
+				|| & & \\
+				\sum\limits_\lambda dim I_\lambda & = & \sum\limits_\lambda m(\lambda) = m
+			\end{array}$}\\\\
+			$I_\lambda \subset P_{m-1}\\
+			\\
+			\Rightarrow P_{m-1} = \bigoplus\limits_\lambda I_\lambda$
+		\end{mylist}
+	\end{proof}
+	\begin{corollary}
+		$\forall p \in P_{m-1} \ \exists! \ p = \sum\limits_\lambda p_\lambda\\
+		p_\lambda \in I_\lambda\\
+		\boxed{1 = \sum\limits_\lambda p_\lambda\text{ -- полиномиальное разложение единицы}}$ 
+	\end{corollary}
 \end{document}
