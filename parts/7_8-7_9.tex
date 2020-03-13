@@ -68,5 +68,201 @@
 			$f_\lambda = const \ \ \ (def \ f_\lambda = m(\lambda) - 1 = 0)$
 		\end{mylist}
 	\end{remark}
-	
+	\begin{theorem}[Лагранжа] \ \\
+		$\forall \lambda: m(\lambda) = 1 \Rightarrow \\
+		\forall p \in P_{m-1} \ \ p(t) = \sum\limits_\lambda \frac{p(\lambda)}{\phi'(\lambda)}\cdot \phi_\lambda(t)$
+	\end{theorem}
+	\begin{proof}\ \\
+		$\text{корень }\phi \rightarrow \mu \neq \lambda \ \ \begin{matrix}
+			\phi_\lambda(\mu) = 0\\
+			\phi_\lambda(\lambda) \neq 0
+		\end{matrix}\\
+		p(t) \ \sum\limits_\lambda p_\lambda(t) = $\belowbaseline[-12pt]{$\begin{array}{rcl}
+			\sum\limits_\mu
+			& \underset{\uparrow}{\boxed{f_\mu}} & \cdot\; \phi_\mu(t)\\
+			\multicolumn{3}{c}{\begin{matrix}
+				const,\text{ т.к. }\\
+				\text{корни взаимно}\\
+				\text{просты}
+			\end{matrix}}
+		\end{array}$}\\
+		$p(\lambda) = f_\lambda \cdot \phi_\lambda(\lambda)
+		\Rightarrow \forall \lambda : f_\lambda = \frac{p(\lambda)}{\phi_\lambda(\lambda)}\\
+		\phi(t) = \prod\limits_\mu (t-\mu)\\
+		\phi'(t) = \sum\limits_\mu \underbracket{\prod\limits_{\lambda\neq \mu} (t-\lambda)}_{\phi_\mu(t)} = 
+		\sum\limits_\mu \phi_\mu(t)\\
+		\phi'(\lambda) = \sum\limits_\mu$ \belowbaseline[-12pt]{$\begin{array}{cl}
+			\phi_\mu(\lambda) & = \phi_\lambda(\lambda)\\
+			\mathsmaller{||} & 
+			\\ \mathsmaller{0 \; \mu \neq \lambda} & 
+		\end{array}$} $
+		\Rightarrow f_\lambda = \mathlarger{\frac{p(\lambda)}{\phi'(\lambda)}}
+		\Rightarrow p = \sum\limits_\lambda \mathlarger{\frac{p(\lambda)}{\phi'(\lambda)}} \phi_\lambda(t)$
+	\end{proof}
+	\begin{corollary}
+		$\forall \lambda: m(\lambda) = 1\\
+		1 = \sum\limits_\lambda p_\lambda \Rightarrow \boxed{t = \sum\limits_\lambda \lambda p_\lambda}$
+	\end{corollary}
+	\begin{proof}
+		По теореме: $1 = \sum\limits_\lambda \boldsymbol{p_\lambda} = \sum\limits_\lambda f_\lambda \cdot \phi_\lambda = \sum\limits_\lambda \mathlarger{\frac{1}{\boldsymbol{\phi'(\lambda)}}} \cdot \boldsymbol{\phi_\lambda(t)}$\\
+		По теореме: $t = \sum\limits_\lambda \mathlarger{\frac{\lambda}{\boldsymbol{\phi'(\lambda)}}}\boldsymbol{\phi_\lambda(t)} = \sum\limits_\lambda \lambda p_\lambda$
+	\end{proof}\ \\
+	$\A \in End(V)\\
+	\phi$ минималный многочлен, все корни $\in K (\Rightarrow \text{ все корни }\chi \in K \\
+	\Rightarrow \text{т.е. все с.ч. }\in K \text{ -- I, II случаи})\\
+	1 = \sum\limits_{\lambda} p_\lambda(t)$\\
+	\begin{minipage}{0.2\textwidth}
+		$\p_\lambda:=p_\lambda(\A)\\
+		\p_\lambda\in End(V)\\
+		\p_\lambda$ -- проекторы $?$
+	\end{minipage}
+	\begin{minipage}{0.6\textwidth}
+		$
+		\boxed{\E = \sum\limits_\lambda \p_\lambda}$ операторное разложение единицы\\
+		$\uparrow$ это уже есть
+	\end{minipage}\\\\
+	Достаточно проверить $\underset{\lambda\neq \mu}{\p_\lambda \cdot \p_\mu} = \0\\
+	\p_\lambda = p_\lambda(\A) = \underset{\nwarrow \nearrow}{f_\lambda(\A)\cdot \phi_\lambda(\A)}\\
+	\lambda\neq \mu\\
+	\p_\mu = p_\mu(\A) = \underset{\nwarrow\nearrow}{f_\mu(\A)\cdot\phi_\mu(\A)}\\
+	\text{перестановочны, т.к. многочлены от }\A\\\\
+	\begin{array}{llr}
+		\multicolumn{3}{l}{
+			\p_\lambda\p_\mu = f_\lambda(\A)\cdot f_\mu(\A) \underset{\mathlarger{\uparrow}}
+			{\phi_\lambda(\A)} \cdot \boldsymbol{\phi_\mu(\A)} = \0
+		}\\
+	\updownarrow & \text{содержит}&\\
+	(p_\lambda \cdot p_\mu \vdots \phi \text{ см. замеч. 1}) & \eta(\A)\boldsymbol{(t-\mu)^{m(\mu)}} & \phi(\A) = \0
+	\end{array}\\\\
+	\Rightarrow \p_\lambda $ проекторы -- \textbf{спектральные проекторы $\A$}\\
+	$Im\p_\lambda$ \textbf{спектральное подпространство}\\
+	$\underset{7.5}{\Rightarrow} \boxed{V = \bigoplus\limits_\lambda Im\p_\lambda}$
+	\begin{examples}
+		$A = \begin{pmatrix}
+			1 & -3 & 4\\
+			4 & -7 & 8\\
+			6 & -7 & 7
+		\end{pmatrix} \begin{matrix}
+			\lambda_1 = -1 & \alpha(\lambda_1) = 2\\
+			\lambda_2 = 3 & \alpha(\lambda_2) = 1
+		\end{matrix}\\
+		V_{\lambda_1} = span\begin{pmatrix}
+			1\\2\\1
+		\end{pmatrix} \ \ \ \; \gamma(\lambda_1) = 1 < \alpha(\lambda_1) \Rightarrow \text{ не о.п.с.}\\
+		V_{\lambda_2} = span\begin{pmatrix}
+			1\\2\\2
+		\end{pmatrix} \ \ \ \; \gamma(\lambda_2) = 1\\
+		\chi(t) = -(t+1)^2(t-3) \quad \phi_{\lambda_1} = (t-3)\\
+		\phi(t) = (t+1)^2(t-3) \quad \phi_{\lambda_2} = (t+1)^2\\
+		1 = \sum\limits_\lambda p_\lambda = p_{\lambda_1} + p_{\lambda_2} = f_{\lambda_1}\phi_{\lambda_1} 
+		+ f_{\lambda_2}\cdot\phi_{\lambda_2} =\\
+		= f_{\lambda_1}(t-3) + f_{\lambda_2}(t+1)^2\\
+		\text{Прав. дробь }\mathlarger{\frac{1}{\phi}} = \sum\limits_\lambda \underset{\text{Правильн.}}{\mathlarger{\frac{f_\lambda \cdot \phi_\lambda}{\phi}}} = \sum\limits_\lambda \underset{\text{Правильн. дробь}}{\mathlarger{\frac{f_\lambda}{(t-\lambda)^{m(\lambda)}}}}\\
+		deg \ f_\lambda < m(\lambda)\\
+		\mathlarger{
+			\frac{1}{(t+1)^2(t-3)} = \underset{\text{простейшие}}{\frac{A_1}{t+1} + \frac{A_2}{(t+1)^2}} + 
+			\frac{A_3}{t-3} = \frac{-\frac{1}{16}t - \frac{5}{16}}{(t+1)^2} + \frac{\frac{1}{15}}{t-3}
+		}\\
+		1 = \underbracket{(-\frac{1}{16}t - \frac{5}{16})\overbrace{(t-3)}^{\phi_\lambda}}_{p_{\lambda_1}} + 
+		\underbracket{\frac{1}{15} \overbrace{(t+1)^2}^{\phi_{\lambda_2}}}_{p_{\lambda_2}}\\
+		\p_1 = p_{\lambda_1}(A) = \begin{pmatrix}
+			0 & 1 & -1\\
+			-2 & 3 & -2\\
+			-2 & 2& -1
+		\end{pmatrix} \; p_1 + p_2 = E\\
+		\p_2 = p_{\lambda_2}(A) = \begin{pmatrix}
+			1 & -1 & 1\\
+			2 & -2 & 2\\
+			2 & -2 & 2
+		\end{pmatrix}
+		$
+	\end{examples}
+	\begin{remark}
+		$\forall \lambda: m(\lambda) = 1$\\
+		Из следствия теоремы Лагранжа $t = \sum\limits_\lambda \lambda p_\lambda\\
+		\boxed{\A = \sum\limits_\lambda \lambda \p_\lambda}  \nearrow \; \quad 1 = \sum p_\lambda \; \; $ 
+		спектральное разложение о.п.с.\\\\
+		$\boxed{\A \text{ о.п.с.} \Leftrightarrow \forall \lambda: m(\lambda) = 1
+		\text{     \ \ \ \ \; Доказательство позже}}$
+	\end{remark}
+	\begin{defin}
+		$K_\lambda = Ker(\A - \lambda\E)^{m(\lambda)}$\\
+		называется \textbf{корневым подпространством }$\A$
+	\end{defin}
+	\begin{theorem}\
+		\begin{mylist}
+			\item 
+			$K_\lambda$ инвариантно относительно $\A$
+			\item $Im \p_\lambda = K_\lambda$
+			\item $(t-\lambda)^{m(\lambda)}$ минимальный многочлен $\A|_{K_\lambda = Im\p_\lambda}$
+		\end{mylist}
+		$\Rightarrow \boxed{V = \bigoplus\limits_\lambda K_\lambda}$
+	\end{theorem}
+	\begin{proof}\
+		\begin{mylist}
+			\item 
+			$x\in K_\lambda \overset{?}{\Rightarrow} \A x \in K_\lambda\\
+			\underset{\stackrel{\nwarrow\nearrow}{\text{перестановочны}}}{(\A-\lambda\E)^{m(\lambda)} \A x}
+			= \A \underbracket{(\A-\lambda\E)^{m(\lambda)} x \in K_\lambda}_{=\0} = \0\\
+			\Rightarrow
+			 \A x \in Ker(\A - \lambda\E)^{m(\lambda)}$
+			 \item 
+			 $(\A - \lambda \E)^{m(\lambda)}\p_\lambda = (\A - \lambda\E)^{m(\lambda)} f_\lambda(\A)\phi_\lambda(\A) =\\
+			 = f_\lambda(\A) \cdot \underbracket{(\A - \lambda \E)^{m(\lambda)} \phi_\lambda(\A)}_{\phi(\A)} = \0\\
+			 \forall x \in V\\
+			 (\A - \lambda \E)^{m(\lambda)} \underbracket{\p_\lambda x}_{\in Im\p_\lambda} = \0 \Rightarrow Im\p_\lambda \subseteq Ker(\A - \lambda\E)^{m(\lambda)} = K_\lambda$\\
+			 \textbf{Обратно: } $K_\lambda \overset{?}{\subseteq} Im\p_\lambda\\
+			 x\in K_\lambda\\
+			 \mu \neq K_\lambda \; \p_\mu x = \underbracket{
+			 	\underset{
+			 		\stackrel{\nearrow}
+			 		{
+			 			\text{содержит }(\A-\lambda\E)^{m(\lambda)}
+		 			}
+		 		}
+	 			{
+	 				f_\mu(\A)\phi_\mu(\A)x
+ 				}
+	 	 	}_{\eta(\A)(\A - \lambda\E)^{m(\lambda)}} = \eta(\A)\cdot \underbracket{(\A-\lambda\E)^{m(\lambda)}x\in K_\lambda}_{=\0} = \0\\
+ 	 		x = \E x = \sum\limits_\mu \underset{\stackrel{||}{\0 \ \mu\neq \lambda}}{\p_\mu x} = \p_\lambda x \in Im\p_\lambda \Rightarrow K_\lambda \subseteq Im\p_\lambda \\
+ 	 		\Rightarrow \boxed{K_\lambda = Im\p_\lambda}$\newpage
+ 	 		\item 
+ 	 		$(t-\lambda)^{m(\lambda)}$ минимальный многочлен для $\A|_{K_\lambda = Im\p_\lambda}$ $?\\
+ 	 		(\A - \lambda \E)^{m(\lambda)}$ аннулятор $\A|_{K_\lambda}$\\
+ 	 		Минимальный?\\\\
+ 	 		$\pu \overset{\psi}{\text{не минимальный}}\\
+ 	 		\psi_1 = (t-\lambda)^{m(\lambda) - 1} \; \pu \text{ это минимальный многочлен}\\
+ 	 		\phi_1:= (t-\lambda)^{m(\lambda) - 1}\phi_\lambda(t) = $ аннулятор $\A?\\
+ 	 		\underset{\mu \neq \lambda}{\phi_1(\A) \p_\mu} = (\A-\lambda\E)^{m(\lambda) - 1} \phi_\lambda(\A) f_\mu (\A) \phi_\mu (\A) = \\
+ 	 		= \ldots \phi_\lambda(\A) \phi_\mu(\A) = \eta(\A) \cdot \phi(\A) = \0\\
+ 	 		\forall x \ \phi_1(\A) \p_{\lambda}x = (\A-\lambda\E)^{m(\lambda) - 1}\phi_\lambda(\A) \p_\lambda x = \\
+ 	 		= \phi_\lambda(\A) \underbracket{\underbracket{(\A - \lambda\E)^{m(\lambda) - 1}}_{\psi_1(\A)}
+ 	 		\underbracket{\p_\lambda x}_{\in Im\p_\lambda = K_\lambda}
+  		   	}_{\underset{\text{ мин. многочлен по предположению}}{\psi_1(\A|_{K_\lambda})x}} = \0\\
+  	   		\phi_1(\A)\p_\lambda = \0\\
+  	   		\phi_1(\A)\cdot\E = \underbracket{\phi_1(\A) \sum\limits_\mu \p_\mu}_{\phi_1(\A)\p_\lambda + \sum\limits_{\mu\neq \lambda}\phi_1(\A) \p_\mu} = \0\\
+  	   		\Rightarrow \phi_1 \text{ аннулятор }\A$, но степени $< \phi\\
+  	   		deg\ \phi_1 = m-1 \Rightarrow \text{противоречие мин. }\phi \Rightarrow (t-\lambda)^{m(\lambda)}$ минимальный мн-н $\A|_{K_\lambda}$
+		\end{mylist}
+	\end{proof}
+	\begin{corollary}
+		$A$ о.п.с. $\Leftrightarrow \forall \lambda: m(\lambda) = 1$
+	\end{corollary}
+	\begin{proof}
+		$(\Rightarrow) \ \; \; \A$ о.п.с.\\
+		$\phi(t) \ \prod\limits_\lambda (t-\lambda) \; \; \; $ покажем что это минимальный многочлен $\A\\
+		V = \bigoplus\limits_\lambda V_\lambda$ -- собственные подпространства $\A\\
+		\forall v \in V \; \exists! \ v = \sum\limits_\lambda v_\lambda, v_\lambda \in V_\lambda\\
+		\phi(\A) v = \prod\limits_\lambda (\A - \lambda\E) \sum\limits_\mu v_\mu = \\
+		= \sum\limits_\mu \underbracket{\prod\limits_\lambda (\A - \lambda \E)}_{\phi_\mu (\A) \cdot (\A - \mu \E)} v_\mu = \sum\limits_\mu \phi_\mu (\A)\underbracket{(\A-\mu\E)v_\mu}_{\stackrel{||}{\0}} = \0\\
+		v_\mu \in V_\mu = Ker(\A-\mu\E) \nearrow\\
+		\Rightarrow \phi \text{ аннулятор }\A \Rightarrow$ очевидно минимальная степень $\Rightarrow$ минимальный многочлен.\\
+		$(\Leftarrow) \forall \lambda: m(\lambda) = 1\\
+		\underset{\stackrel{||}{Im\p_\lambda}}{K_\lambda} = Ker(\A - \lambda\E)^1 = V_\lambda\\
+		V = \bigoplus\limits_\lambda K_\lambda = \bigoplus\limits_\lambda V_\lambda \Leftrightarrow \A $ о.п.с.
+	\end{proof}
+	\begin{examples}\ \\
+		$Im\p_1 = Ker(A - \lambda_1 E)^2 = K_{\lambda_1}\\
+		Im \p_2 = Ker(A - \lambda_2 E)^2 = K_{\lambda_2}\; \; \; \quad$ --- упр.
+	\end{examples}
 \end{document}
