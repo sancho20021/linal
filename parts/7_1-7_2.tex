@@ -1,0 +1,507 @@
+\documentclass[../spring.tex]{subfiles}
+\begin{document}
+	\section{Линейные отображения}
+	
+	\subsection{Основные определения}
+	\begin{defin}
+		$U, V$ -- линейные пространства над полем $K(\R/ \mathbb{C})$\\
+		Линейным отображением $\A$ называется $\A: U \rightarrow V$, обладающее свойством линейности:\\
+		$\forall \lambda \in K, \forall u, v \in U\\ 
+		\A(u + \lambda v) = \A(u) + \lambda \A(v)$
+	\end{defin}
+	
+	\begin{remark}\hfill
+		\begin{mylist}
+			\item Записываем не $\A(u)$, а $\A u$
+			\item "Поточечно" выполняются все арифметические операции, свойственные функциям
+			\item $\A\0_U = \0_V$
+		\end{mylist}
+	\end{remark}
+	\begin{examples}\hfill
+		\begin{mylist}
+			\item $\0$ -- нулевое отображение $U \rightarrow V$\\
+			$\forall u \in U: \0u = \0_v$
+			\item $\mathcal{E}$ -- тождественное отображение: $V \rightarrow V$\\
+			$\forall v \in V: \mathcal{E}v = v$ 
+			\item $U = V = P_n$ -- многочлены степени до $n$
+			\\$\A: V \rightarrow V$\\
+			$\A p = p'(t)$ -- дифференциальный оператор\\
+			$\A(p_1 + \lambda p_2) = (p_1 + \lambda p_2)' = p_1' + \lambda p_2' = \A p_1 + \lambda \A p_2$\\
+			Линейное отображение 
+			$\A = \frac{d}{dt}$
+			\item $U = \R^n \ V = \R^m\\
+			\A = (a_{i j})_{m\times n}\\
+			\A: x\in U \rightarrow y = \A x \in V\\
+			x_1 + \lambda x_2 \in \R^n \rightarrow y = \A(x_1 + \lambda x_2) = \A x_1 + \lambda \A x_2$
+			\item $U \cong V$. То есть отображение, на котором строится изоморфизм является линейным.
+		\end{mylist}
+	\end{examples}
+	\begin{defin}$\lambda \in K \ \A: U\rightarrow V$\\
+		Произведение линейного отображения на скаляр называется линейное отображение \\
+		$\B = \lambda \A \\
+		\B: U \rightarrow V \ \forall u \in U \ \B u = \lambda \A u$
+	\end{defin}
+	\begin{defin}
+		Суммой линейных отображений $\A, \B: U \rightarrow V$ называется $\mathcal{C}: U \rightarrow V\\
+		\forall u \in U \ \mathcal{C}u = \A u + \B u$
+		\mybox{
+			$\mathcal{C} = \A + \B$
+		}
+	\end{defin}
+	
+	\begin{defin}
+		$-\A$ -- отображение противоположное $\A$\\
+		$\forall u \in U \ (-\A)u = -1 \cdot \A u$
+	\end{defin}
+	
+	$L(U, V) = Hom_K(U, V) = Hom(U, V) = \mathcal{L}(U, V)$\\
+	$L(U, V)$ -- множество всех линейных отображений из $U$ в $V$.\\
+	Линейное отображение = гомоморфизм с операциями $\lambda \A$ и $\A + \B$\\
+	Выполнены свойства 1--8 линейного пространства (проверить самим). \\Значит \mybox{$L(U, V)$ -- линейное пространство}
+	\begin{defin}
+		$\A \in L(U, V)\\
+		Ker\A = \{u \in U \ | \ \A u = \0_v\}$ -- ядро линейного отображения. 
+	\end{defin}
+	\begin{defin}
+		$Im\A =\{v \in V = \A u \ \forall u \in U\} = \\ \{v \in V \ | \  \exists u \in U \ v = \A u\}$ --
+		образ линейного отображения.
+	\end{defin}
+	\includegraphics[width=250px]{1}
+	
+	Упр: $Ker\A$ и $Im\A$ - это подпространства соответственно пространств $U$ и $V$. То есть они замкнуты относительно линейных операций. \\
+	Если $Ker\A$ конечномерное подпространство $U$, то \\
+	\mybox{$dim \ Ker\A = def\A$} -- дефект линейного отображения.\\
+	Если $Im\A$ конечномерное подпространство $V$, то \\
+	\mybox{$dimIm\A = rg\A$} -- ранг линейного отображения.
+	
+	\begin{stat}
+		$\A$ изоморфно между $U$ и $V \Leftrightarrow$ 
+		\begin{mylist}
+			\item $\A \in L(U, V)$
+			\item $Im\A = V$
+			\item $Ker\A = \{\0\}$ тривиально 
+		\end{mylist}
+	\end{stat}
+	\begin{proof}
+		$\A$ изоморфно $\Leftrightarrow$ взаимнооднозначное соответствие + линейность -- $\A\in L(U, V)$\\
+		$\0_u \leftrightarrow \0_v$, т. к. изоморфизм $\Rightarrow Ker\A = \{\0\}$\\
+		Пусть $Ker\A = \{\0\}$\\
+		Докажем инъективность $v_1 = v_2 \Leftrightarrow u_1 = u_2\\
+		v_1 = \A u_1 \ v_2 = \A u_2\\
+		\0 = v_1-v_2 = \A u_1 - \A u_2 = \A(u_1 - u_2) = \0$ т. к. ядро тривиально.\\
+		Сюръективность. $Im\A = V \Leftrightarrow \forall v \in V: \exists u \in U \A u = v$. Последнее и означает сюръекцию.
+	\end{proof}
+	\begin{defin}
+		$\A \in L(U, V)$\\
+		--инъективно, если $Ker\A = \{\0 \}$\\
+		--сюръективно, если $Im \A = v$\\
+		--биективно $\equiv$ изоморфизм, если инъекция + сюръекция.\\
+		--эндоморфизм $\equiv$ линейный оператор, если $U \equiv V$\\
+		$End_k(V) = End(V) = L(V, V)$\\
+		--автоморфизм $\equiv$ эндоморфизм + изоморфизм. \\
+		$Aut_k(V) = Aut(V)$
+	\end{defin}
+	\begin{defin}
+		Произведением линейных отображений $\A, \B$ \\
+		$\A \in L(W, V) \ \  \B \in L(U, W) \ \
+		U \xrightarrow{\B} W \xrightarrow{\A} V$\\
+		называется $\mathcal{C} \in L(U, V) : \mathcal{C} = \A\cdot \B$, которое является композицией функций, определяющих отображения $\A$ и $\B$.\\
+		$\A\cdot \B = \A \circ \B\\
+		\forall u \in U: (\A \B)u = \A(\B u)$\\
+		Очевидно, $\mathcal{C}$ -- линейное отображение.
+	\end{defin}
+	$\Omega \xrightarrow{\mathcal{C}} U \xrightarrow{\B_{1, 2}} W \xrightarrow{\A_{1, 2}} V$\\
+	Упр: \begin{mylist}
+		\item $\A, \B$ изоморфизмы $\Rightarrow \A\cdot \B$ изоморфизм
+		\item $(\A_1 + \A_2)\B = \A_1\B + \A_2\B\\
+		\A(\B_1 + \B_2) = \A \B_1 + \A \B_2$ -- дистрибутивность
+		\item $\A(\B\mathcal{C}) = (\A \B)\mathcal{C}$ -- ассоциативность
+		\item $\lambda \A \B = \A \lambda \B$
+	\end{mylist}
+	$End(V)$ -- ассоциативная унитарная алгебра\\
+	$\mathcal{E}$ -- единица $\mathcal{E}\A = \A\mathcal{E}$
+	\begin{defin}
+		$\A \in L(U, V)$ изоморфно.\\
+		$\forall v \in V \exists! u \in U: v = \A u\\
+		\A^{-1}: V \rightarrow U$\\
+		\mybox{$\A^{-1}v = u$}\\
+		Упр: $\A^{-1}\in L(V, U)$\\
+		$\A^{-1} \A = \E_v \ \ \A\A^{-1} = \E_u$
+		
+	\end{defin}
+	$\A\in End(U)$ -- линейный оператор
+	
+	$\A^{-1}\in End(V)$ -- обратный оператор
+	\begin{defin}
+		$U_0 \subset U \ \ \A\in L(U, V)$\\
+		Сужением линейного отображения $\A$ на линейное подпространство $U_0$ называется \\
+		$\A|_{U_0}: U_0 \rightarrow V \ \ \forall u \in U_0 \ \A|_{U_0} u = \A u$
+	\end{defin}
+	\begin{stat}
+		$\A$ изоморфизм $\in L(U, V) \Rightarrow  \A|_{U_0}\in L(U_0, Im(\A|_{U_0}))$ -- изоморфизм
+	\end{stat}
+	\begin{examples}
+		\hfil
+		\begin{mylist}
+			\item $\0: U\rightarrow U$ -- не сюръекция, не инъекция, эндоморфизм, не автоморфизм.
+			\item $\E: U \rightarrow U$ -- автоморфизм
+			\item 
+			$\A = \frac{d}{dt}$ \  
+			$\A: P_n \rightarrow P_n$ -- эндоморфизм, не инъекция, не сюръекция.
+			\item $x\in \R^n \rightarrow y = \A x \in \R^n$ -- эндоморфизм. \\
+			Сюръекция $\Leftrightarrow rg\A = n \Leftrightarrow \exists \A^{-1} \Leftrightarrow$ инъекция.\\
+			То есть автоморфизм.
+		\end{mylist}
+	\end{examples}
+	\begin{theorem}[о $rg$ и $def$ линейного отображения]
+		$\A\in L(U, V)$\\
+		\mybox{
+			$rg\A + def\A = dimU$	
+		}
+	\end{theorem}
+	\includegraphics[width=250px]{2}
+	\begin{proof}
+		$U_0 = Ker\A$\\
+		Дополним линейное пространство $U_1$ до пр-ва $U$:\\
+		$U = U_0 \oplus U_1 \ \ \ U_1 \cap U_0 = \{ \0 \}\\
+		\forall u \in U : u = u_0 + u_1$ (единственным образом)\\
+		$\A u = \A u_0 + \A u_1 = \A u_1 \ \ \ \ Im\A = \A(U_1)\\
+		\A_1 = \A|_{U_1}: U_1 \rightarrow Im\A$ \\
+		$\A_1$ -- изоморфизм? $Im\A_1 = Im\A$ -- сюръекция\\
+		$\left.\begin{array}{c}
+		\forall w \in Ker\A_1 \in U_1\\
+		KerA_1 \subset KerA = U_0
+		\end{array}\right \}
+		\Rightarrow w \in U_1 \cap U_0 = \{\0\} \Rightarrow Ker\A_1 = \{\0\}\Rightarrow \A_1$ изоморфизм.\\
+		$U_1 \cong Im\A \Leftrightarrow dimU_1 = dim(Im\A)$ -- инъекция.\\
+		Т. к. $U = U_0 \oplus U_1$, то $dimU = dimU_0 + dimU_1 = \underset{def\A}{dimKer\A} + \underset{rg\A}{dimIm\A}$
+	\end{proof}
+	\begin{corollary}[Характеристика изоморфизма]
+		\ \\
+		$\A\in L(U, V)$ Следующие условия эквивалентны:
+		\begin{mylist}
+			\item $\A$ изоморфно
+			\item $dimU = dimV = rg\A$
+			\item $dimU = dimV\\
+			Ker\A = \{\0\} \Leftrightarrow def\A = 0$
+		\end{mylist}
+	\end{corollary}
+	\begin{corollary}
+		$\A \in End(V)$ Следующие условия эквивалентны:
+		\begin{mylist}
+			\item $\A \in Aut(V)$
+			\item $dimV =rg \A$
+			\item $Ker\A = \{\0\} \Leftrightarrow def\A = 0$ 
+		\end{mylist}
+	\end{corollary}
+	
+	\subsection{Матрица линейного отображения. Изоморфизм алгебр. Преобразование матрицы линейного отображения при замене базиса.}
+	$\A \in L(U, V)\\
+	\xi_1 \ldots \xi_n$ базис $U$\\
+	$\eta_1 \ldots \eta_m$ базис $V$\\
+	$\forall u \in U \ u = \sum\limits_{i=1}^{n} u_i\xi_i \leftrightarrow u = \left(
+	\begin{array}{c}
+	u_1 \\
+	\vdots\\
+	u_n 
+	\end{array} \right)
+	\in \R^n(\mathbb{C}^n)$\\
+	\begin{tabular}{cc}
+		$\A u = \A(\sum\limits_{i = 1}^{n}u_i\xi_i) = \sum\limits_{i=1}^{n}u_i\A\xi_i$ &
+		Достаточно знать, как $\A$ работает на базисных векторах $\xi_1\ldots\xi_n$
+	\end{tabular}\\ \\
+	$Im\A = span(\A\xi_1, \A\xi_2, \ldots, \A\xi_n)$\\
+	$$\A\xi_i \in V = \sum_{j=1}^{m}a_{ji}\eta_j \leftrightarrow A_i = \left(
+	\begin{array}{c}
+	a_{1i}\\
+	a_{2i}\\
+	\vdots\\
+	a_{mi}
+	\end{array}\right)
+	\in \R^m(\mathbb{C^m})\ \ \ \ 
+	a_{ji} \in \R(\mathbb{C})
+	$$\\
+	\mybox{
+		$A = (A_1 \ldots A_i \ldots A_n) = (a_{ij})_{m\times n}$
+	}
+	матрица линейного отображения $\A$ относительно базисов $(\xi, \eta)$\\\\
+	Частный случай: $\A\in End(V): \underset{e_1\ldots e_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}\\
+	A = (a_{ji})_{n\times n}$ -- матрица линейного оператора\\
+	$A e_i = \sum\limits_{j=1}^{n}a_{ji}e_j$
+	\begin{examples}
+		\ \\
+		\begin{mylist}
+			\item
+			$\E:\underset{e_1 \ldots e_n}{V} \rightarrow \underset{e_1 \ldots e_n}{V} \ \ \ 
+			\E e_i = e_i \leftrightarrow
+			\left( 
+			\begin{array}{c}
+			0\\
+			0\\
+			\vdots\\
+			1\\
+			\vdots\\
+			0
+			\end{array}
+			\right)
+			\leftrightarrow E_{m\times n} = \left(
+			\begin{array}{ccc}
+			1 & \ldots & 0\\
+			\ldots & 1 & \ldots\\
+			0 & \ldots & 1
+			\end{array}
+			\right)
+			$
+			\item 
+			$$\E: \underset{e'_1\ldots e'_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}$$
+			$$
+			\E e'_i =  \sum_{j = 1}^{n}t_{ji}e_j \leftrightarrow T_i = 
+			\left(
+			\begin{array}{c}
+			t_{1i}\\
+			\vdots\\
+			t_{ni}
+			\end{array}
+			\right)$$
+			$$
+			[ \E ] _e = T = 
+			\left(
+			\begin{array}{c}
+			t_{1i}\\
+			\vdots\\
+			t_{ni}
+			\end{array}
+			\right)
+			= T_{e\rightarrow e'}
+			$$
+			\item \ \\
+			\begin{multicols}{2}
+				\includegraphics[width=150px]{3}\\
+				$\A: \R^2 \rightarrow \R^2\\
+				v = \A u$\\
+				Поворот векторов в плоскости на угол $\alpha$. \\
+				Очевидно, линейный оператор.
+			\end{multicols}
+			\begin{multicols}{2}
+				\includegraphics[width=150px]{4}\\
+				$
+				\A_i = \cos\alpha i + \sin\alpha j \leftrightarrow 
+				\left(
+				\begin{array}{c}
+				\cos\alpha\\
+				\sin\alpha
+				\end{array}
+				\right)\\
+				\A_j = -\sin\alpha i \cos\alpha j \leftrightarrow
+				\left(
+				\begin{array}{c}
+				-\sin\alpha\\
+				\cos\alpha
+				\end{array}
+				\right)\\
+				\A \leftrightarrow A = 
+				\left(
+				\begin{array}{cc}
+				\cos\alpha & -\sin\alpha\\
+				\sin\alpha & \cos\alpha
+				\end{array}
+				\right)
+				$
+			\end{multicols}
+			\item 
+			\begin{multicols}{2}
+				$\A: \overset{1, t, t^2}{p_2} \rightarrow  \overset{1, t, t^2}{p_2}\\
+				\A = \frac{d}{dt}\\
+				\A1 = 1' = 0 \leftrightarrow 
+				\begin{pmatrix}
+				0\\0\\0
+				\end{pmatrix}
+				\\
+				\A t = t' = 1 \leftrightarrow
+				\begin{pmatrix}
+				1\\0\\0
+				\end{pmatrix}
+				\\
+				\A t^2 = (t^2)' = 2t \leftrightarrow 
+				\begin{pmatrix}
+				0\\2\\0
+				\end{pmatrix}\\
+				\A \underset{(1, t, t^2)}{\leftrightarrow}
+				\begin{pmatrix}
+				0 & 1 & 0\\
+				0 & 0 & 2\\
+				0 & 0 & 0
+				\end{pmatrix}
+				$
+			\end{multicols}
+			$\A: \underset{1, t, t^2}{p_2} \rightarrow \underset{1, t}{p_1}\\
+			\A = \frac{d}{dt} \leftrightarrow A = \begin{pmatrix}
+			0 & 1 & 0\\
+			0 & 0 & 2
+			\end{pmatrix}$
+		\end{mylist}
+	\end{examples}
+	\begin{stat}
+		$L(U, V) \cong M_{m\times n}$\\
+		(Линейное пространство матриц с вещ.(компл.) элементами размерности $m\times n$. 
+	\end{stat}	
+	\begin{proof}
+		Изоморфизм $\equiv$ биекция + линейность.\\
+		Биекция. $\A \rightarrow A_{m\times n}$ -- поняли, как сопоставлять.\\
+		Теперь обратно. Пусть $A_{m\times n} = (a_{ij})$\\
+		\begin{tabular*}{\textwidth}{c @{\extracolsep{100pt}} c}
+			$U \ \xi_1\ldots \xi_n$ базис & $\A: U\rightarrow V$\\
+			$V \ \eta_1\ldots \eta_m$ базис &
+			$\A\xi_i = \sum\limits_{j=1}^{m}a_{ji}\eta_j \in V$
+		\end{tabular*}\\
+		$
+		\forall u \in U \ u = \sum\limits_{i = 1}^{n}u_i\xi_i
+		\\
+		\A u = \sum\limits_{i = 1}^{n}u_i\A\xi_i \in V \Rightarrow \A \in L(U, V)
+		$
+		$\A, \B \leftrightarrow A, B\\
+		\forall \lambda \in K \ \A + \lambda\B \overset{?}{\leftrightarrow} A + \lambda B$\\
+		$$ (\A + \lambda\B)\xi_i = \A\xi_i + \lambda\B\xi_i = \sum_{j = 1}^{m}a_{ji}n_j + \lambda
+		\sum_{j = 1}^{m}b_{ji}\eta_j = \sum_{j=1}^{m}(a_{ji} + \lambda b_{ji})\eta_j \leftrightarrow
+		c_i = A_i + \lambda B_i \leftrightarrow A + \lambda B \Rightarrow$$ линейность $\Rightarrow$ изоморфизм.
+	\end{proof}
+	$\A + \lambda \B \leftrightarrow A + \lambda B\\
+	\A\B \leftrightarrow A\cdot B\\
+	\A, \A^{-1} \leftrightarrow A, A^{-1}\\
+	End(V) \cong M_{n\times n}$ -- ассоциативные унитарные алгебры. (Координатный изоморфизм).\\
+	Алгебры изоморфны, т.к. сохраняются свойства дистрибутивности, ассоциативности и т. д.
+	\\
+	
+	\textit{Я не особо понял, что мы дальше делаем, но у меня это записано}\\
+	\begin{tabular}{cc}
+		$U \xi_1\ldots\xi_n$ & $\forall u \in U \leftrightarrow u = \begin{pmatrix}
+		u_1\\
+		\vdots\\
+		u_n
+		\end{pmatrix}$\\
+		$V \eta_1\ldots\eta_m$ &
+		$u = \sum\limits_{i=1}^{n}u_i\xi_i$
+	\end{tabular}
+	
+	$\forall v\in V \leftrightarrow v = \begin{pmatrix}
+	v_1\\
+	\vdots\\
+	v_m
+	\end{pmatrix}\\	
+	v = \sum\limits_{j=1}^{m}v_j\eta_j\\
+	\A\in L(U, V) \underset{\xi, \eta}{\leftrightarrow} A\\
+	\sum\limits_{j=1}^m v_j\eta_j = v = \A u = \sum\limits_{i=1}^n u_i\A\xi_i = \sum\limits_{i=1}^n u_i
+	\sum\limits_{j=1}^m a_{ji}\eta_j = \sum\limits_{j=1}^m (\sum\limits_{i=1}^n u_i a_{ji})\eta_j$\\
+	Так как координаты определяются единственным образом:\\
+	\mybox{ 
+		$ v_j = \sum\limits_{i=1}^n a_{ji}u_i $ 
+	} 
+	$\leftrightarrow$ 
+	\mybox{$v = Au$} $\leftrightarrow v = \A u$
+	
+	\begin{examples}\ \\
+		\begin{mylist}
+			\item 
+			$\A$ поворот на угол $\alpha$\\
+			$(i, j) \leftrightarrow A = \begin{pmatrix}
+			\cos\alpha & -\sin\alpha\\\sin\alpha & \cos\alpha
+			\end{pmatrix}$
+			\\
+			\begin{tabular}{lcc}
+				\includegraphics[width=200px]{5} &
+				$\alpha=45^{\circ}$ &
+				$A = \begin{pmatrix}
+				\frac{\sqrt2}{2} & -\frac{\sqrt2}{2}\\
+				\frac{\sqrt2}{2} & \frac{\sqrt2}{2}\end{pmatrix}$\\
+				$\mathscr{u} \leftrightarrow u = \begin{pmatrix}2\\1\end{pmatrix}$
+			\end{tabular}
+			\\
+			$\mathscr{v} = \A \mathscr{u} \leftrightarrow v = Au = \begin{pmatrix}
+			\frac{\sqrt2}{2} & -\frac{\sqrt2}{2}\\
+			\frac{\sqrt2}{2} & \frac{\sqrt2}{2}
+			\end{pmatrix}\begin{pmatrix}2\\1\end{pmatrix} = \begin{pmatrix}
+			\frac{\sqrt 2}{2}\\
+			\frac{3\sqrt 2}{2}
+			\end{pmatrix}$\\
+			\begin{multicols}{2}
+				$i \leftrightarrow \begin{pmatrix}
+				1\\0
+				\end{pmatrix}$\\
+				$\A i \leftrightarrow \begin{pmatrix}
+				\frac{\sqrt 2}{2}\\
+				\frac{\sqrt 2}{2}
+				\end{pmatrix}$\\
+				\includegraphics[width=100px]{6}\\
+			\end{multicols}
+			\item 
+			$\A = \frac{d}{dt}: \underset{1, t, t^2}{p_2} \rightarrow \underset{1, t, t^2}{p_2}\\
+			A = \begin{pmatrix}
+			0 & 1 & 0\\
+			0 & 0 & 2\\
+			0 & 0&0
+			\end{pmatrix}\\
+			(\overbrace{3t^3 + 6t + 4}^{u(t)})' = 6t + 6\\
+			3t^2 + 6t + 4 = \begin{pmatrix}
+			4\\6\\3
+			\end{pmatrix}\\
+			\A\mathscr{u} \leftrightarrow \begin{pmatrix}
+			0&1&0\\0&0&2\\
+			0&0&0
+			\end{pmatrix}\cdot
+			\begin{pmatrix}
+			4\\6\\3
+			\end{pmatrix}
+			= \begin{pmatrix}
+			6\\6\\0
+			\end{pmatrix} \leftrightarrow 6 + 6t$
+		\end{mylist}
+	\end{examples}
+	\begin{theorem}[Преобразование матрицы линейного отображения при замене базиса]
+		$\A \in L(U, V)$\\
+		\begin{tabular}{lll}
+			$U$ & $\xi = (\xi_1\ldots\xi_n)$ & -- базисы  $\ \ \ \ \A \xrightarrow{(\xi, \eta)} A$\\
+			& $\xi' = (\xi'_1\ldots\xi'_n)$
+		\end{tabular}\\
+		$T_{\eta\rightarrow\eta'}$ -- матрица перехода\\
+		\begin{tabular}{lll}
+			$V$ & $\eta = (\eta_1\ldots\eta_m)$ & -- базисы  $\ \ \ \ \A \xrightarrow{(\xi', \eta')} A'$\\
+			& $\eta' = (\eta'_1\ldots\eta'_m)$
+		\end{tabular}\\
+		\mybox{
+			$\A' = T^{-1}_{\eta\rightarrow\eta'} \cdot A \cdot T_{\xi\rightarrow\xi'}$	
+		}
+	\end{theorem}
+	Ну видимо сейчас доказательство, но я не уверен.
+	\begin{proof}\ \\
+		\begin{tabular}{c c c}
+			$\underset{\xi_1\ldots\xi_n}{U}$ & \stackanchor{$\xrightarrow{\A}$}{$\rightharpoonup$} & $\underset{\eta_1\ldots\eta_m}{V}$\\
+			$\E_u \uparrow \upharpoonright$ & & $\downharpoonleft \uparrow \E_v$\\
+			$\underset{\xi'_1\ldots\xi'_n}{U}$ & $\xrightarrow{\A}$ & $\underset{\eta'_1\ldots\eta'_m}{V}$
+		\end{tabular}
+		\\\\
+		$\A = \E^{-1}_v\A\E_u\leftrightarrow A' = T^{-1}_{\eta\rightarrow\eta'}AT_{\xi\rightarrow\xi'}\\
+		\A\B \leftrightarrow AB\\
+		\A^{-1}\leftrightarrow A^{-1}\\
+		\E^{-1}_v \leftrightarrow T^{-1}_{\eta\rightarrow\eta'}$ Смотри пример 2
+	\end{proof}
+	\begin{corollary}
+		\ \\
+		$\A\in End(V) \ \ \ \A: \underset{e_1\ldots e_n}{V} \rightarrow \underset{e_1\ldots e_n}{V}\\
+		e_1\ldots e_n$ базис $V \leftrightarrow A\\
+		e'_1\ldots e'_n$ базис $\leftrightarrow A'\\
+		\A: \underset{e'_1\ldots e'_n}{V} \xrightarrow{A'} \underset{e'_1\ldots e'_n}{V}\\
+		T = T_{e\rightarrow e'}$\\
+		\mybox{$A' = T^{-1}AT$}
+	\end{corollary}
+	\begin{remark}
+		В условиях теоремы $v = \A u \begin{array}{c}
+		\xleftrightarrow{(\xi, \eta)} v = Au\\
+		\xleftrightarrow{(\xi', \eta')} v' = A'u
+		\end{array}\\
+		V = T_{\eta\rightarrow\eta'} V'\\
+		U = T_{\xi\rightarrow\xi'} U'\\
+		T_{\eta\rightarrow\eta'}v' = AT_{\xi\rightarrow\xi'}u'\\
+		v' = \underset{A'}{\boxed{T^{-1}_{\eta\rightarrow\eta'}AT_{\xi\rightarrow\xi'}}u'}
+		$
+	\end{remark}
+\end{document}

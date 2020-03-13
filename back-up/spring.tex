@@ -19,6 +19,8 @@
 \usepackage{relsize}
 \usepackage{latexsym}
 
+\usepackage{subfiles}
+
 \title{Конспекты по линейной алгебре, 2 сем}
 \author{Пак Александр}
 
@@ -63,7 +65,7 @@
 \newcommand{\pu}{\sqsupset}
 %-------------------------------%
 
-\graphicspath{ {./imgs/} }
+\graphicspath{ {imgs/}{../imgs/}}
 \setlength{\parindent}{0ex}
 \linespread{1.2}
 
@@ -580,6 +582,8 @@
 		v' = \underset{A'}{\boxed{T^{-1}_{\eta\rightarrow\eta'}AT_{\xi\rightarrow\xi'}}u'}
 		$
 	\end{remark}
+
+	
 	\subsection{Инварианты линейного отображения}
 	\textbf{Инвариант - свойство, которое сохраняется при некоторых определенных преобразованиях}\\
 	$\mathscr{v} = \A\mathscr{u} \leftrightarrow v = Au$\\
@@ -923,6 +927,7 @@
 		\text{Т.к. }L_i $ инвариантна $\Rightarrow \A u_i \in L_i \Rightarrow v_i \in L_i$, но $L_i$ дизъюнктны $\nwarrow \Rightarrow \forall i : v_i = \0\\
 		\Rightarrow Im \A|_{L_i}$ дизъюнктны $\Rightarrow \bigoplus$
 	\end{proof}
+
 	\subsection{Собственные числа и собственные вектора линейного оператора.}
 	$\A\in End(v) \ \ \ \ V$ линейное пространство над $K$
 	\begin{defin}
@@ -1656,6 +1661,7 @@
 		A^{-1} = \mathlarger{\frac{1}{1}}\p_1 + \mathlarger{\frac{1}{(-1)}}\p_2 = \p_1 -\p_2 = A\\
 		A^2 = E$
 	\end{examples}
+
 	\subsection{Комплексификаци линейного вещ. пространства. Продолжение вещ. линейного оператора.}
 	$\A \in End(V) \ \ \ V $ над полем $K$\\
 	$\begin{array}{lll}
@@ -2104,6 +2110,7 @@
 				\end{array} \ 1\leq m(\lambda) \leq \alpha(\lambda)}$
 		\end{mylist}
 	\end{corollary}
+
 	\subsection{Операторное разложение единицы. Корневые подпространства.}
 	\begin{minipage}{0.5\textwidth}
 		$\phi(t) = \prod\limits_\lambda (t-\lambda)^{m(\lambda)}$
@@ -2155,4 +2162,21 @@
 		p_\lambda \in I_\lambda\\
 		\boxed{1 = \sum\limits_\lambda p_\lambda\text{ -- полиномиальное разложение единицы}}$ 
 	\end{corollary}
+	\newpage
+	\begin{remark} \
+		\begin{mylist}
+			\item 
+			$\lambda \neq \mu\\
+			\begin{array}{rclcl}
+				p_\lambda & \cdot & p_\mu & \vdots & \phi\\
+				|| & & || & &\\
+				f_\lambda\phi_\lambda & & f_\mu\phi_\lambda & = & \eta \cdot \phi\\
+				& & \uparrow & & \\
+				& & (t-\lambda)^{m(\lambda)} & &
+			\end{array}$
+			\item $\forall \lambda \ m(\lambda) = 1$\\
+			\textbf{Если.} Т. е. все корни $\phi$ взаимно простые.\\
+			$f_\lambda = const \ \ \ (def \ f_\lambda = m(\lambda) - 1 = 0)$
+		\end{mylist}
+	\end{remark}
 \end{document}

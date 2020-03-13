@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{systeme}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{bbold}
+\usepackage{enumitem}
+\usepackage{collectbox}
+\usepackage{multicol}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage[scr=boondoxo,scrscaled=1.05]{mathalfa}
+\usepackage{stackengine}
+\usepackage{wrapfig}
+\usepackage{relsize}
+\usepackage{latexsym}
+
+\usepackage{subfiles}
+
+\title{Конспекты по линейной алгебре, 2 сем}
+\author{Пак Александр}
+
+%----ENVIRONMENTS--------------%
+\newtheorem{theorem}{Теорема}[subsection]
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\newtheorem{lemma}{Лемма}[subsection]
+\renewcommand{\thelemma}{\arabic{lemma}}
+\newtheorem{defin}{Определение}[subsection]
+\renewcommand{\thedefin}{\arabic{defin}}
+\newtheorem*{stat}{Утверждение}
+\newtheorem{corollary}{Следствие}[theorem]
+\renewcommand{\thecorollary}{\arabic{corollary}}
+
+\newenvironment{mylist}{\begin{enumerate}[noitemsep, nolistsep]}{\end{enumerate}}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+
+\theoremstyle{definition}
+\newtheorem*{examples}{Примеры}
+
+%-------------------------------%
+
+%------COMMANDS-----------------%
+\newcommand{\N}{\numberset{N}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\0}{\mathbb{0}}
+\newcommand{\mybox}{
+	\collectbox{
+		\setlength{\fboxsep}{1pt}
+		\fbox{\BOXCONTENT}
+	}
+}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\let\vec\overline
+\newcommand{\p}{\mathcal{P}}
+\newcommand{\pu}{\sqsupset}
+%-------------------------------%
+
+\graphicspath{ {imgs/}{../imgs/}}
+\setlength{\parindent}{0ex}
+\linespread{1.2}
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	\setcounter{section}{6}
+	\tableofcontents
+	\newpage
+	
+	\subfile{parts/7_1-7_2}
+	\subfile{parts/7_3}
+	\subfile{parts/7_4-7_5}
+	\subfile{parts/7_6-7_7}
+	\subfile{parts/7_8-7_9}
+\end{document}
