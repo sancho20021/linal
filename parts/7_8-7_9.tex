@@ -524,5 +524,175 @@
 		\forall \lambda \text{ корня }\chi \text{ с.ч. (I, II)}$
 	\end{proof}
 	\subsection{Жорданова форма матрицы, Жорданов базис}
-	
+	$
+	\begin{array}{ll}
+		V = \bigoplus\limits_{\lambda \text{ с.ч.}} K_\lambda \text{ корневые } & dim K_\lambda = \alpha(\lambda)\\
+		\chi(t) = \prod\limits_{\lambda\text{с.ч.}} (t-\lambda)^{\alpha(\lambda)} & \lambda \in K \text{ все корни с.ч.}\\
+		\phi(t) = \prod\limits_{\lambda \text{ с.ч.}}(t-\lambda)^{m(\lambda)}
+	\end{array}\n
+	\begin{array}{clc}
+		V_\lambda & = Ker(\A - \lambda \E) & \gamma(\lambda) = dim V_\lambda\\
+		\bigcap | \\
+		K_\lambda & = Ker(\A - \lambda\E)^{m(\lambda)}
+	\end{array}\n
+	\forall \lambda \; K_\lambda \leadsto \underset{\mathlarger{\bigcup\limits_\lambda \text{ Жорданов базис}}}{\text{ строим базис }} \leadsto $ \belowbaseline[-12pt]{$\begin{array}{l}
+		\text{ матрица оператора будет иметь}\\
+		\text{блочно-диагональную структуру}\\
+		\text{-- Жорданова форма матрицы}
+	\end{array}	
+	$}\n
+	$\pu K_\lambda = K \; \; \gamma(\lambda) = \gamma\\
+	\alpha(\lambda) = \alpha \; \; m(\lambda) = m\n
+	\B = \B_\lambda = (\A - \lambda\E)|_{K_\lambda}\; \; \quad
+	dim = \gamma\n
+	\begin{array}{ccl}
+		K_1 &= &V_\lambda = Ker(\A - \lambda\E)\\
+		\bigcap |\\
+		K_2 &= & Ker(\A-\lambda\E)^2\\
+		\vdots\\
+		\bigcap |\\
+		K_m &= &Ker(\A - \lambda\E)^m = K_\lambda = K \; \; \; dim = \alpha
+	\end{array}$\n
+	\textbf{Пример.}\\
+	$\alpha = dim K_\lambda = dim K_5 = 24\\
+	m = 5\\
+	\gamma = 7\\$
+	\belowbaseline[-12pt]{
+	\begin{turn}{90}
+		Циклический базис
+	\end{turn}}
+	\belowbaseline[-12pt]{
+	$\begin{array}{|c| c l}
+		\cline{1-1}
+		j_5 & \in & K_5 \backslash K_4\\
+		j_4 & = & \B j_5 = (\A - \lambda\E) j_5 \in K_4\\
+		j_3 & = & \B j_4 = (\A - \lambda\E) j_4 \in K_3\\
+		j_2 & = & \B j_3 = (\A - \lambda\E) j_3 \in K_2\\
+		j_1 & = & \B j_2 = (\A - \lambda\E) j_2 \in K_1 = V_\lambda\\
+		\cline{1-1}
+	\end{array}$}\n
+	$j_1, j_2, j_3, j_4$ -- \textbf{присоединенные вектора.}\n
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{basis}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+	$j_r = \B j_{r+1}\\
+	j_{r+1} \in K_{r+1} = Ker \B^{r+1} = Ker(\A - \lambda\E)^{r+1}\n
+	\B^r j_r = \B ^r \B j_{r+1} = \B ^{r+1} j _{r+1} = \0 \n
+	\Rightarrow j_r \ in K_r = Ker \B^r\n
+	L = span(j_1 \ j_2 \ j_3 \ j_4 \ j_5)\n$
+	\end{minipage}\n
+	$\A|_{L}\n
+	\begin{array}{ccccc}
+		\begin{pmatrix}
+			\lambda\\
+			0\\0\\0\\0
+		\end{pmatrix}
+		& \begin{pmatrix}
+		1\\
+		\lambda\\
+		0\\0\\0
+		\end{pmatrix}
+		& \begin{pmatrix}
+		0\\1\\
+		\lambda\\
+		0\\0
+		\end{pmatrix}
+		& \begin{pmatrix}
+		0\\0\\1\\
+		\lambda\\
+		0
+		\end{pmatrix}
+		& \begin{pmatrix}
+		0\\0\\0\\1\\
+		\lambda
+		\end{pmatrix}\\
+		\updownarrow & \updownarrow &\updownarrow &\updownarrow &\updownarrow\\
+		\A j_1 = \lambda j_1 &
+		\A j_2 = j_1 + \lambda j_2 &
+		\A j_3 = j_2 + \lambda j_3 &
+		\A j_4 = j_3 + \lambda j_4 &
+		\A j_5 = j_4 + \lambda j_5
+	\end{array}\n
+	\text{Матрица }\A|_L \text{ в базисе } j = A_j = \begin{pmatrix}
+		\lambda & 1 & 0 & 0 & 0\\
+		0 & \lambda & 1 & 0 & 0\\
+		0 & 0 & \lambda & 1 & 0\\
+		0 & 0 & 0 & \lambda & 1\\
+		0 & 0 & 0 & 0 & \lambda
+	\end{pmatrix}$ $\begin{matrix}\text{\textbf{Клетка Жордана }} \boldsymbol{5\times 5}\\
+		\text{(блок нижнего уровня)}
+		\end{matrix}\n
+	(j_5\ j_4 \ j_3 \ j_2 \ j_1) \rightarrow \begin{pmatrix}
+		\lambda & \ldots & \ldots & 0\\
+		1 & \ddots & & \vdots\\
+		\vdots & \ddots & \ddots & \vdots\\
+		0 & \ldots & 1 & \lambda
+	\end{pmatrix}$\n
+	\begin{minipage}{0.5\textwidth}
+		\includegraphics[width=\textwidth]{castle}
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		\textbf{Башня} -- циклическое объединение базисов одной длины.\\
+		\textbf{Высота башни} -- количество векторов в базисе.\\
+		\textbf{Ширина башни} -- число циклических базисов одной размерности\\
+		\textbf{Основания} каждой башни в собственном подпространстве\\
+		Число циклических базисов = $\gamma$\\
+		$\slide{0.2in}||$\\
+		Число Жордановых клеток
+	\end{minipage}\n
+	$
+	\begin{matrix}\begin{pmatrix}
+		\boxed{\lambda}\\
+		& \boxed{\begin{matrix}
+			\boxed{\begin{matrix}
+					\lambda & 1\\
+					& \lambda & 1\\
+					& & \lambda
+				\end{matrix}} &  \leftarrow \begin{array}{l}\text{Блок}\\ \text{нижнего}\\ \text{уровня}\end{array}\\
+			& \boxed{\begin{matrix}
+				\lambda & 1\\
+				& \lambda & 1\\
+				& & \lambda
+				\end{matrix}}
+			\end{matrix}}\\
+		& \begin{array}{r}
+			\text{Блок среднего}\\
+			\text{уровня}\\
+			\text{(отвечает башне)}
+		\end{array} \rightarrow & \boxed{\begin{matrix}
+				\boxed{\begin{matrix}
+						\lambda & 1\\
+						& \lambda & 1\\
+						& & \lambda & 1\\
+						& & & \lambda
+					\end{matrix}} \\
+				& \boxed{\begin{matrix}
+					\lambda & 1\\
+					& \lambda & 1\\
+					& & \lambda & 1\\
+					& & & \lambda
+					\end{matrix}}\\
+				& & \boxed{\begin{matrix}
+					\lambda & 1\\
+					& \lambda & 1\\
+					& & \lambda & 1\\
+					& & & \lambda
+					\end{matrix}}
+			\end{matrix}}\\
+		& & & \boxed{\begin{matrix}
+				\lambda & 1\\
+				& \lambda & 1\\
+				& & \lambda & 1\\
+				& & & \lambda & 1\\
+				& & & & \lambda
+			\end{matrix}}
+	\end{pmatrix}\\
+	\overset{\uparrow}{\text{Блок верхнего уровня, отвечает }K_\lambda}
+	\end{matrix}$\n
+	$\gamma = $ Число блоков нижнего уровня\\
+	$\alpha = $ Число $\lambda$ на диагонали\n
+	$\A $ о.п.с. $\forall \alpha = \gamma\\
+	V_\lambda \; \; \boxed \cdot \ \boxed \cdot\ \boxed \cdot \ \boxed \cdot \ \boxed \cdot$\\
+	"Деревня Жордана" 
 \end{document}
