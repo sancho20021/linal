@@ -18,6 +18,7 @@
 \usepackage{wrapfig}
 \usepackage{relsize}
 \usepackage{latexsym}
+\usepackage{caption}
 
 \usepackage{subfiles}
 
@@ -43,6 +44,10 @@
 \theoremstyle{definition}
 \newtheorem*{examples}{Примеры}
 
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
 %-------------------------------%
 
 %------COMMANDS-----------------%
@@ -60,9 +65,17 @@
 \newcommand{\E}{\mathcal{E}}
 \newcommand{\A}{\mathcal{A}}
 \newcommand{\B}{\mathcal{B}}
+\newcommand{\D}{\mathcal{D}}
 \let\vec\overline
 \newcommand{\p}{\mathcal{P}}
 \newcommand{\pu}{\sqsupset}
+\def\dunderline#1{\underline{\underline{#1}}}
+\newcommand{\ns}{\\[1pt]}
+\newcommand{\nm}{\\[2pt]}
+\newcommand{\nb}{\\[4pt]}
+\newcommand{\nl}{\\[8pt]}
+\newcommand{\n}{\\[6pt]}
+\def\slide#1{\phantom{}\hspace{#1}}
 %-------------------------------%
 
 \graphicspath{ {imgs/}{../imgs/}}

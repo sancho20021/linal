@@ -1,4 +1,6 @@
 \documentclass[../main.tex]{subfiles}
+
+
 \begin{document}
 	\subsection{Операторное разложение единицы. Корневые подпространства.}
 	\begin{minipage}{0.5\textwidth}
@@ -265,4 +267,262 @@
 		$Im\p_1 = Ker(A - \lambda_1 E)^2 = K_{\lambda_1}\\
 		Im \p_2 = Ker(A - \lambda_2 E)^2 = K_{\lambda_2}\; \; \; \quad$ --- упр.
 	\end{examples}
+	\subsection{Нильпотентный оператор. Разложение Жордана}
+	\begin{defin}
+		$\B \in End(V)$ называется \textbf{нильпотентным}, если $\phi(t) = t^\nu$\\
+		Минимальный многочлен $\B$, т.е. $\B^\nu = \0$\\
+		\underline{$\nu$ -- индекс нильпотентности} (мин. степерь $\B^\nu = \0$)\\\\
+		$\boxed{\begin{matrix}\p^2_\lambda = \p_\lambda\\\text{Идемпотентность}\end{matrix}}\\
+		\text{Степень минимального многочлена} \rightarrow \nu \leq dim V \underset{\stackrel{\uparrow}{\text{степень }\chi}}{=} n$
+	\end{defin}
+	\begin{stat}
+		$\forall \lambda: m(\lambda) \leq dim V_\lambda$
+	\end{stat}
+	\begin{proof}
+		$(t-\lambda)^{m(\lambda)}$ минимальный мн-н $\A|_{K_\lambda}\\
+		\B_\lambda = (\A-\lambda\E)|_{k_\lambda} \Rightarrow\B_\lambda^{m(\lambda)} = (\A-\lambda\E)^{m(\lambda)}|_{K_\lambda} = \0 \\
+		\Rightarrow m(\lambda)$ индекс нильпотентности $\B_\lambda\in End(K_\lambda)\\
+		m(\lambda) \leq dim K_\lambda$
+	\end{proof}
+	\begin{remark}
+		$\underbracket{\sum\limits_\lambda m(\lambda)}_{deg \ \phi} \leq \underset{\stackrel{||}{deg \ \chi}}
+		{\sum}dimK_\lambda = n$\\
+		\phantom\noindent\hspace{2.7in}$\bigoplus\limits_\lambda K_\lambda = V$
+	\end{remark}
+	\begin{theorem}[Разложение Жордана]
+		\ \\
+		$\forall \A \in End(V)$ можно представить в виде:\\
+		$\A: \D + \B$, где $\D$ о.п.с.\\
+		$\B$ нильпотентный, причем $\B\D = \D\B$ перестановочны
+	\end{theorem}
+	\begin{proof}
+		$\phi$ -- минимальный многочлен $\A\\
+		\E = \sum\limits_\lambda\p_\lambda$ операторн. разложение единицы\\
+		$\D:= \sum\limits_\lambda \lambda\p_\lambda \; \; \; D$ о.п.с.$?\\
+		V = \bigoplus\limits_\lambda Im\p_\lambda\\
+		\pu v_\lambda \neq 0 \; \in Im\p_\lambda\\
+		\underline{\underline{D v_\lambda}} = (\sum\limits_\mu \mu \p_\mu) v_\lambda = \sum\limits_\mu \mu \begin{array}{l}
+			\hspace{10pt}0 \; \mu\neq \lambda\\
+			\hspace{10pt}|| \\
+			(\p_\mu v_\lambda)\\
+			\p_\mu \p_\lambda = \0\\
+			\lambda\neq \mu
+		\end{array} = \lambda\p_\lambda v_\lambda = \dunderline{\lambda\cdot v_\lambda}\\
+		\Rightarrow \lambda \text{ с.ч. }\D, v_\lambda$ соотв. с.в. $\D\\
+		\Rightarrow \boxed{\begin{matrix}
+				Im\p_\lambda\subseteq V^\D_\lambda \text{ собств. подпр-во }\D\text{, отвечающ. с.ч. }\lambda\\
+				V = \bigoplus\limits_\lambda Im\p_\lambda \text{ дизъюнктны}
+			\end{matrix}} \Rightarrow Im\p_\lambda = V^\D_\lambda$\\\\
+		Объединение базисов $Im\p_\lambda = $ базис $V$\\
+		Каждый вектор из $Im\p_\lambda$ -- это с.в. $\D\\
+		\Rightarrow$ у $V$  есть базис из с.в. $\Leftrightarrow D$ о.п.с.\\
+		$\B = \A - \D = \A \E - \sum\limits_\lambda \lambda \p_\lambda = \A \sum\limits_\lambda \p_\lambda - \sum\limits_\lambda \lambda\p_\lambda = \sum\limits_\lambda (\A -\lambda\E) \p_\lambda \ns
+		\nu = \underset{\lambda}{max}\ m(\lambda) \; \underset{\text{мин. мн-н }\A}{\phi(t)} = \prod\limits_\lambda(t-\lambda)^{m(\lambda)}\nb
+		\B^\nu = (\sum\limits_\lambda(\A - \lambda \E) \p_\lambda)^\nu = \sum\limits_\lambda(\A - \lambda\E) ^\nu \p_\lambda = \\
+		\phantom{se} \hspace{20pt}\begin{matrix}
+			\p_\lambda \p_\mu = \0\\
+			\lambda\neq \mu\\
+			\p^2_\lambda = \p_\lambda
+		\end{matrix}\n
+		= \sum\limits_\lambda \underset{\stackrel{\nwarrow \nearrow}{\text{все операторы перестановочны}}}
+		{(\A - \lambda \E)^\nu \underbracket{f_\lambda (\A) \phi_\lambda (\A)}_{\p_\lambda}} = \n
+		\sum\limits_\lambda(\A - \lambda\E)^{\nu - m(\lambda)} f_\lambda(\A) \cdot \underbracket{(\A - \lambda\E)^{m(\lambda)} \phi_\lambda (\A)}_{\phi(\A) = \0} = 0\\
+		\phantom{}\hspace{200pt}\B \text{ нильпотент}\\
+		\B = \sum\limits_\lambda\underset{\stackrel{\nwarrow\nearrow}{\text{перестановочны}}}{(\A - \lambda\E)\p}\n
+		D = \sum\limits_\mu \mu \p_\mu\n
+		\D\B = \B\D
+		$
+	\end{proof}
+	\begin{remark}\
+		\begin{mylist}
+			\item $\B = \sum\limits_\lambda(\A - \lambda\E) \p_\lambda = \sum\limits_\lambda \B_\lambda\\
+			\B_\lambda = (\A-\lambda\E)|_{Im\p_\lambda = K_\lambda}$
+			\item $\A, \D, \B $ все три оператора взаимно-перестановочны\\
+			$\A\D = \D\A\\
+			\A\B = \B\A$
+		\end{mylist}
+	\end{remark}
+	\begin{examples}\ \\
+		$A = \begin{pmatrix}
+			1 & -3 & 4\\
+			4 & -7 & 8\\
+			5 & -7 & 5
+		\end{pmatrix} \begin{matrix}
+			\lambda_1 = -1\\
+			\lambda_2 = 3
+		\end{matrix} \; \quad\D = -1\p_1 + 3\p_2\n
+		\p_1 = \begin{pmatrix}
+			0 & 1 & -1\\
+			-2 & 3 & -2\\
+			-2 & 2 & -1
+		\end{pmatrix} \ \p_2 = \begin{pmatrix}
+			1 & -1 & 1\\
+			2 & -2 & 2\\
+			2 & -2 & 2
+		\end{pmatrix}\n
+		D = \begin{pmatrix}
+			0 & -1 & 1\\
+			2 & -3 & 2\\
+			2 & -2 & 1
+		\end{pmatrix} + \begin{pmatrix}
+			3 & -3 & 3\\
+			6 & -6 & 6\\
+			6 & -6 & 6
+		\end{pmatrix} = \begin{pmatrix}
+			3 & -4 & 4\\
+			8 & -9 & 8\\
+			8 & -8 & 7
+		\end{pmatrix}\n
+		B = A - D = \begin{pmatrix}
+			-2 & 1 & 0\\
+			-4 & 2 & 0\\
+			-2 & 1 & 0
+		\end{pmatrix}\n
+		\nu = \underset{\lambda_{1, 2}}{max} \ m(\lambda) = 2\n
+		B^2 \overset{?}{=} \0 \; \quad B^2 = \begin{pmatrix}
+			-2 & 1 & 0\\
+			-4 & 2 & 0\\
+			-2 & 1 & 0
+		\end{pmatrix}\begin{pmatrix}
+			-2 & 1 & 0\\
+			-4 & 2 & 0\\
+			-2 & 1 & 0
+		\end{pmatrix} = \begin{pmatrix}
+			0 & 0 & 0\\
+			0 & 0 & 0\\
+			0 & 0 & 0
+		\end{pmatrix}\n
+		\begin{pmatrix}
+			1 & -3 & 4\\
+			4 & -7 & 8\\
+			6 & -7 & 7
+		\end{pmatrix} \underset{\text{Разложение Жордана}}{=} \underset{\text{Диагонализ.}}{\begin{pmatrix}
+				3 & -4 & 4\\
+				8 & -9 & 8\\
+				8 & -8 & 7
+			\end{pmatrix}} + \underset{\text{Нильпотент.}}{\begin{pmatrix}
+				-2 & 1 & 0\\
+				-4 & 2 & 0\\
+				-2 & 1 & 0
+			\end{pmatrix}}
+		$
+	\end{examples}
+	\begin{theorem}[Единственность разложения Жордана]\ 
+		\begin{multicols}{2}
+			Разложение Жордана определяется единственным образом. (Рис. 1)\\
+			\begin{Figure}
+				\centering
+				\includegraphics[width=100px]{Jordan} 
+				\captionof{figure}{}
+			\end{Figure}
+		\end{multicols}
+	\end{theorem}
+	\begin{proof}
+		$\pu \A = \underset{\text{о.п.с.}}{\D'} + \underset{\text{Нильпотент}}{\mathcal{C}} \; \; \; \D'
+		\mathcal C = \mathcal C \D'$\n
+		Т.к. $\D'$ о.п.с., то $\D' = \sum\limits_{\mu \in M} \mu Q_\mu$\n
+		$M$ -- множество с.ч. $\D'\\
+		Q_\mu$ спектральные проекторы\n
+		$Q_\mu : V\rightarrow V^\nu_\mu\n
+		\sum\limits_\mu Q_\mu = \E$\n
+		\underline{Достаточно доказать: }$\D' = \D$
+		\begin{mylist}
+			\item Множество $M$ совпадает с множеством корней $\phi$ -- минимальн. мн-н $\A\\
+			\slide{1in} \{\mu\} = \{\lambda\}$
+			\item $ImQ_\mu = K_\mu \leftarrow$ корневое подпространство $\A$, отвеч. с.ч. $\mu \ (Im\p_\lambda = K_\lambda)$
+		\end{mylist}
+		\begin{mylist}
+			\item
+			$(\A - \mu\E) Q_\mu = (\sum\limits_\nu \nu Q_\nu + \mathcal C - \mu \sum\limits_\nu Q_\nu) Q_\mu 
+			= \mathcal C Q_\mu\\
+			\slide{1.4in} \begin{matrix}
+				Q_\nu Q_\mu = 0\\
+				\nu \neq \mu
+			\end{matrix} \; \; \quad Q^2_\mu = Q\n
+			(\A - \mu \E)^k Q_\mu$ \belowbaseline[-12pt]{$ \begin{array}{l}
+					=\ \mathcal C^k Q_\mu\\
+					\uparrow\\
+					\text{Верно, если }\mathcal C Q_\mu = Q_\mu \mathcal C
+				\end{array}$}\n
+			$\Rightarrow$ докажем: $\mathcal C Q_\mu = Q_\mu \mathcal C\\
+			\pu \lambda \neq \mu \; \; (\lambda-\mu) Q_\lambda \mathcal C Q_\mu = 
+			\underset{Q_\lambda \D'}{(\lambda Q_\lambda)} \mathcal C Q_\mu - 
+			Q_\lambda \mathcal C \underbracket{(\mu Q_\mu)}_{\D' Q_\mu} = \n
+			\D' Q_\mu = \sum\limits_\lambda Q_\lambda Q_\mu = \mu Q_\mu = Q_\mu \D' \n
+			Q_\lambda(\underset{\stackrel{||}{\0}}{\D'\mathcal C - \mathcal C \D'}) Q_\mu = \0$\n
+			$\lambda \neq \mu \quad \quad Q_\lambda \mathcal C Q_\mu = \0 = Q_\mu \mathcal C Q_\lambda\n
+			\underbrace{\sum\limits_\lambda Q_\lambda}_\E \mathcal C Q_\mu = Q_\lambda \mathcal C Q_\lambda = 
+			\underset{\boxed{\E}}{\dunderline{\boxed{\sum\limits_\lambda} Q_\mu \mathcal C \boxed{Q_\lambda}}}\n
+			\boxed{\mathcal C Q_\mu = Q_\mu C}\!\n
+			\Rightarrow (\A -\mu \E)^k Q_\mu = \mathcal C^k Q_\mu\n
+			k(\mu) = min K$, такой что $\mathcal C^k Q_\mu = \0$\n
+			Такое $K(\mu)$ обязательно найдется, т.к. $\mathcal C$ -- нильпотент.\\
+			$(\A - \mu \E)^{k(\mu)} Q_\mu = \0\n
+			(t-\mu)^{k(\mu)}$ -- минимальный аннулятор элементов $imQ_\mu\n
+			Im Q_\mu \subseteq Ker(\A - \mu\E)^{k(\mu)}$\n
+			$\phi$ минимальный многочлен $\A \Rightarrow \phi(\A)$ аннулирует любые элементы $V$, \\
+			в частности элементы $ImQ_\mu$\\
+			Т.е. $\phi(t) $ аннулятор элементов $ImQ_\mu \Rightarrow \phi(t) \vdots (t-\mu)^{k(\mu)} \leftarrow$ 
+			минимальный аннулятор для $ImQ_\mu\n
+			\Rightarrow $ верно $\forall \mu \in M\n
+			\psi(t) = \prod\limits_{\mu \in M} (t-\mu)^{k(\mu)} \n
+			\Rightarrow \phi \vdots \psi$\n
+			Покажем, что $\psi$ аннулятор $\A\\
+			\psi(\A) = \psi(\A)\cdot\E = \psi(\A) \sum\limits_{\mu \in M} Q_\mu = \sum\limits_{\mu \in M}
+			\prod\limits_{\nu \in M} \underset{\stackrel{\uparrow}{\text{перестановочны}}}{(\A - \nu \E)^{k(\nu)}}Q_\mu = \n
+			\sum\limits_{\mu \in M} \prod\limits_{\nu \neq \mu} (\A - \nu \E)^{k(\nu)} 
+			\underbracket{(\A - \mu \E)^{k(\mu)} Q_\mu}_{\stackrel{||}{\0}} = \0\n
+			\Rightarrow \psi$ аннулятор $\A \Rightarrow \psi \vdots \phi$ минимальный аннулятор\\
+			$\Rightarrow \psi \equiv \phi \Rightarrow \{\mu \in M\} = \{\lambda \text{ -- корни }\phi\}\n
+			\slide{50pt} \begin{matrix}K(\mu) = m(\lambda)\\
+			\mu = \lambda\end{matrix}$
+			\item \belowbaseline[-12pt]{$
+			\begin{array}{ll}
+				(\A - \mu\E)^{k(\mu)} Q_\mu & = \0\\
+				\slide{20pt}||\\
+				(\A - \mu\E)^{m(\mu)} Q_\mu & = \0
+			\end{array}$}\n
+			$\mu$ корень $\phi\n
+			Im Q_\mu \subseteq Ker(\A - \mu \E)^{m(\mu)} = \underset{\text{Корневое подпр-во}}{K_\mu}
+			= Im\p_\mu\n
+			\left.\begin{array}{ll}
+				\bigoplus\limits_\mu K_\mu & = V\\
+				\bigoplus\limits_\mu Im Q_\mu & = V
+			\end{array}\right\} \Rightarrow Im Q_\mu = K_\mu
+			\Rightarrow \D' = \D \Rightarrow \mathcal C = \B$
+		\end{mylist}
+	\end{proof}
+	\begin{theorem}
+		$\A = \D + \B$ разложение Жордана\\
+		$\Rightarrow \chi_\A(t) = \chi_\D(t)$
+	\end{theorem}
+	\begin{proof}
+		$(\chi_\A(t))^k = (det(\A-t\E))^k = det(\A - t\E)^k\n
+		\B^\nu = \0\n
+		\mu\text{ -- не корень   } \underset{\text{не зависит от }t}{(\chi_\A(\mu))^\nu} = 
+		det((\A-\mu\E)^\nu - \underbracket{(t\B)^\nu}_{\stackrel{||}{\0}}) = \n
+		= det(\underset{t = 1}{\A - \mu\E - t\B}) \cdot det(\underset{t=0}{(\A-\mu\E)^{\nu-1} + (\A - \mu\E)^{\nu-2} t \B} + \ldots + (\A - \mu\E)(t\B)^{\nu - 2} + (t\B)^{\nu - 1})$\n
+		\textbf{$\mu$ -- не корень}\\
+		$(\underset{\stackrel{\nparallel}{0}}{\chi_\A (\mu))^\nu}
+		= det(\underset{\boxed\D}{\dunderline{\boxed\A - \mu \E \boxed{-\B}}}) \cdot
+		det(\A - \mu \E)^{\nu - 1} = \n
+		= \underbracket{det(\D - \mu \E)}_{\chi_\D(\mu)} \underbracket{(det(\A - \mu\E))^{\nu-1}}_{(\chi_\A(\mu))^{\nu-1}}\n
+		\chi_\A(\mu) = \chi_\D(\mu)$
+	\end{proof}	
+	\begin{corollary}
+		Если $\A = \D + \B$ разложение Жордана\n
+		То $det\A = det\D$
+	\end{corollary}
+	\begin{proof}
+		Очевидно, $\chi_\A(0) = \chi_\D(0)$
+	\end{proof}
+	\begin{corollary}
+		$\boxed{dim K_\lambda = \alpha(\lambda)}$
+	\end{corollary}
+	\begin{proof}
+		$\chi_\A(t) = \chi_\D(t) \Rightarrow \alpha(\lambda) = \alpha^\D(\lambda) \underset{\stackrel{\uparrow}{\text{о.п.с.}}}{=} \gamma^\D(\lambda) = dim \p_\lambda = dim K_\lambda\\
+		\forall \lambda \text{ корня }\chi \text{ с.ч. (I, II)}$
+	\end{proof}
+	\subsection{Жорданова форма матрицы, Жорданов базис}
+	
 \end{document}
