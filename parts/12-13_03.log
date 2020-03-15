@@ -1,12 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  15 MAR 2020 03:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  14 MAR 2020 22:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**12-13_03.tex
+(./12-13_03.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+(/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2012/05/23 Federico Garcia
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks14
+\verbatim@line=\toks15
+\verbatim@in@stream=\read1
+)
+Preamble taken from file `../main.tex'
+(../main.tex (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
@@ -25,8 +34,8 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
+\inpenc@prehook=\toks16
+\inpenc@posthook=\toks17
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
@@ -566,7 +575,7 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\@emptytoks=\toks16
+\@emptytoks=\toks18
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
@@ -582,8 +591,8 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/systeme/systeme.tex
-\SYS@systemecode=\toks17
-\SYS@systempreamble=\toks18
+\SYS@systemecode=\toks19
+\SYS@systempreamble=\toks20
 \SYSeqnum=\count91
 )
 Package: systeme 2018/01/01 v0.31 Mise en forme de systemes d'equations (CT)
@@ -598,7 +607,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
+\@emptytoks=\toks21
 \ex@=\dimen104
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -628,42 +637,42 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip10
 \c@parentequation=\count99
 \dspbrk@lvl=\count100
-\tag@help=\toks20
+\tag@help=\toks22
 \row@=\count101
 \column@=\count102
 \maxfields@=\count103
-\andhelp@=\toks21
+\andhelp@=\toks23
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
 \tagshift@=\dimen109
 \tagwidth@=\dimen110
 \totwidth@=\dimen111
 \lineht@=\dimen112
-\@envbody=\toks22
+\@envbody=\toks24
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
-\thm@style=\toks24
-\thm@bodyfont=\toks25
-\thm@headfont=\toks26
-\thm@notefont=\toks27
-\thm@headpunct=\toks28
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
 \thm@preskip=\skip46
 \thm@postskip=\skip47
 \thm@headsep=\skip48
-\dth@everypar=\toks29
+\dth@everypar=\toks31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks30
+\KV@toks@=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
@@ -723,7 +732,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen124
-\enit@toks=\toks31
+\enit@toks=\toks33
 \enit@inbox=\box28
 \enitdp@description=\count108
 )
@@ -804,7 +813,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen139
 \Gm@layouthoffset=\dimen140
 \Gm@layoutvoffset=\dimen141
-\Gm@dimlist=\toks32
+\Gm@dimlist=\toks34
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
@@ -813,7 +822,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen142
 \extrarowheight=\dimen143
-\NC@list=\toks33
+\NC@list=\toks35
 \extratabsurround=\skip56
 \backup@length=\skip57
 )
@@ -823,7 +832,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@target=\dimen147
 \TX@delta=\dimen148
 \TX@cols=\count121
-\TX@ftn=\toks34
+\TX@ftn=\toks36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathalfa/mathalfa.sty
 Package: mathalfa 2017/02/23 - 1.09mathalfa (License LPPL) Michael Sharpe
@@ -833,8 +842,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks35
-\XKV@tempa@toks=\toks36
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
 )
 \XKV@depth=\count122
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -874,7 +883,7 @@ sep char (CT)
 \WF@size=\dimen150
 \c@WF@wrappedlines=\count127
 \WF@box=\box60
-\WF@everypar=\toks37
+\WF@everypar=\toks39
 Package: wrapfig 2003/01/31  v 3.6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
@@ -913,72 +922,51 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPtop=\skip62
 \rotFPbot=\skip63
 \rot@float@box=\box61
-\rot@mess@toks=\toks38
-)
-(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
-Package: cancel 2013/04/12 v2.2 Cancel math terms
-)
-(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box62
-\UL@hyphenbox=\box63
-\UL@skip=\skip64
-\UL@hook=\toks39
-\UL@height=\dimen158
-\UL@pe=\count130
-\UL@pixel=\dimen159
-\ULC@box=\box64
-Package: ulem 2012/05/18
-\ULdepth=\dimen160
+\rot@mess@toks=\toks40
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks40
-\verbatim@line=\toks41
-\verbatim@in@stream=\read1
+)
+\c@theorem=\count130
+\c@lemma=\count131
+\c@defin=\count132
+\c@corollary=\count133
 ))
-\c@theorem=\count131
-\c@lemma=\count132
-\c@defin=\count133
-\c@corollary=\count134
- (./main.aux
+(./12-13_03.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
-
-(/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
-\openout1 = `main.aux'.
+\openout1 = `12-13_03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
-\scratchdimen=\dimen161
-\scratchbox=\box65
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count138
-\MPscratchDim=\dimen162
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count134
+\scratchdimen=\dimen158
+\scratchbox=\box62
+\nofMPsegments=\count135
+\nofMParguments=\count136
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen159
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1068,519 +1056,24 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 91.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 91.
+[1
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+lasy on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
-
- [1] (./parts/7_1-7_2.tex
-LaTeX Font Info:    Try loading font information for U+bbold on input line 7.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd) [2]
-<imgs/1.png, id=26, 507.39563pt x 211.54031pt>
-File: imgs/1.png Graphic file (type png)
-<use imgs/1.png>
-Package pdftex.def Info: imgs/1.png  used on input line 69.
-(pdftex.def)             Requested size: 250.93842pt x 104.61754pt.
- [3 <./imgs/1.png>]
-<imgs/2.png, id=32, 483.30562pt x 201.75375pt>
-File: imgs/2.png Graphic file (type png)
-<use imgs/2.png>
-Package pdftex.def Info: imgs/2.png  used on input line 162.
-(pdftex.def)             Requested size: 250.93842pt x 104.75246pt.
- [4 <./imgs/2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 199--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 199--214
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 223--231
-
- []
-
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 232--233
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 277--279
-
- []
-
-<imgs/3.png, id=44, 240.9pt x 207.02344pt>
-File: imgs/3.png Graphic file (type png)
-<use imgs/3.png>
-Package pdftex.def Info: imgs/3.png  used on input line 279.
-(pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
-<imgs/4.png, id=45, 240.9pt x 207.02344pt>
-File: imgs/4.png Graphic file (type png)
-<use imgs/4.png>
-Package pdftex.def Info: imgs/4.png  used on input line 286.
-(pdftex.def)             Requested size: 150.56305pt x 129.39247pt.
-[6 <./imgs/3.png> <./imgs/4.png>]
-Underfull \hbox (badness 10000) in alignment at lines 352--356
-[] [] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 349--364
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 368--374
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 402--403
-
- []
-
-<imgs/5.png, id=56, 471.32608pt x 401.15086pt>
-File: imgs/5.png Graphic file (type png)
-<use imgs/5.png>
-Package pdftex.def Info: imgs/5.png  used on input line 411.
-(pdftex.def)             Requested size: 200.75073pt x 170.8633pt.
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 12.60004pt on input line 416.
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 8.40002pt on input line 416.
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 6.30002pt on input line 416.
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--427
-
- []
-
-<imgs/6.png, id=57, 246.13696pt x 201.09914pt>
-File: imgs/6.png Graphic file (type png)
-<use imgs/6.png>
-Package pdftex.def Info: imgs/6.png  used on input line 434.
-(pdftex.def)             Requested size: 100.37537pt x 82.00931pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 427--435
-
- []
-
-[8 <./imgs/5.png> <./imgs/6.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 475--486
-
- []
-
-[9]) (./parts/7_3.tex [10]
-Underfull \hbox (badness 10000) in paragraph at lines 66--83
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-<imgs/7.png, id=75, 278.54062pt x 222.07968pt>
-File: imgs/7.png Graphic file (type png)
-<use imgs/7.png>
-Package pdftex.def Info: imgs/7.png  used on input line 133.
-(pdftex.def)             Requested size: 150.56305pt x 120.04662pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 139--142
-
- []
-
-
-Overfull \hbox (34.58737pt too wide) in paragraph at lines 144--164
-[]$ $[]$ $[]$
- []
-
-[12 <./imgs/7.png>]
-<imgs/8.png, id=81, 298.86656pt x 222.07968pt>
-File: imgs/8.png Graphic file (type png)
-<use imgs/8.png>
-Package pdftex.def Info: imgs/8.png  used on input line 189.
-(pdftex.def)             Requested size: 135.50624pt x 100.6906pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--210
-
- []
-
-
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 166--210
-[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 166--210
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
-
- []
-
-
-Overfull \hbox (2.0144pt too wide) detected at line 222
-\OML/cmm/m/it/12 trB \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 b[] \OT1/cmr/m/n/12 
-= [] [] \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 AC\OT1/cmr/m/n/12
- )[] = [] [] [] \OML/cmm/m/it/12 C[]a[]C[] \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/i
-t/12 a[] [] \OT1/cmr/m/n/12 = [] \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 = \OML/cm
-m/m/it/12 trA
- []
-
-[13 <./imgs/8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-<imgs/9.png, id=86, 145.29282pt x 207.77625pt>
-File: imgs/9.png Graphic file (type png)
-<use imgs/9.png>
-Package pdftex.def Info: imgs/9.png  used on input line 238.
-(pdftex.def)             Requested size: 145.29245pt x 207.77573pt.
-<imgs/10.png, id=87, 155.07938pt x 207.77625pt>
-File: imgs/10.png Graphic file (type png)
-<use imgs/10.png>
-Package pdftex.def Info: imgs/10.png  used on input line 247.
-(pdftex.def)             Requested size: 155.07898pt x 207.77573pt.
-
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 236--255
-[]$ $[]$ 
- []
-
-
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 236--255
-[]$ $[]$ 
- []
-
-[14 <./imgs/9.png> <./imgs/10.png>] [15]) (./parts/7_4-7_5.tex
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-<imgs/11.png, id=97, 222.07968pt x 134.75343pt>
-File: imgs/11.png Graphic file (type png)
-<use imgs/11.png>
-Package pdftex.def Info: imgs/11.png  used on input line 28.
-(pdftex.def)             Requested size: 100.37537pt x 60.90578pt.
-
-Overfull \hbox (31.98517pt too wide) in paragraph at lines 26--34
-[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--34
-
- []
-
-[16 <./imgs/11.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 53--69
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 74--88
-
- []
-
-[17]
-File: imgs/11.png Graphic file (type png)
-<use imgs/11.png>
-Package pdftex.def Info: imgs/11.png  used on input line 91.
-(pdftex.def)             Requested size: 162.60915pt x 98.66733pt.
-
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 89--108
-[]$ $[]$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--129
-
- []
-
-[18] [19] [20] [21]
-
-LaTeX Warning: Command \o invalid in math mode on input line 334.
-
-
-LaTeX Warning: Command \o invalid in math mode on input line 334.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 340--341
-
- []
-
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 15.12003pt on input line 350.
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 10.50003pt on input line 350.
-LaTeX Font Info:    Font shape `U/BOONDOX-scro/m/n' will be
-(Font)              scaled to size 7.35002pt on input line 350.
-
-Underfull \hbox (badness 10000) in paragraph at lines 366--367
-
- []
-
-[22]
-Underfull \hbox (badness 10000) in paragraph at lines 389--390
-
- []
-
-[23]
-Underfull \hbox (badness 10000) in paragraph at lines 464--480
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 482--484
-
- []
-
-[24]
-Underfull \hbox (badness 10000) in paragraph at lines 523--524
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 535--554
-
- []
-
-[25] [26] [27]) (./parts/7_6-7_7.tex
-Overfull \hbox (27.776pt too wide) in paragraph at lines 4--39
-[]$ 
- []
-
-[28]
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-
- []
-
-
-Overfull \hbox (2.99925pt too wide) in paragraph at lines 105--120
-[]$ $[]$ 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--120
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 193--200
-
- []
-
-[31] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--275
-
- []
-
-[33] [34] [35]) (./parts/7_8-7_9.tex
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 6--22
-$[]$ $[]$ 
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 45--49
-
- []
-
-[37]
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 109.
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--142
-
- []
-
-[38] [39]
-Underfull \hbox (badness 10000) in paragraph at lines 183--189
-
- []
-
-[40]
-Underfull \hbox (badness 10000) in paragraph at lines 232--248
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 272--277
-
- []
-
-[41]
-Underfull \hbox (badness 10000) in paragraph at lines 299--335
-
- []
-
-[42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-
- []
-
-<imgs/Jordan.png, id=200, 863.225pt x 614.295pt>
-File: imgs/Jordan.png Graphic file (type png)
-<use imgs/Jordan.png>
-Package pdftex.def Info: imgs/Jordan.png  used on input line 415.
-(pdftex.def)             Requested size: 100.37537pt x 71.42511pt.
-[44 <./imgs/Jordan.png>] [45]
-<imgs/basis.jpg, id=208, 1171.37625pt x 886.31125pt>
-File: imgs/basis.jpg Graphic file (type jpg)
-<use imgs/basis.jpg>
-Package pdftex.def Info: imgs/basis.jpg  used on input line 576.
-(pdftex.def)             Requested size: 271.0125pt x 205.05093pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--584
-
- []
-
-<imgs/castle.jpg, id=209, 2018.54124pt x 1732.4725pt>
-File: imgs/castle.jpg Graphic file (type jpg)
-<use imgs/castle.jpg>
-Package pdftex.def Info: imgs/castle.jpg  used on input line 633.
-(pdftex.def)             Requested size: 271.0125pt x 232.6048pt.
-) (./parts/12-13_03.tex
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 527--3
-[]$ $[]$ 
- []
-
-
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 527--3
-[]$ $[]$ 
- []
-
-[46] [47 <./imgs/basis.jpg>] [48 <./imgs/castle.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-[49]
-<imgs/sphere.png, id=225, 342.5297pt x 224.33812pt>
-File: imgs/sphere.png Graphic file (type png)
-<use imgs/sphere.png>
-Package pdftex.def Info: imgs/sphere.png  used on input line 110.
-(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
-File: imgs/sphere.png Graphic file (type png)
-<use imgs/sphere.png>
-Package pdftex.def Info: imgs/sphere.png  used on input line 110.
-(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
-File: imgs/sphere.png Graphic file (type png)
-<use imgs/sphere.png>
-Package pdftex.def Info: imgs/sphere.png  used on input line 110.
-(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
-
-Overfull \hbox (2.61047pt too wide) in paragraph at lines 45--123
-[] [] 
- []
-
-[50] [51 <./imgs/sphere.png>]
-<imgs/pyramid.jpg, id=234, 1761.58125pt x 1535.7375pt>
-File: imgs/pyramid.jpg Graphic file (type jpg)
-<use imgs/pyramid.jpg>
-Package pdftex.def Info: imgs/pyramid.jpg  used on input line 160.
-(pdftex.def)             Requested size: 379.41585pt x 330.76297pt.
-<imgs/sex.png, id=235, 209.28188pt x 188.95593pt>
-File: imgs/sex.png Graphic file (type png)
-<use imgs/sex.png>
-Package pdftex.def Info: imgs/sex.png  used on input line 161.
-(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
-File: imgs/sex.png Graphic file (type png)
-<use imgs/sex.png>
-Package pdftex.def Info: imgs/sex.png  used on input line 161.
-(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
-File: imgs/sex.png Graphic file (type png)
-<use imgs/sex.png>
-Package pdftex.def Info: imgs/sex.png  used on input line 161.
-(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
-<imgs/pyramid2.jpg, id=236, 2935.96875pt x 1471.4975pt>
-File: imgs/pyramid2.jpg Graphic file (type jpg)
-<use imgs/pyramid2.jpg>
-Package pdftex.def Info: imgs/pyramid2.jpg  used on input line 173.
-(pdftex.def)             Requested size: 542.02501pt x 271.66145pt.
- [52] [53 <./imgs/pyramid.jpg> <./imgs/sex.png>]
-[54 <./imgs/pyramid2.jpg>]) [55] (./main.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./12-13_03.aux) ) 
 Here is how much of TeX's memory you used:
- 8399 strings out of 492982
- 118173 string characters out of 6134895
- 235832 words of memory out of 5000000
- 11675 multiletter control sequences out of 15000+600000
- 39677 words of font info for 113 fonts, out of 8000000 for 9000
+ 7960 strings out of 492982
+ 112357 string characters out of 6134895
+ 203203 words of memory out of 5000000
+ 11360 multiletter control sequences out of 15000+600000
+ 4740 words of font info for 16 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,27n,92p,1414b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvip
-s/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/b
-bold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-
-type1/bbold5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/
-bbold7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm12
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (56 pages, 2012086 bytes).
+ 62i,5n,94p,489b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/sh
+are/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1200.pfb>
+Output written on 12-13_03.pdf (1 page, 10550 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 13 PDF objects out of 1000 (max. 8388607)
+ 8 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
