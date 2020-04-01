@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  14 MAR 2020 22:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  1 APR 2020 19:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -924,13 +924,28 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box61
 \rot@mess@toks=\toks40
 )
+(/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2013/04/12 v2.2 Cancel math terms
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box62
+\UL@hyphenbox=\box63
+\UL@skip=\skip64
+\UL@hook=\toks41
+\UL@height=\dimen158
+\UL@pe=\count130
+\UL@pixel=\dimen159
+\ULC@box=\box64
+Package: ulem 2012/05/18
+\ULdepth=\dimen160
+)
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2012/05/23 Federico Garcia
 )
-\c@theorem=\count130
-\c@lemma=\count131
-\c@defin=\count132
-\c@corollary=\count133
+\c@theorem=\count131
+\c@lemma=\count132
+\c@defin=\count133
+\c@corollary=\count134
 ))
 (./12-13_03.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
@@ -956,17 +971,17 @@ LaTeX Font Info:    ... okay on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen158
-\scratchbox=\box62
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks41
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen159
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks42
+\scratchcounter=\count135
+\scratchdimen=\dimen161
+\scratchbox=\box65
+\nofMPsegments=\count136
+\nofMParguments=\count137
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count138
+\MPscratchDim=\dimen162
+\MPnumerator=\count139
+\makeMPintoPDFobject=\count140
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1056,24 +1071,103 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 4.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+bbold on input line 96.
+(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
+<../imgs/sphere.png, id=1, 342.5297pt x 224.33812pt>
+File: ../imgs/sphere.png Graphic file (type png)
+<use ../imgs/sphere.png>
+Package pdftex.def Info: ../imgs/sphere.png  used on input line 110.
+(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
+File: ../imgs/sphere.png Graphic file (type png)
+<use ../imgs/sphere.png>
+Package pdftex.def Info: ../imgs/sphere.png  used on input line 110.
+(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
+File: ../imgs/sphere.png Graphic file (type png)
+<use ../imgs/sphere.png>
+Package pdftex.def Info: ../imgs/sphere.png  used on input line 110.
+(pdftex.def)             Requested size: 216.80669pt x 142.00127pt.
+
+Overfull \hbox (2.61047pt too wide) in paragraph at lines 45--123
+[] [] 
+ []
+
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./12-13_03.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <../imgs/sphere.png>]
+<../imgs/pyramid.jpg, id=29, 1761.58125pt x 1535.7375pt>
+File: ../imgs/pyramid.jpg Graphic file (type jpg)
+<use ../imgs/pyramid.jpg>
+Package pdftex.def Info: ../imgs/pyramid.jpg  used on input line 160.
+(pdftex.def)             Requested size: 379.41585pt x 330.76297pt.
+<../imgs/sex.png, id=30, 209.28188pt x 188.95593pt>
+File: ../imgs/sex.png Graphic file (type png)
+<use ../imgs/sex.png>
+Package pdftex.def Info: ../imgs/sex.png  used on input line 161.
+(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
+File: ../imgs/sex.png Graphic file (type png)
+<use ../imgs/sex.png>
+Package pdftex.def Info: ../imgs/sex.png  used on input line 161.
+(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
+File: ../imgs/sex.png Graphic file (type png)
+<use ../imgs/sex.png>
+Package pdftex.def Info: ../imgs/sex.png  used on input line 161.
+(pdftex.def)             Requested size: 85.35826pt x 77.06589pt.
+<../imgs/pyramid2.jpg, id=31, 2935.96875pt x 1471.4975pt>
+File: ../imgs/pyramid2.jpg Graphic file (type jpg)
+<use ../imgs/pyramid2.jpg>
+Package pdftex.def Info: ../imgs/pyramid2.jpg  used on input line 173.
+(pdftex.def)             Requested size: 542.02501pt x 271.66145pt.
+[3] [4 <../imgs/pyramid.jpg> <../imgs/sex.png>] [5 <../imgs/pyramid2.jpg>]
+[6] (./12-13_03.aux) ) 
 Here is how much of TeX's memory you used:
- 7960 strings out of 492982
- 112357 string characters out of 6134895
- 203203 words of memory out of 5000000
- 11360 multiletter control sequences out of 15000+600000
- 4740 words of font info for 16 fonts, out of 8000000 for 9000
+ 8215 strings out of 492982
+ 115970 string characters out of 6134895
+ 221906 words of memory out of 5000000
+ 11557 multiletter control sequences out of 15000+600000
+ 19284 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,5n,94p,489b,156s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/sh
-are/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/share/texmf/fonts/typ
-e1/public/cm-super/sfrm1200.pfb>
-Output written on 12-13_03.pdf (1 page, 10550 bytes).
+ 62i,23n,94p,489b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.e
+nc}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+msy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+
+Output written on 12-13_03.pdf (6 pages, 776494 bytes).
 PDF statistics:
- 13 PDF objects out of 1000 (max. 8388607)
- 8 compressed objects within 1 object stream
+ 107 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
