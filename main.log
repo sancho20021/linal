@@ -1,362 +1,48 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  15 MAR 2020 03:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.3.31)  2 APR 2020 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
-LaTeX2e <2017-04-15>
-Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+LaTeX2e <2018-12-01>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2015/03/17 v1.2c Input encoding file
+Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
-Now handling font encoding OML ...
-... no UTF-8 mapping file for font encoding OML
-Now handling font encoding T1 ...
-... processing UTF-8 mapping file for font encoding T1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AB (decimal 171)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00BB (decimal 187)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C0 (decimal 192)
-   defining Unicode char U+00C1 (decimal 193)
-   defining Unicode char U+00C2 (decimal 194)
-   defining Unicode char U+00C3 (decimal 195)
-   defining Unicode char U+00C4 (decimal 196)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00C7 (decimal 199)
-   defining Unicode char U+00C8 (decimal 200)
-   defining Unicode char U+00C9 (decimal 201)
-   defining Unicode char U+00CA (decimal 202)
-   defining Unicode char U+00CB (decimal 203)
-   defining Unicode char U+00CC (decimal 204)
-   defining Unicode char U+00CD (decimal 205)
-   defining Unicode char U+00CE (decimal 206)
-   defining Unicode char U+00CF (decimal 207)
-   defining Unicode char U+00D0 (decimal 208)
-   defining Unicode char U+00D1 (decimal 209)
-   defining Unicode char U+00D2 (decimal 210)
-   defining Unicode char U+00D3 (decimal 211)
-   defining Unicode char U+00D4 (decimal 212)
-   defining Unicode char U+00D5 (decimal 213)
-   defining Unicode char U+00D6 (decimal 214)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00D9 (decimal 217)
-   defining Unicode char U+00DA (decimal 218)
-   defining Unicode char U+00DB (decimal 219)
-   defining Unicode char U+00DC (decimal 220)
-   defining Unicode char U+00DD (decimal 221)
-   defining Unicode char U+00DE (decimal 222)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E0 (decimal 224)
-   defining Unicode char U+00E1 (decimal 225)
-   defining Unicode char U+00E2 (decimal 226)
-   defining Unicode char U+00E3 (decimal 227)
-   defining Unicode char U+00E4 (decimal 228)
-   defining Unicode char U+00E5 (decimal 229)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00E7 (decimal 231)
-   defining Unicode char U+00E8 (decimal 232)
-   defining Unicode char U+00E9 (decimal 233)
-   defining Unicode char U+00EA (decimal 234)
-   defining Unicode char U+00EB (decimal 235)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F0 (decimal 240)
-   defining Unicode char U+00F1 (decimal 241)
-   defining Unicode char U+00F2 (decimal 242)
-   defining Unicode char U+00F3 (decimal 243)
-   defining Unicode char U+00F4 (decimal 244)
-   defining Unicode char U+00F5 (decimal 245)
-   defining Unicode char U+00F6 (decimal 246)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+00F9 (decimal 249)
-   defining Unicode char U+00FA (decimal 250)
-   defining Unicode char U+00FB (decimal 251)
-   defining Unicode char U+00FC (decimal 252)
-   defining Unicode char U+00FD (decimal 253)
-   defining Unicode char U+00FE (decimal 254)
-   defining Unicode char U+00FF (decimal 255)
-   defining Unicode char U+0100 (decimal 256)
-   defining Unicode char U+0101 (decimal 257)
-   defining Unicode char U+0102 (decimal 258)
-   defining Unicode char U+0103 (decimal 259)
-   defining Unicode char U+0104 (decimal 260)
-   defining Unicode char U+0105 (decimal 261)
-   defining Unicode char U+0106 (decimal 262)
-   defining Unicode char U+0107 (decimal 263)
-   defining Unicode char U+0108 (decimal 264)
-   defining Unicode char U+0109 (decimal 265)
-   defining Unicode char U+010A (decimal 266)
-   defining Unicode char U+010B (decimal 267)
-   defining Unicode char U+010C (decimal 268)
-   defining Unicode char U+010D (decimal 269)
-   defining Unicode char U+010E (decimal 270)
-   defining Unicode char U+010F (decimal 271)
-   defining Unicode char U+0110 (decimal 272)
-   defining Unicode char U+0111 (decimal 273)
-   defining Unicode char U+0112 (decimal 274)
-   defining Unicode char U+0113 (decimal 275)
-   defining Unicode char U+0114 (decimal 276)
-   defining Unicode char U+0115 (decimal 277)
-   defining Unicode char U+0116 (decimal 278)
-   defining Unicode char U+0117 (decimal 279)
-   defining Unicode char U+0118 (decimal 280)
-   defining Unicode char U+0119 (decimal 281)
-   defining Unicode char U+011A (decimal 282)
-   defining Unicode char U+011B (decimal 283)
-   defining Unicode char U+011C (decimal 284)
-   defining Unicode char U+011D (decimal 285)
-   defining Unicode char U+011E (decimal 286)
-   defining Unicode char U+011F (decimal 287)
-   defining Unicode char U+0120 (decimal 288)
-   defining Unicode char U+0121 (decimal 289)
-   defining Unicode char U+0122 (decimal 290)
-   defining Unicode char U+0123 (decimal 291)
-   defining Unicode char U+0124 (decimal 292)
-   defining Unicode char U+0125 (decimal 293)
-   defining Unicode char U+0128 (decimal 296)
-   defining Unicode char U+0129 (decimal 297)
-   defining Unicode char U+012A (decimal 298)
-   defining Unicode char U+012B (decimal 299)
-   defining Unicode char U+012C (decimal 300)
-   defining Unicode char U+012D (decimal 301)
-   defining Unicode char U+012E (decimal 302)
-   defining Unicode char U+012F (decimal 303)
-   defining Unicode char U+0130 (decimal 304)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0132 (decimal 306)
-   defining Unicode char U+0133 (decimal 307)
-   defining Unicode char U+0134 (decimal 308)
-   defining Unicode char U+0135 (decimal 309)
-   defining Unicode char U+0136 (decimal 310)
-   defining Unicode char U+0137 (decimal 311)
-   defining Unicode char U+0139 (decimal 313)
-   defining Unicode char U+013A (decimal 314)
-   defining Unicode char U+013B (decimal 315)
-   defining Unicode char U+013C (decimal 316)
-   defining Unicode char U+013D (decimal 317)
-   defining Unicode char U+013E (decimal 318)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0143 (decimal 323)
-   defining Unicode char U+0144 (decimal 324)
-   defining Unicode char U+0145 (decimal 325)
-   defining Unicode char U+0146 (decimal 326)
-   defining Unicode char U+0147 (decimal 327)
-   defining Unicode char U+0148 (decimal 328)
-   defining Unicode char U+014A (decimal 330)
-   defining Unicode char U+014B (decimal 331)
-   defining Unicode char U+014C (decimal 332)
-   defining Unicode char U+014D (decimal 333)
-   defining Unicode char U+014E (decimal 334)
-   defining Unicode char U+014F (decimal 335)
-   defining Unicode char U+0150 (decimal 336)
-   defining Unicode char U+0151 (decimal 337)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0154 (decimal 340)
-   defining Unicode char U+0155 (decimal 341)
-   defining Unicode char U+0156 (decimal 342)
-   defining Unicode char U+0157 (decimal 343)
-   defining Unicode char U+0158 (decimal 344)
-   defining Unicode char U+0159 (decimal 345)
-   defining Unicode char U+015A (decimal 346)
-   defining Unicode char U+015B (decimal 347)
-   defining Unicode char U+015C (decimal 348)
-   defining Unicode char U+015D (decimal 349)
-   defining Unicode char U+015E (decimal 350)
-   defining Unicode char U+015F (decimal 351)
-   defining Unicode char U+0160 (decimal 352)
-   defining Unicode char U+0161 (decimal 353)
-   defining Unicode char U+0162 (decimal 354)
-   defining Unicode char U+0163 (decimal 355)
-   defining Unicode char U+0164 (decimal 356)
-   defining Unicode char U+0165 (decimal 357)
-   defining Unicode char U+0168 (decimal 360)
-   defining Unicode char U+0169 (decimal 361)
-   defining Unicode char U+016A (decimal 362)
-   defining Unicode char U+016B (decimal 363)
-   defining Unicode char U+016C (decimal 364)
-   defining Unicode char U+016D (decimal 365)
-   defining Unicode char U+016E (decimal 366)
-   defining Unicode char U+016F (decimal 367)
-   defining Unicode char U+0170 (decimal 368)
-   defining Unicode char U+0171 (decimal 369)
-   defining Unicode char U+0172 (decimal 370)
-   defining Unicode char U+0173 (decimal 371)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0178 (decimal 376)
-   defining Unicode char U+0179 (decimal 377)
-   defining Unicode char U+017A (decimal 378)
-   defining Unicode char U+017B (decimal 379)
-   defining Unicode char U+017C (decimal 380)
-   defining Unicode char U+017D (decimal 381)
-   defining Unicode char U+017E (decimal 382)
-   defining Unicode char U+01CD (decimal 461)
-   defining Unicode char U+01CE (decimal 462)
-   defining Unicode char U+01CF (decimal 463)
-   defining Unicode char U+01D0 (decimal 464)
-   defining Unicode char U+01D1 (decimal 465)
-   defining Unicode char U+01D2 (decimal 466)
-   defining Unicode char U+01D3 (decimal 467)
-   defining Unicode char U+01D4 (decimal 468)
-   defining Unicode char U+01E2 (decimal 482)
-   defining Unicode char U+01E3 (decimal 483)
-   defining Unicode char U+01E6 (decimal 486)
-   defining Unicode char U+01E7 (decimal 487)
-   defining Unicode char U+01E8 (decimal 488)
-   defining Unicode char U+01E9 (decimal 489)
-   defining Unicode char U+01EA (decimal 490)
-   defining Unicode char U+01EB (decimal 491)
-   defining Unicode char U+01F0 (decimal 496)
-   defining Unicode char U+01F4 (decimal 500)
-   defining Unicode char U+01F5 (decimal 501)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+0232 (decimal 562)
-   defining Unicode char U+0233 (decimal 563)
-   defining Unicode char U+1E02 (decimal 7682)
-   defining Unicode char U+1E03 (decimal 7683)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2010 (decimal 8208)
-   defining Unicode char U+2011 (decimal 8209)
-   defining Unicode char U+2012 (decimal 8210)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2015 (decimal 8213)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201A (decimal 8218)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-   defining Unicode char U+201E (decimal 8222)
-   defining Unicode char U+2030 (decimal 8240)
-   defining Unicode char U+2031 (decimal 8241)
-   defining Unicode char U+2039 (decimal 8249)
-   defining Unicode char U+203A (decimal 8250)
-   defining Unicode char U+2423 (decimal 9251)
-   defining Unicode char U+1E20 (decimal 7712)
-   defining Unicode char U+1E21 (decimal 7713)
 )
-Now handling font encoding OT1 ...
-... processing UTF-8 mapping file for font encoding OT1
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A0 (decimal 160)
-   defining Unicode char U+00A1 (decimal 161)
-   defining Unicode char U+00A3 (decimal 163)
-   defining Unicode char U+00AD (decimal 173)
-   defining Unicode char U+00B8 (decimal 184)
-   defining Unicode char U+00BF (decimal 191)
-   defining Unicode char U+00C5 (decimal 197)
-   defining Unicode char U+00C6 (decimal 198)
-   defining Unicode char U+00D8 (decimal 216)
-   defining Unicode char U+00DF (decimal 223)
-   defining Unicode char U+00E6 (decimal 230)
-   defining Unicode char U+00EC (decimal 236)
-   defining Unicode char U+00ED (decimal 237)
-   defining Unicode char U+00EE (decimal 238)
-   defining Unicode char U+00EF (decimal 239)
-   defining Unicode char U+00F8 (decimal 248)
-   defining Unicode char U+0131 (decimal 305)
-   defining Unicode char U+0141 (decimal 321)
-   defining Unicode char U+0142 (decimal 322)
-   defining Unicode char U+0152 (decimal 338)
-   defining Unicode char U+0153 (decimal 339)
-   defining Unicode char U+0174 (decimal 372)
-   defining Unicode char U+0175 (decimal 373)
-   defining Unicode char U+0176 (decimal 374)
-   defining Unicode char U+0177 (decimal 375)
-   defining Unicode char U+0218 (decimal 536)
-   defining Unicode char U+0219 (decimal 537)
-   defining Unicode char U+021A (decimal 538)
-   defining Unicode char U+021B (decimal 539)
-   defining Unicode char U+2013 (decimal 8211)
-   defining Unicode char U+2014 (decimal 8212)
-   defining Unicode char U+2018 (decimal 8216)
-   defining Unicode char U+2019 (decimal 8217)
-   defining Unicode char U+201C (decimal 8220)
-   defining Unicode char U+201D (decimal 8221)
-)
-Now handling font encoding OMS ...
-... processing UTF-8 mapping file for font encoding OMS
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
-   defining Unicode char U+00A7 (decimal 167)
-   defining Unicode char U+00B6 (decimal 182)
-   defining Unicode char U+00B7 (decimal 183)
-   defining Unicode char U+2020 (decimal 8224)
-   defining Unicode char U+2021 (decimal 8225)
-   defining Unicode char U+2022 (decimal 8226)
-)
-Now handling font encoding OMX ...
-... no UTF-8 mapping file for font encoding OMX
-Now handling font encoding U ...
-... no UTF-8 mapping file for font encoding U
-   defining Unicode char U+00A9 (decimal 169)
-   defining Unicode char U+00AA (decimal 170)
-   defining Unicode char U+00AE (decimal 174)
-   defining Unicode char U+00BA (decimal 186)
-   defining Unicode char U+02C6 (decimal 710)
-   defining Unicode char U+02DC (decimal 732)
-   defining Unicode char U+200C (decimal 8204)
-   defining Unicode char U+2026 (decimal 8230)
-   defining Unicode char U+2122 (decimal 8482)
-   defining Unicode char U+2423 (decimal 9251)
-))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2018/02/14 3.18 The Babel package
+Package: babel 2019/06/03 3.32 The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
-File: switch.def 2018/02/14 3.18 Babel switching mechanism
+File: switch.def 2019/06/03 3.32 Babel switching mechanism
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-russian/russianb.ldf
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count87
+File: babel.def 2019/06/03 3.32 Babel common definitions
+\babel@savecnt=\count88
 \U@D=\dimen103
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count88
+\bbl@dirlevel=\count89
 )
 
 Package babel Warning: No Cyrillic font encoding has been loaded so far.
@@ -370,12 +56,13 @@ Now handling font encoding T2A ...
 ... processing UTF-8 mapping file for font encoding T2A
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t2aenc.dfu
-File: t2aenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A4 (decimal 164)
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00AB (decimal 171)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
    defining Unicode char U+0400 (decimal 1024)
    defining Unicode char U+0401 (decimal 1025)
    defining Unicode char U+0402 (decimal 1026)
@@ -575,21 +262,20 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (/usr/share/texlive/texmf-dist/tex/generic/systeme/systeme.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\@xs@message=\write3
-\integerpart=\count89
-\decimalpart=\count90
+\integerpart=\count90
+\decimalpart=\count91
 )
-Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/systeme/systeme.tex
-\SYS@systemecode=\toks17
-\SYS@systempreamble=\toks18
-\SYSeqnum=\count91
+\SYS_systemecode=\toks17
+\SYS_systempreamble=\toks18
+\SYSeqnum=\count92
 )
-Package: systeme 2018/01/01 v0.31 Mise en forme de systemes d'equations (CT)
+Package: systeme 2019/01/13 v0.32 Mise en forme de systemes d'equations (CT)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2017/09/02 v2.17a AMS math features
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
@@ -608,30 +294,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count93
-\leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count95
-\DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 472.
-LaTeX Info: Redefining \dots on input line 475.
-LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
+\inf@bad=\count93
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count94
+\leftroot@=\count95
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count96
+\DOTSCASE@=\count97
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks20
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks21
 \eqnshift@=\dimen107
 \alignsep@=\dimen108
@@ -643,8 +329,8 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks23
-LaTeX Info: Redefining \[ on input line 2817.
-LaTeX Info: Redefining \] on input line 2818.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
@@ -686,16 +372,16 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count104
-\calc@Bcount=\count105
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count105
+\calc@Bcount=\count106
 \calc@Adimen=\dimen115
 \calc@Bdimen=\dimen116
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count106
+\calc@Ccount=\count107
 \calc@Cskip=\skip51
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -705,7 +391,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count107
+\g_MT_multlinerow_int=\count108
 \l_MT_multwidth_dim=\dimen117
 \origjot=\skip52
 \l_MT_shortvdotswithinadjustabove_dim=\dimen118
@@ -720,41 +406,41 @@ Package: bbold 1994/04/06 Bbold symbol package
 LaTeX Font Info:    Redeclaring math alphabet \mathbb on input line 42.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
+Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip53
 \enit@outerparindent=\dimen124
 \enit@toks=\toks31
-\enit@inbox=\box28
-\enitdp@description=\count108
+\enit@inbox=\box29
+\enit@count@id=\count109
+\enitdp@description=\count110
 )
 (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box29
+\collectedbox=\box30
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
-\c@tracingmulticols=\count109
-\mult@box=\box30
+Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
+\c@tracingmulticols=\count111
+\mult@box=\box31
 \multicol@leftmargin=\dimen125
-\c@unbalance=\count110
-\c@collectmore=\count111
-\doublecol@number=\count112
-\multicoltolerance=\count113
-\multicolpretolerance=\count114
+\c@unbalance=\count112
+\c@collectmore=\count113
+\doublecol@number=\count114
+\multicoltolerance=\count115
+\multicolpretolerance=\count116
 \full@width=\dimen126
 \page@free=\dimen127
 \premulticols=\dimen128
 \postmulticols=\dimen129
 \multicolsep=\skip54
 \multicolbaselineskip=\skip55
-\partial@page=\box31
-\last@line=\box32
+\partial@page=\box32
+\last@line=\box33
 \maxbalancingoverflow=\dimen130
-\mult@rightbox=\box33
-\mult@grightbox=\box34
-\mult@gfirstbox=\box35
-\mult@firstbox=\box36
-\@tempa=\box37
+\mult@rightbox=\box34
+\mult@grightbox=\box35
+\mult@gfirstbox=\box36
+\mult@firstbox=\box37
 \@tempa=\box38
 \@tempa=\box39
 \@tempa=\box40
@@ -771,20 +457,21 @@ Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \@tempa=\box51
 \@tempa=\box52
 \@tempa=\box53
-\c@columnbadness=\count115
-\c@finalcolumnbadness=\count116
+\@tempa=\box54
+\c@columnbadness=\count117
+\c@finalcolumnbadness=\count118
 \last@try=\dimen131
 \multicolovershoot=\dimen132
 \multicolundershoot=\dimen133
-\mult@nat@firstbox=\box54
-\colbreak@box=\box55
-\mc@col@check@num=\count117
+\mult@nat@firstbox=\box55
+\colbreak@box=\box56
+\mc@col@check@num=\count119
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -793,9 +480,9 @@ Package ifvtex Info: VTeX not detected.
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count118
-\Gm@cntv=\count119
-\c@Gm@tempcnt=\count120
+\Gm@cnth=\count120
+\Gm@cntv=\count121
+\c@Gm@tempcnt=\count122
 \Gm@bindingoffset=\dimen134
 \Gm@wd@mp=\dimen135
 \Gm@odd@mp=\dimen136
@@ -807,27 +494,31 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen142
+\ar@mcellbox=\box57
 \extrarowheight=\dimen143
 \NC@list=\toks33
 \extratabsurround=\skip56
 \backup@length=\skip57
+\ar@cellbox=\box58
 )
 \TX@col@width=\dimen144
 \TX@old@table=\dimen145
 \TX@old@col=\dimen146
 \TX@target=\dimen147
 \TX@delta=\dimen148
-\TX@cols=\count121
+\TX@cols=\count123
 \TX@ftn=\toks34
 )
-(/usr/share/texlive/texmf-dist/tex/latex/mathalfa/mathalfa.sty
-Package: mathalfa 2017/02/23 - 1.09mathalfa (License LPPL) Michael Sharpe
+(/usr/share/texlive/texmf-dist/tex/latex/mathalpha/mathalfa.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/mathalpha/mathalpha.sty
+Package: mathalpha 2019/05/20 - 1.12mathalpha (License LPPL) Michael Sharpe
 
+`mathalpha' v1.12, 2019/05/20, a renaming of mathalfa (msharpe)
 (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
@@ -836,44 +527,45 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
 )
-\XKV@depth=\count122
+\XKV@depth=\count124
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 LaTeX Font Info:    Overwriting math alphabet `\mathscr' in version `bold'
 (Font)                  U/BOONDOX-scro/m/n --> U/BOONDOX-scro/b/n on input line
- 500.
+ 510.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/stackengine/stackengine.sty
 Package: stackengine 2017/02/13 v4.01\ Stacking text and objects in convenient 
 ways
 
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count123
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count125
 )
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.sty
 (/usr/share/texlive/texmf-dist/tex/generic/listofitems/listofitems.tex
-\loi_nestcnt=\count124
+\loi_cnt_foreach_nest=\count126
+\loi_nestcnt=\count127
 )
-Package: listofitems 2018/01/13 v1.52 Grab items in lists using user-specified 
+Package: listofitems 2019/05/18 v1.62 Grab items in lists using user-specified 
 sep char (CT)
 )
-\c@@stackindex=\count125
+\c@@stackindex=\count128
 \@boxshift=\skip58
 \stack@tmplength=\skip59
 \temp@stkl=\skip60
 \@stackedboxwidth=\skip61
-\@addedbox=\box56
-\@anchorbox=\box57
-\stackedbox=\box58
-\@centerbox=\box59
-\c@ROWcellindex@=\count126
+\@addedbox=\box59
+\@anchorbox=\box60
+\stackedbox=\box61
+\@centerbox=\box62
+\c@ROWcellindex@=\count129
 )
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen149
 \WF@size=\dimen150
-\c@WF@wrappedlines=\count127
-\WF@box=\box60
+\c@WF@wrappedlines=\count130
+\WF@box=\box63
 \WF@everypar=\toks37
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -887,11 +579,11 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen151
 \captionmargin@=\dimen152
 \captionwidth=\dimen153
@@ -900,7 +592,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen156
 \caption@hangindent=\dimen157
 )
-\c@ContinuedFloat=\count128
+\c@caption@flags=\count131
+\c@ContinuedFloat=\count132
 Package caption Info: wrapfig package is loaded.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
@@ -909,29 +602,29 @@ Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count129
+\c@r@tfl@t=\count133
 \rotFPtop=\skip62
 \rotFPbot=\skip63
-\rot@float@box=\box61
+\rot@float@box=\box64
 \rot@mess@toks=\toks38
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 )
 (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box62
-\UL@hyphenbox=\box63
+\UL@box=\box65
+\UL@hyphenbox=\box66
 \UL@skip=\skip64
 \UL@hook=\toks39
 \UL@height=\dimen158
-\UL@pe=\count130
+\UL@pe=\count134
 \UL@pixel=\dimen159
-\ULC@box=\box64
+\ULC@box=\box67
 Package: ulem 2012/05/18
 \ULdepth=\dimen160
 )
 (/usr/share/texlive/texmf-dist/tex/latex/subfiles/subfiles.sty
-Package: subfiles 2012/05/23 Federico Garcia
+Package: subfiles 2018/07/31 Federico Garcia, Gernot Salzer
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
@@ -939,10 +632,10 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks41
 \verbatim@in@stream=\read1
 ))
-\c@theorem=\count131
-\c@lemma=\count132
-\c@defin=\count133
-\c@corollary=\count134
+\c@theorem=\count135
+\c@lemma=\count136
+\c@defin=\count137
+\c@corollary=\count138
  (./main.aux
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 3.
 
@@ -968,16 +661,16 @@ LaTeX Font Info:    ... okay on input line 89.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
+\scratchcounter=\count139
 \scratchdimen=\dimen161
-\scratchbox=\box65
-\nofMPsegments=\count136
-\nofMParguments=\count137
+\scratchbox=\box68
+\nofMPsegments=\count140
+\nofMParguments=\count141
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count138
+\MPscratchCnt=\count142
 \MPscratchDim=\dimen162
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
+\MPnumerator=\count143
+\makeMPintoPDFobject=\count144
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1006,14 +699,9 @@ Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+))))
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -1084,8 +772,8 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.toc)
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write3
+\openout3 = `main.toc'.
 
  [1] (./parts/7_1-7_2.tex
 LaTeX Font Info:    Try loading font information for U+bbold on input line 7.
@@ -1367,7 +1055,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 535--554
  []
 
 [25] [26] [27]) (./parts/7_6-7_7.tex
-Overfull \hbox (27.776pt too wide) in paragraph at lines 4--39
+Overfull \hbox (27.77602pt too wide) in paragraph at lines 4--39
 []$ 
  []
 
@@ -1533,54 +1221,241 @@ File: imgs/pyramid2.jpg Graphic file (type jpg)
 Package pdftex.def Info: imgs/pyramid2.jpg  used on input line 173.
 (pdftex.def)             Requested size: 542.02501pt x 271.66145pt.
  [52] [53 <./imgs/pyramid.jpg> <./imgs/sex.png>]
-[54 <./imgs/pyramid2.jpg>]) [55] (./main.aux) ) 
+[54 <./imgs/pyramid2.jpg>]) (./parts/8_1-8_5.tex
+<imgs/8_1-1.jpeg, id=249, 845.3181pt x 614.295pt>
+File: imgs/8_1-1.jpeg Graphic file (type jpg)
+<use imgs/8_1-1.jpeg>
+Package pdftex.def Info: imgs/8_1-1.jpeg  used on input line 5.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_1-2.jpeg, id=250, 845.3181pt x 614.295pt>
+File: imgs/8_1-2.jpeg Graphic file (type jpg)
+<use imgs/8_1-2.jpeg>
+Package pdftex.def Info: imgs/8_1-2.jpeg  used on input line 7.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_1-3.jpeg, id=251, 845.3181pt x 614.295pt>
+File: imgs/8_1-3.jpeg Graphic file (type jpg)
+<use imgs/8_1-3.jpeg>
+Package pdftex.def Info: imgs/8_1-3.jpeg  used on input line 9.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_1-4.jpeg, id=252, 845.3181pt x 614.295pt>
+File: imgs/8_1-4.jpeg Graphic file (type jpg)
+<use imgs/8_1-4.jpeg>
+Package pdftex.def Info: imgs/8_1-4.jpeg  used on input line 11.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_1-5.jpeg, id=253, 845.3181pt x 614.295pt>
+File: imgs/8_1-5.jpeg Graphic file (type jpg)
+<use imgs/8_1-5.jpeg>
+Package pdftex.def Info: imgs/8_1-5.jpeg  used on input line 13.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_1-6.jpeg, id=254, 845.3181pt x 614.295pt>
+File: imgs/8_1-6.jpeg Graphic file (type jpg)
+<use imgs/8_1-6.jpeg>
+Package pdftex.def Info: imgs/8_1-6.jpeg  used on input line 15.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--17
+
+ []
+
+[55]
+Overfull \vbox (45.21465pt too high) has occurred while \output is active []
+
+
+[56 <./imgs/8_1-1.jpeg> <./imgs/8_1-2.jpeg>] [57 <./imgs/8_1-3.jpeg> <./imgs/8_
+1-4.jpeg>]
+<imgs/8_2-1.jpg, id=264, 845.3181pt x 614.295pt>
+File: imgs/8_2-1.jpg Graphic file (type jpg)
+<use imgs/8_2-1.jpg>
+Package pdftex.def Info: imgs/8_2-1.jpg  used on input line 18.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-2.jpg, id=265, 845.3181pt x 614.295pt>
+File: imgs/8_2-2.jpg Graphic file (type jpg)
+<use imgs/8_2-2.jpg>
+Package pdftex.def Info: imgs/8_2-2.jpg  used on input line 20.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-3.jpg, id=266, 845.3181pt x 614.295pt>
+File: imgs/8_2-3.jpg Graphic file (type jpg)
+<use imgs/8_2-3.jpg>
+Package pdftex.def Info: imgs/8_2-3.jpg  used on input line 22.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-4.jpg, id=267, 845.3181pt x 614.295pt>
+File: imgs/8_2-4.jpg Graphic file (type jpg)
+<use imgs/8_2-4.jpg>
+Package pdftex.def Info: imgs/8_2-4.jpg  used on input line 24.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-5.jpg, id=268, 845.3181pt x 614.295pt>
+File: imgs/8_2-5.jpg Graphic file (type jpg)
+<use imgs/8_2-5.jpg>
+Package pdftex.def Info: imgs/8_2-5.jpg  used on input line 26.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-6.jpg, id=269, 845.3181pt x 614.295pt>
+File: imgs/8_2-6.jpg Graphic file (type jpg)
+<use imgs/8_2-6.jpg>
+Package pdftex.def Info: imgs/8_2-6.jpg  used on input line 28.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+<imgs/8_2-7.jpg, id=270, 845.3181pt x 614.295pt>
+File: imgs/8_2-7.jpg Graphic file (type jpg)
+<use imgs/8_2-7.jpg>
+Package pdftex.def Info: imgs/8_2-7.jpg  used on input line 30.
+(pdftex.def)             Requested size: 542.02072pt x 344.14345pt.
+ [58 <./imgs/8_1-5.jpeg> <./imgs/8_1-6.jpeg>]
+Overfull \vbox (11.73425pt too high) has occurred while \output is active []
+
+
+[59 <./imgs/8_2-1.jpg> <./imgs/8_2-2.jpg>] [60 <./imgs/8_2-3.jpg> <./imgs/8_2-4
+.jpg>] [61 <./imgs/8_2-5.jpg> <./imgs/8_2-6.jpg>]
+<imgs/8_3-1.png, id=284, 1028.34187pt x 578.16pt>
+File: imgs/8_3-1.png Graphic file (type png)
+<use imgs/8_3-1.png>
+Package pdftex.def Info: imgs/8_3-1.png  used on input line 34.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_3-2.png, id=285, 1028.34187pt x 578.16pt>
+File: imgs/8_3-2.png Graphic file (type png)
+<use imgs/8_3-2.png>
+Package pdftex.def Info: imgs/8_3-2.png  used on input line 36.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_3-3.png, id=286, 1028.34187pt x 578.16pt>
+File: imgs/8_3-3.png Graphic file (type png)
+<use imgs/8_3-3.png>
+Package pdftex.def Info: imgs/8_3-3.png  used on input line 38.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_3-4.png, id=287, 1028.34187pt x 578.16pt>
+File: imgs/8_3-4.png Graphic file (type png)
+<use imgs/8_3-4.png>
+Package pdftex.def Info: imgs/8_3-4.png  used on input line 40.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_3-5.png, id=288, 1028.34187pt x 578.16pt>
+File: imgs/8_3-5.png Graphic file (type png)
+<use imgs/8_3-5.png>
+Package pdftex.def Info: imgs/8_3-5.png  used on input line 42.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_3-6.png, id=289, 1028.34187pt x 578.16pt>
+File: imgs/8_3-6.png Graphic file (type png)
+<use imgs/8_3-6.png>
+Package pdftex.def Info: imgs/8_3-6.png  used on input line 44.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--46
+
+ []
+
+[62 <./imgs/8_2-7.jpg>]
+Overfull \vbox (11.72214pt too high) has occurred while \output is active []
+
+
+[63 <./imgs/8_3-1.png (PNG copy)> <./imgs/8_3-2.png (PNG copy)>] [64 <./imgs/8_
+3-3.png (PNG copy)> <./imgs/8_3-4.png (PNG copy)>]
+<imgs/8_4-1.png, id=299, 1028.34187pt x 578.16pt>
+File: imgs/8_4-1.png Graphic file (type png)
+<use imgs/8_4-1.png>
+Package pdftex.def Info: imgs/8_4-1.png  used on input line 49.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_4-2.png, id=300, 1028.34187pt x 578.16pt>
+File: imgs/8_4-2.png Graphic file (type png)
+<use imgs/8_4-2.png>
+Package pdftex.def Info: imgs/8_4-2.png  used on input line 51.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_4-3.png, id=301, 1028.34187pt x 578.16pt>
+File: imgs/8_4-3.png Graphic file (type png)
+<use imgs/8_4-3.png>
+Package pdftex.def Info: imgs/8_4-3.png  used on input line 53.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_4-4.png, id=302, 1028.34187pt x 578.16pt>
+File: imgs/8_4-4.png Graphic file (type png)
+<use imgs/8_4-4.png>
+Package pdftex.def Info: imgs/8_4-4.png  used on input line 55.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_4-5.png, id=303, 1028.34187pt x 578.16pt>
+File: imgs/8_4-5.png Graphic file (type png)
+<use imgs/8_4-5.png>
+Package pdftex.def Info: imgs/8_4-5.png  used on input line 57.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_4-6.png, id=304, 1028.34187pt x 578.16pt>
+File: imgs/8_4-6.png Graphic file (type png)
+<use imgs/8_4-6.png>
+Package pdftex.def Info: imgs/8_4-6.png  used on input line 59.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--61
+
+ []
+
+[65 <./imgs/8_3-5.png (PNG copy)> <./imgs/8_3-6.png (PNG copy)>]
+Overfull \vbox (11.72214pt too high) has occurred while \output is active []
+
+
+[66 <./imgs/8_4-1.png (PNG copy)> <./imgs/8_4-2.png (PNG copy)>] [67 <./imgs/8_
+4-3.png (PNG copy)> <./imgs/8_4-4.png (PNG copy)>]
+<imgs/8_5-1.png, id=315, 1028.34187pt x 578.16pt>
+File: imgs/8_5-1.png Graphic file (type png)
+<use imgs/8_5-1.png>
+Package pdftex.def Info: imgs/8_5-1.png  used on input line 64.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_5-2.png, id=316, 1028.34187pt x 578.16pt>
+File: imgs/8_5-2.png Graphic file (type png)
+<use imgs/8_5-2.png>
+Package pdftex.def Info: imgs/8_5-2.png  used on input line 66.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+<imgs/8_5-3.png, id=317, 1028.34187pt x 578.16pt>
+File: imgs/8_5-3.png Graphic file (type png)
+<use imgs/8_5-3.png>
+Package pdftex.def Info: imgs/8_5-3.png  used on input line 68.
+(pdftex.def)             Requested size: 542.03728pt x 344.13739pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 64--105
+
+ []
+
+[68 <./imgs/8_4-5.png (PNG copy)> <./imgs/8_4-6.png (PNG copy)>] [69 <./imgs/8_
+5-1.png (PNG copy)> <./imgs/8_5-2.png (PNG copy)>] [70 <./imgs/8_5-3.png (PNG c
+opy)>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8399 strings out of 492982
- 118173 string characters out of 6134895
- 235832 words of memory out of 5000000
- 11675 multiletter control sequences out of 15000+600000
+ 8447 strings out of 492609
+ 121227 string characters out of 6131462
+ 247501 words of memory out of 5000000
+ 12055 multiletter control sequences out of 15000+600000
  39677 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,27n,92p,1414b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvip
-s/cm-super/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/b
-bold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-
-type1/bbold5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/
-bbold7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share
-/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1
-440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm12
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti120
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (56 pages, 2012086 bytes).
+ 53i,27n,92p,1438b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.en
+c}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold5.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/
+cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbi1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/boondox/zxxrw8a.pfb>
+Output written on main.pdf (71 pages, 18921753 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 242 compressed objects within 3 object streams
+ 448 PDF objects out of 1000 (max. 8388607)
+ 274 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
