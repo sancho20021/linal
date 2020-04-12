@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  12 APR 2020 16:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  12 APR 2020 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1603,69 +1603,67 @@ File: imgs/kek1/kek1_00005.jpg Graphic file (type jpg)
 <use imgs/kek1/kek1_00005.jpg>
 Package pdftex.def Info: imgs/kek1/kek1_00005.jpg  used on input line 16.
 (pdftex.def)             Requested size: 542.02501pt x 461.47293pt.
- [63 <./imgs/kek0/kek0_00008.jpg>]
-Overfull \vbox (305.34402pt too high) has occurred while \output is active []
-
-
-[64 <./imgs/kek1/kek1_00001.jpg> <./imgs/kek1/kek1_00002.jpg>] [65 <./imgs/kek1
-/kek1_00003.jpg> <./imgs/kek1/kek1_00004.jpg>]
-<imgs/kek2/kek2_00001.jpg, id=296, 1445.4pt x 1260.71pt>
+ [63 <./imgs/kek0/kek0_00008.jpg>] [64 <./imgs/kek1/kek1_00001.jpg>] [65 <./img
+s/kek1/kek1_00002.jpg>] [66 <./imgs/kek1/kek1_00003.jpg> <./imgs/kek1/kek1_0000
+4.jpg>]
+<imgs/kek2/kek2_00001.jpg, id=300, 1445.4pt x 1260.71pt>
 File: imgs/kek2/kek2_00001.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00001.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00001.jpg  used on input line 20.
 (pdftex.def)             Requested size: 542.02501pt x 472.76509pt.
-<imgs/kek2/kek2_00002.jpg, id=297, 1445.4pt x 1317.92375pt>
+<imgs/kek2/kek2_00002.jpg, id=301, 1445.4pt x 1317.92375pt>
 File: imgs/kek2/kek2_00002.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00002.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00002.jpg  used on input line 21.
 (pdftex.def)             Requested size: 542.02501pt x 494.2202pt.
-<imgs/kek2/kek2_00003.jpg, id=298, 1445.4pt x 965.6075pt>
+<imgs/kek2/kek2_00003.jpg, id=302, 1445.4pt x 965.6075pt>
 File: imgs/kek2/kek2_00003.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00003.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00003.jpg  used on input line 22.
 (pdftex.def)             Requested size: 504.07928pt x 336.74477pt.
-<imgs/kek2/kek2_00004.jpg, id=299, 1445.4pt x 1072.005pt>
+<imgs/kek2/kek2_00004.jpg, id=303, 1445.4pt x 1072.005pt>
 File: imgs/kek2/kek2_00004.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00004.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00004.jpg  used on input line 23.
 (pdftex.def)             Requested size: 504.07928pt x 373.8497pt.
-<imgs/kek2/kek2_00005.jpg, id=300, 1445.4pt x 1309.89375pt>
+<imgs/kek2/kek2_00005.jpg, id=304, 1445.4pt x 1309.89375pt>
 File: imgs/kek2/kek2_00005.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00005.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00005.jpg  used on input line 24.
 (pdftex.def)             Requested size: 542.02501pt x 491.20895pt.
-<imgs/kek2/kek2_00006.jpg, id=301, 1445.4pt x 597.23125pt>
+<imgs/kek2/kek2_00006.jpg, id=305, 1445.4pt x 597.23125pt>
 File: imgs/kek2/kek2_00006.jpg Graphic file (type jpg)
 <use imgs/kek2/kek2_00006.jpg>
 Package pdftex.def Info: imgs/kek2/kek2_00006.jpg  used on input line 25.
 (pdftex.def)             Requested size: 542.02501pt x 223.96117pt.
-) (./parts/8_1-8_5.tex
-<imgs/8_1-1.jpeg, id=302, 845.3181pt x 614.295pt>
+)
+(./parts/8_1-8_5.tex
+<imgs/8_1-1.jpeg, id=306, 845.3181pt x 614.295pt>
 File: imgs/8_1-1.jpeg Graphic file (type jpg)
 <use imgs/8_1-1.jpeg>
 Package pdftex.def Info: imgs/8_1-1.jpeg  used on input line 3.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_1-2.jpeg, id=303, 845.3181pt x 614.295pt>
+<imgs/8_1-2.jpeg, id=307, 845.3181pt x 614.295pt>
 File: imgs/8_1-2.jpeg Graphic file (type jpg)
 <use imgs/8_1-2.jpeg>
 Package pdftex.def Info: imgs/8_1-2.jpeg  used on input line 5.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_1-3.jpeg, id=304, 845.3181pt x 614.295pt>
+<imgs/8_1-3.jpeg, id=308, 845.3181pt x 614.295pt>
 File: imgs/8_1-3.jpeg Graphic file (type jpg)
 <use imgs/8_1-3.jpeg>
 Package pdftex.def Info: imgs/8_1-3.jpeg  used on input line 7.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_1-4.jpeg, id=305, 845.3181pt x 614.295pt>
+<imgs/8_1-4.jpeg, id=309, 845.3181pt x 614.295pt>
 File: imgs/8_1-4.jpeg Graphic file (type jpg)
 <use imgs/8_1-4.jpeg>
 Package pdftex.def Info: imgs/8_1-4.jpeg  used on input line 9.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_1-5.jpeg, id=306, 845.3181pt x 614.295pt>
+<imgs/8_1-5.jpeg, id=310, 845.3181pt x 614.295pt>
 File: imgs/8_1-5.jpeg Graphic file (type jpg)
 <use imgs/8_1-5.jpeg>
 Package pdftex.def Info: imgs/8_1-5.jpeg  used on input line 11.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_1-6.jpeg, id=307, 845.3181pt x 614.295pt>
+<imgs/8_1-6.jpeg, id=311, 845.3181pt x 614.295pt>
 File: imgs/8_1-6.jpeg Graphic file (type jpg)
 <use imgs/8_1-6.jpeg>
 Package pdftex.def Info: imgs/8_1-6.jpeg  used on input line 13.
@@ -1675,69 +1673,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--15
 
  []
 
-[66 <./imgs/kek1/kek1_00005.jpg>] [67 <./imgs/kek2/kek2_00001.jpg>] [68 <./imgs
-/kek2/kek2_00002.jpg>] [69 <./imgs/kek2/kek2_00003.jpg> <./imgs/kek2/kek2_00004
-.jpg>] [70 <./imgs/kek2/kek2_00005.jpg> <./imgs/kek2/kek2_00006.jpg>] [71 <./im
-gs/8_1-1.jpeg> <./imgs/8_1-2.jpeg>] [72 <./imgs/8_1-3.jpeg> <./imgs/8_1-4.jpeg>
-] [73 <./imgs/8_1-5.jpeg> <./imgs/8_1-6.jpeg>]
-<imgs/8_2-1.jpg, id=334, 845.3181pt x 614.295pt>
+[67 <./imgs/kek1/kek1_00005.jpg>] [68 <./imgs/kek2/kek2_00001.jpg>] [69 <./imgs
+/kek2/kek2_00002.jpg>] [70 <./imgs/kek2/kek2_00003.jpg> <./imgs/kek2/kek2_00004
+.jpg>] [71 <./imgs/kek2/kek2_00005.jpg> <./imgs/kek2/kek2_00006.jpg>] [72 <./im
+gs/8_1-1.jpeg> <./imgs/8_1-2.jpeg>] [73 <./imgs/8_1-3.jpeg> <./imgs/8_1-4.jpeg>
+] [74 <./imgs/8_1-5.jpeg> <./imgs/8_1-6.jpeg>]
+<imgs/8_2-1.jpg, id=337, 845.3181pt x 614.295pt>
 File: imgs/8_2-1.jpg Graphic file (type jpg)
 <use imgs/8_2-1.jpg>
 Package pdftex.def Info: imgs/8_2-1.jpg  used on input line 16.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-2.jpg, id=335, 845.3181pt x 614.295pt>
+<imgs/8_2-2.jpg, id=338, 845.3181pt x 614.295pt>
 File: imgs/8_2-2.jpg Graphic file (type jpg)
 <use imgs/8_2-2.jpg>
 Package pdftex.def Info: imgs/8_2-2.jpg  used on input line 18.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-3.jpg, id=336, 845.3181pt x 614.295pt>
+<imgs/8_2-3.jpg, id=339, 845.3181pt x 614.295pt>
 File: imgs/8_2-3.jpg Graphic file (type jpg)
 <use imgs/8_2-3.jpg>
 Package pdftex.def Info: imgs/8_2-3.jpg  used on input line 20.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-4.jpg, id=337, 845.3181pt x 614.295pt>
+<imgs/8_2-4.jpg, id=340, 845.3181pt x 614.295pt>
 File: imgs/8_2-4.jpg Graphic file (type jpg)
 <use imgs/8_2-4.jpg>
 Package pdftex.def Info: imgs/8_2-4.jpg  used on input line 22.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-5.jpg, id=338, 845.3181pt x 614.295pt>
+<imgs/8_2-5.jpg, id=341, 845.3181pt x 614.295pt>
 File: imgs/8_2-5.jpg Graphic file (type jpg)
 <use imgs/8_2-5.jpg>
 Package pdftex.def Info: imgs/8_2-5.jpg  used on input line 24.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-6.jpg, id=339, 845.3181pt x 614.295pt>
+<imgs/8_2-6.jpg, id=342, 845.3181pt x 614.295pt>
 File: imgs/8_2-6.jpg Graphic file (type jpg)
 <use imgs/8_2-6.jpg>
 Package pdftex.def Info: imgs/8_2-6.jpg  used on input line 26.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
-<imgs/8_2-7.jpg, id=340, 845.3181pt x 614.295pt>
+<imgs/8_2-7.jpg, id=343, 845.3181pt x 614.295pt>
 File: imgs/8_2-7.jpg Graphic file (type jpg)
 <use imgs/8_2-7.jpg>
 Package pdftex.def Info: imgs/8_2-7.jpg  used on input line 28.
 (pdftex.def)             Requested size: 542.02072pt x 354.12608pt.
- [74 <./imgs/8_2-1.jpg>] [75 <./imgs/8_2-2.jpg> <./imgs/8_2-3.jpg>] [76 <./imgs
+ [75 <./imgs/8_2-1.jpg>] [76 <./imgs/8_2-2.jpg> <./imgs/8_2-3.jpg>] [77 <./imgs
 /8_2-4.jpg> <./imgs/8_2-5.jpg>]
-<imgs/new/New_00001.jpg, id=350, 1445.4pt x 1029.8475pt>
+<imgs/new/New_00001.jpg, id=353, 1445.4pt x 1029.8475pt>
 File: imgs/new/New_00001.jpg Graphic file (type jpg)
 <use imgs/new/New_00001.jpg>
 Package pdftex.def Info: imgs/new/New_00001.jpg  used on input line 32.
 (pdftex.def)             Requested size: 542.02368pt x 354.11922pt.
-<imgs/new/New_00002.jpg, id=351, 1445.4pt x 929.4725pt>
+<imgs/new/New_00002.jpg, id=354, 1445.4pt x 929.4725pt>
 File: imgs/new/New_00002.jpg Graphic file (type jpg)
 <use imgs/new/New_00002.jpg>
 Package pdftex.def Info: imgs/new/New_00002.jpg  used on input line 34.
 (pdftex.def)             Requested size: 542.02368pt x 354.12509pt.
-<imgs/new/New_00003.jpg, id=352, 1445.4pt x 1058.95625pt>
+<imgs/new/New_00003.jpg, id=355, 1445.4pt x 1058.95625pt>
 File: imgs/new/New_00003.jpg Graphic file (type jpg)
 <use imgs/new/New_00003.jpg>
 Package pdftex.def Info: imgs/new/New_00003.jpg  used on input line 36.
 (pdftex.def)             Requested size: 542.02368pt x 354.1264pt.
-<imgs/new/New_00004.jpg, id=353, 1445.4pt x 1045.9075pt>
+<imgs/new/New_00004.jpg, id=356, 1445.4pt x 1045.9075pt>
 File: imgs/new/New_00004.jpg Graphic file (type jpg)
 <use imgs/new/New_00004.jpg>
 Package pdftex.def Info: imgs/new/New_00004.jpg  used on input line 38.
 (pdftex.def)             Requested size: 542.02368pt x 354.13559pt.
-<imgs/new/New_00005.jpg, id=354, 1445.4pt x 694.595pt>
+<imgs/new/New_00005.jpg, id=357, 1445.4pt x 694.595pt>
 File: imgs/new/New_00005.jpg Graphic file (type jpg)
 <use imgs/new/New_00005.jpg>
 Package pdftex.def Info: imgs/new/New_00005.jpg  used on input line 40.
@@ -1747,35 +1745,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 32--42
 
  []
 
-[77 <./imgs/8_2-6.jpg> <./imgs/8_2-7.jpg>] [78 <./imgs/new/New_00001.jpg>]
-[79 <./imgs/new/New_00002.jpg> <./imgs/new/New_00003.jpg>] [80 <./imgs/new/New_
+[78 <./imgs/8_2-6.jpg> <./imgs/8_2-7.jpg>] [79 <./imgs/new/New_00001.jpg>]
+[80 <./imgs/new/New_00002.jpg> <./imgs/new/New_00003.jpg>] [81 <./imgs/new/New_
 00004.jpg> <./imgs/new/New_00005.jpg>]
-<imgs/new/New_00006.jpg, id=368, 1445.4pt x 979.66pt>
+<imgs/new/New_00006.jpg, id=371, 1445.4pt x 979.66pt>
 File: imgs/new/New_00006.jpg Graphic file (type jpg)
 <use imgs/new/New_00006.jpg>
 Package pdftex.def Info: imgs/new/New_00006.jpg  used on input line 45.
 (pdftex.def)             Requested size: 542.02368pt x 354.12733pt.
-<imgs/new/New_00007.jpg, id=369, 1445.4pt x 1036.87375pt>
+<imgs/new/New_00007.jpg, id=372, 1445.4pt x 1036.87375pt>
 File: imgs/new/New_00007.jpg Graphic file (type jpg)
 <use imgs/new/New_00007.jpg>
 Package pdftex.def Info: imgs/new/New_00007.jpg  used on input line 47.
 (pdftex.def)             Requested size: 542.02368pt x 354.13037pt.
-<imgs/new/New_00008.jpg, id=370, 1445.4pt x 1067.99pt>
+<imgs/new/New_00008.jpg, id=373, 1445.4pt x 1067.99pt>
 File: imgs/new/New_00008.jpg Graphic file (type jpg)
 <use imgs/new/New_00008.jpg>
 Package pdftex.def Info: imgs/new/New_00008.jpg  used on input line 49.
 (pdftex.def)             Requested size: 542.02368pt x 354.1326pt.
-<imgs/new/New_00009.jpg, id=371, 1445.4pt x 1016.79875pt>
+<imgs/new/New_00009.jpg, id=374, 1445.4pt x 1016.79875pt>
 File: imgs/new/New_00009.jpg Graphic file (type jpg)
 <use imgs/new/New_00009.jpg>
 Package pdftex.def Info: imgs/new/New_00009.jpg  used on input line 51.
 (pdftex.def)             Requested size: 542.02368pt x 354.1317pt.
-<imgs/new/New_00010.jpg, id=372, 1445.4pt x 1057.9525pt>
+<imgs/new/New_00010.jpg, id=375, 1445.4pt x 1057.9525pt>
 File: imgs/new/New_00010.jpg Graphic file (type jpg)
 <use imgs/new/New_00010.jpg>
 Package pdftex.def Info: imgs/new/New_00010.jpg  used on input line 53.
 (pdftex.def)             Requested size: 542.02368pt x 354.12975pt.
-<imgs/new/New_00011.jpg, id=373, 1445.4pt x 1095.09125pt>
+<imgs/new/New_00011.jpg, id=376, 1445.4pt x 1095.09125pt>
 File: imgs/new/New_00011.jpg Graphic file (type jpg)
 <use imgs/new/New_00011.jpg>
 Package pdftex.def Info: imgs/new/New_00011.jpg  used on input line 55.
@@ -1785,19 +1783,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--57
 
  []
 
-[81 <./imgs/new/New_00006.jpg>] [82 <./imgs/new/New_00007.jpg> <./imgs/new/New_
-00008.jpg>] [83 <./imgs/new/New_00009.jpg> <./imgs/new/New_00010.jpg>]
-<imgs/new/New_00012.jpg, id=383, 1445.4pt x 1052.93375pt>
+[82 <./imgs/new/New_00006.jpg>] [83 <./imgs/new/New_00007.jpg> <./imgs/new/New_
+00008.jpg>] [84 <./imgs/new/New_00009.jpg> <./imgs/new/New_00010.jpg>]
+<imgs/new/New_00012.jpg, id=387, 1445.4pt x 1052.93375pt>
 File: imgs/new/New_00012.jpg Graphic file (type jpg)
 <use imgs/new/New_00012.jpg>
 Package pdftex.def Info: imgs/new/New_00012.jpg  used on input line 60.
 (pdftex.def)             Requested size: 542.02368pt x 354.12073pt.
-<imgs/new/New_00013.jpg, id=384, 1445.4pt x 1084.05pt>
+<imgs/new/New_00013.jpg, id=388, 1445.4pt x 1084.05pt>
 File: imgs/new/New_00013.jpg Graphic file (type jpg)
 <use imgs/new/New_00013.jpg>
 Package pdftex.def Info: imgs/new/New_00013.jpg  used on input line 62.
 (pdftex.def)             Requested size: 542.02368pt x 354.13162pt.
-<imgs/new/New_00014.jpg, id=385, 1445.4pt x 996.72375pt>
+<imgs/new/New_00014.jpg, id=389, 1445.4pt x 996.72375pt>
 File: imgs/new/New_00014.jpg Graphic file (type jpg)
 <use imgs/new/New_00014.jpg>
 Package pdftex.def Info: imgs/new/New_00014.jpg  used on input line 64.
@@ -1807,7 +1805,7 @@ Overfull \hbox (5.21965pt too wide) in paragraph at lines 60--108
 []   
  []
 
-[84 <./imgs/new/New_00011.jpg>] [85 <./imgs/new/New_00012.jpg>] [86 <./imgs/new
+[85 <./imgs/new/New_00011.jpg>] [86 <./imgs/new/New_00012.jpg>] [87 <./imgs/new
 /New_00013.jpg> <./imgs/new/New_00014.jpg>] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  8649 strings out of 492982
@@ -1853,10 +1851,10 @@ usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zxxr
 w8a.pfb>
-Output written on main.pdf (87 pages, 29131827 bytes).
+Output written on main.pdf (88 pages, 29132021 bytes).
 PDF statistics:
- 519 PDF objects out of 1000 (max. 8388607)
- 310 compressed objects within 4 object streams
+ 522 PDF objects out of 1000 (max. 8388607)
+ 312 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
  321 words of extra memory for PDF output out of 10000 (max. 10000000)
 
