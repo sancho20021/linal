@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  19 APR 2020 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.12.22)  20 APR 2020 23:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -951,20 +951,20 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1068,16 +1068,16 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+LaTeX Font Info:    Try loading font information for U+msa on input line 95.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 94.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1857,57 +1857,153 @@ Overfull \hbox (2.61047pt too wide) in paragraph at lines 216--228
 []$ $[]$ 
  []
 
-) [97 <./imgs/pic04.png>] (./main.aux) ) 
+) (./parts/Lecture8.tex
+<imgs/pic05.png, id=440, 115.43124pt x 78.2925pt>
+File: imgs/pic05.png Graphic file (type png)
+<use imgs/pic05.png>
+Package pdftex.def Info: imgs/pic05.png  used on input line 8.
+(pdftex.def)             Requested size: 150.56305pt x 102.12785pt.
+
+Overfull \hbox (2.61049pt too wide) in paragraph at lines 3--15
+[]$ $[]$ 
+ []
+
+<imgs/pic06.png, id=441, 152.57pt x 87.32625pt>
+File: imgs/pic06.png Graphic file (type png)
+<use imgs/pic06.png>
+Package pdftex.def Info: imgs/pic06.png  used on input line 23.
+(pdftex.def)             Requested size: 130.48798pt x 74.69003pt.
+<imgs/pic07.png, id=442, 187.70125pt x 82.3075pt>
+File: imgs/pic07.png Graphic file (type png)
+<use imgs/pic07.png>
+Package pdftex.def Info: imgs/pic07.png  used on input line 27.
+(pdftex.def)             Requested size: 130.48798pt x 57.22299pt.
+[97 <./imgs/pic04.png> <./imgs/pic05.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--36
+
+ []
+
+<imgs/pic08.png, id=448, 83.31125pt x 88.33pt>
+File: imgs/pic08.png Graphic file (type png)
+<use imgs/pic08.png>
+Package pdftex.def Info: imgs/pic08.png  used on input line 41.
+(pdftex.def)             Requested size: 50.18768pt x 53.21135pt.
+File: imgs/pic08.png Graphic file (type png)
+<use imgs/pic08.png>
+Package pdftex.def Info: imgs/pic08.png  used on input line 41.
+(pdftex.def)             Requested size: 50.18768pt x 53.21135pt.
+File: imgs/pic08.png Graphic file (type png)
+<use imgs/pic08.png>
+Package pdftex.def Info: imgs/pic08.png  used on input line 41.
+(pdftex.def)             Requested size: 50.18768pt x 53.21135pt.
+<imgs/pic09.png, id=449, 271.0125pt x 151.56625pt>
+File: imgs/pic09.png Graphic file (type png)
+<use imgs/pic09.png>
+Package pdftex.def Info: imgs/pic09.png  used on input line 42.
+(pdftex.def)             Requested size: 100.37537pt x 56.13644pt.
+<imgs/pic10.png, id=450, 157.58875pt x 78.2925pt>
+File: imgs/pic10.png Graphic file (type png)
+<use imgs/pic10.png>
+Package pdftex.def Info: imgs/pic10.png  used on input line 45.
+(pdftex.def)             Requested size: 80.3003pt x 39.89398pt.
+File: imgs/pic10.png Graphic file (type png)
+<use imgs/pic10.png>
+Package pdftex.def Info: imgs/pic10.png  used on input line 45.
+(pdftex.def)             Requested size: 80.3003pt x 39.89398pt.
+File: imgs/pic10.png Graphic file (type png)
+<use imgs/pic10.png>
+Package pdftex.def Info: imgs/pic10.png  used on input line 45.
+(pdftex.def)             Requested size: 80.3003pt x 39.89398pt.
+<imgs/pic11.png, id=451, 317.185pt x 176.66pt>
+File: imgs/pic11.png Graphic file (type png)
+<use imgs/pic11.png>
+Package pdftex.def Info: imgs/pic11.png  used on input line 58.
+(pdftex.def)             Requested size: 130.48798pt x 72.67906pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--64
+
+ []
+
+[98 <./imgs/pic06.png> <./imgs/pic07.png> <./imgs/pic08.png> <./imgs/pic09.png>
+ <./imgs/pic10.png> <./imgs/pic11.png>] [99]
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
+
+ []
+
+[100]
+<imgs/pic12.png, id=468, 459.7175pt x 297.11pt>
+File: imgs/pic12.png Graphic file (type png)
+<use imgs/pic12.png>
+Package pdftex.def Info: imgs/pic12.png  used on input line 252.
+(pdftex.def)             Requested size: 150.56305pt x 97.30763pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--253
+
+ []
+
+[101] [102 <./imgs/pic12.png>]
+<imgs/pic13.png, id=477, 156.585pt x 116.435pt>
+File: imgs/pic13.png Graphic file (type png)
+<use imgs/pic13.png>
+Package pdftex.def Info: imgs/pic13.png  used on input line 318.
+(pdftex.def)             Requested size: 150.56305pt x 111.96109pt.
+<imgs/pic14.png, id=478, 160.6pt x 94.3525pt>
+File: imgs/pic14.png Graphic file (type png)
+<use imgs/pic14.png>
+Package pdftex.def Info: imgs/pic14.png  used on input line 338.
+(pdftex.def)             Requested size: 150.56305pt x 88.4581pt.
+) [103 <./imgs/pic13.png> <./imgs/pic14.png>]
+(./main.aux) ) 
 Here is how much of TeX's memory you used:
- 8682 strings out of 492982
- 124203 string characters out of 6134895
- 235836 words of memory out of 5000000
- 11881 multiletter control sequences out of 15000+600000
+ 8736 strings out of 492982
+ 125096 string characters out of 6134895
+ 235850 words of memory out of 5000000
+ 11922 multiletter control sequences out of 15000+600000
  39677 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,27n,92p,1414b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-su
-per/cm-super-t2a.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/bbold-ty
-pe1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/b
-bold5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/p
-ublic/cm-super/sfbi0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1
-200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm06
-00.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm207
-4.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti0800.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/boondox/zxxrw8a.pfb>
-Output written on main.pdf (98 pages, 29363090 bytes).
+ 53i,27n,92p,1732b,611s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr
+/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold5.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cmextra/cmbsy8.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/latxfont/lasy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/latxfont/lasy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/symbols/msbm7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi0800.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbi1200.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfti0800.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfti1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/boondox/zx
+xrw8a.pfb>
+Output written on main.pdf (104 pages, 29531656 bytes).
 PDF statistics:
- 576 PDF objects out of 1000 (max. 8388607)
- 343 compressed objects within 4 object streams
+ 615 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
  0 named destinations out of 1000 (max. 500000)
- 346 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 396 words of extra memory for PDF output out of 10000 (max. 10000000)
 
