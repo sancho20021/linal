@@ -1,0 +1,203 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+	\section{Линейные операторы в унитарных и евклидовых пространствах}
+	\subsection{Сопряженный оператор в унитарном и евклидовом пространствах}
+	$U, V$ линейные пространства над полем $K$\n
+	$U^*, V^*$ соответственно, сопряженные пространства к $U$ и $V$\n
+	$\A \in \mathcal L (U, V)$ линейное отображение.
+	\begin{defin}
+		$\A^*: V^* \longrightarrow U^*$ называется сопряженным к $\A$, если\\
+		$\forall f \in V^* \Space \boxed{\underbracket{\A^* f}_{g\in U^*}(x) = f(\A x)} \Space \forall x \in U\n
+		g$ линейн. очев., т.к. $\A$ и $f$ линейны.\n
+		$x \in U \overset{\A}{\longrightarrow} V \ni \A x \Sspace \underset{\text{лин.}}{f:} V \rightarrow K\n
+		\underset{=\A^* f}{g\in} U^* \overset{\A^*}{\longleftarrow} V^* \ni f \Sspace \underset{\text{лин.}}{g:} U \rightarrow K$
+	\end{defin}
+	$\A^* \in \mathcal L (U^*, V^*)$ т.е. лиинейное отображение:\n 
+	$\begin{matrix}
+		\forall f_1, f_2 \in U^* \\
+		\forall \lambda \in K
+	\end{matrix} \Space \underset{\forall x \in U}{A^* (\lambda f_1 + f_2)(x)} = (\lambda f_1 + f_2)(\A x ) = \underbracket{\lambda f_1 (\A x)}_{\lambda (\A^* f_1 ) (x)} + \underbracket{f_2 (\A x)}_{(\A^* f_2) (x)}\n
+	\slide{0.4\textwidth}\A^* (\lambda f_1 + f_2) = \lambda \A^* f_1 + \A^* f_2$
+	\n \phantom{}\hrulefill\n
+	$\pu U = V \Space (V, (\cdot, \cdot))$ унит (евклидово пространство) $\Space \A \in End(V)\n
+	\A^* \in End(V^*)$\n
+	По теореме Рисса: $\forall f \in V^* \leftrightarrow y \in V: \Space f(x) = (x, y) \; \forall x \in V\n
+	\pu \; \; g= \A^* f \in V^* \leftrightarrow z \in V: \Space g(x) = (x, z) \; \forall x \in V\n 
+	\Rightarrow \forall x \in V \Space \underset{\stackrel{||}{(x, z)}}{g(x)} = \A^* f(x) = f(\A x) = (\A x,  y) $\n
+	Т.к. $V \leftrightarrow V^* \Sspace \begin{matrix}
+		\A^* : V \rightarrow V\\
+		g = \A^* f \leftrightarrow z = \A^* y
+	\end{matrix}\n
+	g(x) = (x, z)\n
+	(x, \A^*, y) = (x, z) = (\A x, y)$
+	\begin{defin}
+		$(V, (\cdot, \cdot))$ унит. (евкл.) пространство, \n$\A \in End(V), \\\A^* \in End(V^*)$ -- \underline{сопряженный к $\A$},\n
+		$\forall x, y \in V$
+		$\boxed{(x, \A^* y) = (\A x, y)}$
+	\end{defin}
+	\begin{remark}
+		\
+		\begin{mylist}
+			\item В силу теоремы Рисса $\A^* \; \; \exists$ и определен единственным образом
+			\item $\A^*$ определяется операцией $(\cdot, \cdot)$, т.е. поменяем $(\cdot, \cdot) \leadsto \n$
+			\slide{0.5\textwidth} поменяется $\A^*$ ( в этом случае неоднозначно)
+		\end{mylist}
+	\end{remark}
+	\textbf{Свойства сопряженного оператора}
+	\begin{mylist}
+		\item $e_1 \ldots e_n$ базис $V, \Space \A, \A^* \longleftrightarrow \underset{\text{матрицы операторов в базисе }e}{A, A^{\circled{*}}}\n
+		\Gamma = G(e_1 \ldots e_n)$ матрица Грама\n 
+		$\Rightarrow \boxed{A^{\circled{*}} = \vec{\Gamma^{-1}} A^* \vec \Gamma}$ , где $\underset{\text{сопряж. матрица}}{A^* = \vec{A^T}}$
+		\begin{proof}
+			$\forall x, y \in V\n
+			x, y \leftrightarrow \underset{\text{столбцы координат в базисе }e}{x, y} \Space $
+			\belowbaseline[-11pt]{			$
+			\begin{matrix}
+				(x, \A^*y) &= (\A x, y) = (A x)^T \Gamma \vec y = x^T A^T \Gamma \vec y\n
+				||\n 
+				x^T \Gamma \vec{(A^{\circled *} y)} &= x^T \Gamma \vec{A^{\circled *}} \vec y \Leftrightarrow A^T \Gamma = \Gamma \vec{A^{\circled*}}\n 
+				& \vec{A^{\circled *}} = \Gamma^{-1} A^T \Gamma\\
+				& A^{\circled *} = \vec{\Gamma^{-1}}\ \underset{A^*}{\vec{A^T}} \ \vec \Gamma\\
+			\end{matrix}$}
+		\end{proof}
+		\begin{corollary}
+			$e_1 \ldots e_n$ о.н.б. $V \Rightarrow \boxed{A^{\circled{*}} = A^*}$\n
+			(Очевидно, т.к. $\Gamma = E$)
+		\end{corollary}
+		\item $(\A^* )^* = \A$ (т.е. $\A$ и $\A^*$ \underline{взаимно-сопряженные} операторы)
+		\begin{proof}
+			$\forall x, y: \Space \underset{\stackrel{||}{\vec{(y, \A x)}}}{(\A x, y)} = 
+			\underset{\stackrel{||}{\vec{(\A^* y, x)}}}{(x, \A^* y)} \Leftrightarrow (y, \A x) = (\A^* y, x) \Rightarrow (\A^*)^* = \A$
+		\end{proof}
+		\item
+		$\forall \lambda \in K \Space \forall \A, \B \in End(V) \Sspace \boxed{(\lambda \A + \B)^* = \vec \lambda \A^* + \B^*}$ (упр.)
+		\item $\forall \A, \B \in End(V) \Space \boxed{(\A \B)^* = \B^* \A^*}$
+		\begin{proof}\ \\
+			$\forall x, y \in V \Space (x, (\A \B)^* y) = (\A \B x, y) = (\B x, \A^* y) = (x, \B^* \A^* y) \Leftrightarrow (\A \B)^* = \B^* \A*$
+		\end{proof}
+		\item $\boxed{\begin{matrix}
+				Im \A^* = (Ker \A)^\perp\n
+				Ker \A^* = (Im \A)^\perp
+			\end{matrix}}$
+		\begin{proof}
+			\
+			\begin{mylist}
+				\item
+			$\forall x \in Ker \A \; \; \forall y \in V\n 
+			(x, \underbracket{\A^* y}_{\in Im\A^*}) = (\underset{\stackrel{||}{\0}}{\A x}, y)
+			= \0 \Rightarrow Im \A^* \subseteq (Ker \A)^\perp \n
+			dim Im \A^* = rg A^{\circled{*}} = rg (\vec{\underset{\text{невырожд}}{
+				\underbracket{\Gamma^{-1}} A^T \underbracket{\Gamma}
+			}}) = rg \vec{A^T} \underset{\begin{matrix}\text{комплексифик. вещ. про-ва}\\ rg(v_1 \ldots v_k) = rg(\vec v_1 \ldots \vec v_k)\\\text{см. глава 7}\end{matrix}}{=} rgA = dim Im A = \n =n - \underbracket{def A}_{dim Ker A}
+			\underset{L \oplus L^\perp = V}{=} dim (KerA)^\perp \Rightarrow Im\A^* = (Ker\A)^\perp
+			$
+			\item $\A$ и $\A^*$ вз. сопр. по a) $\begin{matrix}
+				Im \A = (Ker \A^*) ^\perp\n
+				(Im \A)^\perp = Ker \A^*
+			\end{matrix}$
+			\end{mylist}
+		\end{proof}
+		\item Если $\exists \A^{-1} \Leftrightarrow \exists (\A^*)^{-1}$, причем $\boxed{(\A^*)^{-1}
+		 = (\A^{-1})^*}$
+		\begin{proof}\ \\
+			$\exists \A^{-1} \Leftrightarrow Ker \A = \{\0\} \underset{5}{\Leftrightarrow} Im \A^* = (Ker\A)^\perp = V \Leftrightarrow Ker\A^* = \{\0 \} \Leftrightarrow \exists (\A^*)^{-1}\n 
+			\forall x, y \in V \Space (x, (\A^*)^{-1} y) = (\underbracket{\A \A^{-1}}_\E x, (\A^*)^{-1} y) = (\A^{-1} x, \underbracket{\A^* (\A^*)^{-1}}_\E y) = (\A^{-1} x, y)\n 
+			\underset{\text{по def}}{\Rightarrow} (\A^{-1})^* = (\A^*)^{-1}$
+		\end{proof}
+		\item $\boxed{\chi_\A (\lambda) = 0 \Leftrightarrow \chi_{\A^*}(\vec \lambda) = 0}$
+		\begin{proof}
+			$\pu e_1 \ldots e_n$ о.н.б. $V \underset{1}{\Rightarrow} A^{\circled *} = A^*\n 
+			\Rightarrow \chi_{\A^*} (t) = \chi_{A^*}(t) = det(A^* - tE) = det(\vec{A^T} - tE) = \vec{det(A^T - \vec t E)} = \n =\vec{det (A - \vec t E)} = \vec{\chi_A (\vec t)} = \vec{\chi_\A (\vec t)} \Sspace \begin{matrix}
+				\chi_\A(\lambda) = 0\\
+				||\\
+				\vec{\chi_{\A^*} (\vec \lambda)} & \Leftrightarrow \chi_{\A^*} (\vec \lambda) = 0
+			\end{matrix}$ 
+		\end{proof}
+		\item \belowbaseline[-12pt]{$\boxed{\begin{matrix}\lambda \text{ с.ч., } u \text{ с.в.} \A\n 
+		\vec \lambda \text{ с.ч., } v \text{ с.в.} \A^*\end{matrix} \Sspace \lambda \neq \vec \mu \Rightarrow u \perp v}$}
+		\begin{proof}\ \\
+			$\begin{matrix}
+				\A u = \lambda u\n
+				\A^* v = \mu v \n
+			\end{matrix} \Sspace \begin{matrix}
+				(\A u, v) &= (u, \A^* v) = (u, \mu v) = \vec \mu (u, v)\n 
+				|| \n 
+				(\lambda u, v) &= \lambda (u, v) \Sspace (\underset{\stackrel{\nparallel}{0}}{\lambda - \vec \mu}) (u, v) = 0 \Leftrightarrow (u, v) = 0
+			\end{matrix}$
+		\end{proof}
+		\item $\boxed{\underset{\text{лин. подпр-во}}{L \subset V} \text{ инвариантно относительно }\A \Rightarrow L^\perp \text{ инвариантно относительно }\A^*}$
+		\begin{proof}
+			$\forall x \in L \Rightarrow \A x \in L\n 
+			\forall y \in L^\perp: (x, y) = 0 \Rightarrow (x, \A^*, y) = (\underset{\in L}{\A x}, \underset{\in L^\perp}{y}) = 0 \Rightarrow \A^* y \in L^\perp \Rightarrow L^\perp$ инвариантно отн. $\A^*$
+		\end{proof}
+	\end{mylist}
+	\subsection{Нормальные опператоры в евклидов. и унит. пространствах}
+	\begin{defin}
+		$\A \in End(V) \Space (V, (\cdot, \cdot))$\n 
+		Оператор $\A$ называется \underline{нормальным}, если $\A$ и $A^*$ перестановочны.\n
+		$\boxed{\A \A^* = \A^* \A} \Leftrightarrow \forall
+		 x, y \in V \Space \boxed{(\A x, \A y) = (\A^* x, \A^* y)}$\n 
+		 \underline{Действительно:} $\Space \forall x, y \; \; (\A x, \A y) = (x, \underset{\leftrightarrow}{\A^* \A} y) = (x, \A \A^* y) = (\A^* x, \A^* y)$
+	\end{defin}
+	\textbf{Свойства нормального оператора:}\
+	\begin{mylist}
+		\item $\A$ нормальный оператор $\Leftrightarrow$ в некотором базисе матрица $A$(оператор $\A$) перестановнчна с матрицой $A^{\circled *}$ (опер. $\A^*$): $A A^{\circled *} = A^{\circled *} A$
+		\begin{proof}
+			$(\Rightarrow)$ очевидно $\Space \A \A^* = \A* \A \leftrightarrow A A^{\circled *} = A^{\circled *} A\n 
+			(\Leftarrow) \Space \pu e'_1 \ldots e'_n$ базис $V \Space T_{e\rightarrow e'} = T \n 
+			A' \cdot (A^{\circled *})' = T^{-1} A \underbracket{T T^{-1}}_E A^{\circled *} T = T^{-1} A^{\circled *} A T = \underbracket{T^{-1} A^{\circled *} T}_{(A^{\circled *})'} \underbracket{T^{-1} A T}_{A'}\n 
+			\Leftrightarrow \A \A^* = \A^* \A$
+		\end{proof}
+		\item \belowbaseline[-12pt]{$\boxed{\begin{matrix}
+					Ker\A = Ker \A^*\n 
+					(Ker \A)^\perp = Im \A \n 
+					Ker \A^2 = Ker \A
+				\end{matrix}} \Rightarrow \boxed{V = Ker \A \oplus Im \A}$}
+		\begin{proof}
+			\
+			\begin{mylist}
+				\item $x \in Ker \A \Leftrightarrow \A x = \0 \Leftrightarrow (\A x, \A x) = 0\n 
+				(\A x, \A x) \underset{\text{Норм. опер.}}{=} (\A^* x, \A^* x) \Leftrightarrow \A^* x = \0 \Leftrightarrow x \in Ker \A^*$
+				\item 5 свойство сопряж. \Space $(\underset{\stackrel{|| \text{св-во 1}}{Ker \A}}{Ker \A^*})^\perp = Im \A$
+				\item $x \in Ker \A^2 \Leftrightarrow \A^2 x = \0 \Leftrightarrow (\A^2 x, \A^2 x) = 0 \overset{\text{норм. оператор}}{\Leftrightarrow} (\A^* \underbracket{\A x}, \A^* \underbracket{\A x}) = 0 \Leftrightarrow \n 
+				\Leftrightarrow \A^* (\underset{\in Im\A}{\A x}) = \0 \Leftrightarrow \underset{\in Im\A}{\A x} \in Ker\A^* = Ker \A, \; \; Im\A \cap Ker\A = \{\0 \} \Leftrightarrow \A x = \0 \Leftrightarrow x \in Ker \A$
+			\end{mylist}
+		\end{proof}
+		\item $\A$ норм. опер. $\Leftrightarrow \forall \lambda \in K \Space \A - \lambda \E$ норм.
+		\begin{proof}
+			$\B = \A - \lambda \E \Space \B^* = \A^* - \vec \lambda \E \Space \E^* = \E \n 
+			\begin{matrix}
+			\B \B^* &= (\A - \lambda \E)(\A^* - \vec \lambda \E) &= \underbracket{\A \A^*}_{\A^* \A} - \vec \lambda \A - \lambda \A^* + |\lambda|^2 \E\n 
+			&& || \n 
+			\B^* \B &= (\A^* - \vec \lambda \E)(\A - \lambda \E)& = \A^* \A - \vec \lambda \A - \lambda \A^* + |\lambda|^2 \E
+			\end{matrix} \Rightarrow \B$  нормальный оператор
+		\end{proof}
+		\item $\boxed{\lambda \text{ с.ч., } u \text{ с.в. } \A \Rightarrow u \text{ с.в. для } \vec \lambda \text{ с.ч. } \A^*}$\ \n
+		\begin{proof}
+			\ \\
+			$\A u = \lambda u \Sspace \B = \A - \lambda \E \Sspace \B^* = \A^* - \vec \lambda \E \n 
+			\Updownarrow \n 
+			\B u = \0 \Leftrightarrow \underset{\stackrel{\text{3 св-во норм. опер.}}{=(\B^* u, \B^* u)}}{\B u, \B u} = 0 \Leftrightarrow \B^* u = \0 \Leftrightarrow u $ с.в. для $\vec \lambda$ опер. $\A^*$
+		\end{proof}
+		\item $\boxed{\begin{matrix}
+				\lambda \text{ с.ч. } u \text{ с.в. } \A \n 
+				\mu \text{ с.ч. } v \text{ с.в. } \A
+			\end{matrix} \Space \lambda \neq \mu \; \; \Rightarrow \; \; u \perp v}$, т.е. $\boxed{\underset{\lambda \neq \mu}{V_\lambda \perp V_\mu}}$ для норм. опер.
+		\begin{proof}
+			\ \n
+			\begin{minipage}{0.5\textwidth}
+				$\lambda$ с.ч., $u$ с.в. $\A \Sspace \lambda \neq \mu \\ 
+				\mu $ с.ч, $v$ с.в. $\A$\n 
+				$\Space \Downarrow$ по св-ву сопряж. опер. 4\n
+				$\vec \lambda, \vec \mu $ с.ч. $\A^*$\\
+				$u, v$ с.в.
+			\end{minipage}
+			\begin{minipage}{0.5\textwidth}
+				$(\A u, v) = (u, \A^* v) = (u, \vec \mu v) = \mu (u, v) \\
+				~\Space ||\\
+				(\lambda u, v) = \lambda (u, v) \n 
+				\underset{\neq 0}{(\lambda - \mu)} (u, v) = 0 \Leftrightarrow (u, v) = 0 \Leftrightarrow u \perp v$
+			\end{minipage}
+		\end{proof}
+	\end{mylist}
+\end{document}

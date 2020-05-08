@@ -22,6 +22,7 @@
 \usepackage{rotating}
 \usepackage{cancel}%strickeout%
 \usepackage{ulem}
+\usepackage{tikz}
 
 %\usepackage{pdfpages}
 
@@ -87,6 +88,8 @@
 \newcommand{\Space}{\slide{20px}}
 \newcommand{\Sspace}{\slide{40px}}
 \newcommand\stolead{\mathrel{\reflectbox{$\leadsto$}}}
+\newcommand{\circled}[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 %-------------------------------%
 
 \graphicspath{ {imgs/}{../imgs/}}
@@ -115,4 +118,6 @@
 	\subfile{parts/Lecture8}
 	\subfile{parts/Lecture9}
 	\subfile{parts/Lecture10}
+	\subfile{parts/Lecture11}
+	\subfile{parts/dopLecture}
 \end{document}
