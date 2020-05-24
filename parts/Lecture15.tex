@@ -1,0 +1,267 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+	\begin{theorem}[QR разложение]
+		\ \\
+		$\forall $ \underline{невырожд} $\underset{a_{ij} \in \mathbb C (\R)}{A_{n \times n}} \exists$ унитарн (ортог) $Q$ и $\underset{\text{(правая ''Right'')}}{\text{верхн треугольн.}}$ матрица $R: \Space \boxed{A = QR}$
+	\end{theorem}
+	\begin{proof}
+		$A$ невырожд. $\Leftrightarrow rg (\underset{\stackrel{\nwarrow \nearrow}{\text{ лин. нез. столбцы}}}{A_1 \ldots A_n}) = n \Space A_k \in \mathbb C^n (\R^n)\n 
+		A_1 \ldots A_n \underset{\text{Г-Ш нормируем}}{\leadsto} \underbracket{q_1 \ldots q_n}_{\text{попарно-ортог. и нормир.}} q_k \in \mathbb C^n (\R^n)\n 
+		\left[\begin{array}{ccl}
+			q_1 &=& u_{11} A_1 \\
+			q_2 &=& u_{12} A_1 + u_{22} A_2\\
+			q_3 &=& u_{13} A_1 + u_{23} A_2 + u_{33} A_3 \\
+			\ldots\\
+			q_n &=& u_{1n} A_1 + u_{2n} A_2 + \ldots + u_{nn} A_n\end{array}
+		\right. \begin{matrix}
+			Q = \underset{\text{очевидно, унит. (ортог)}}{(\overbracket{q_1 \ldots q_n}^{\swarrow \text{ о.н.с.}})}\n 
+			U = \begin{pmatrix}
+				u_{11} & u_{12} & \ldots & u_{1n}\\
+				& u_{21} & \ldots & u_{2n}\\
+				& & \ddots\\
+				0 & & & u_{nn}
+			\end{pmatrix}
+		\end{matrix}\n 
+		(q_1 \ldots q_n) = \underbracket{Q}_\text{невыр} = \underbracket{A}_\text{невыр} U = 
+		(A_1 \ldots A_n) \left(\begin{pmatrix}
+			\\\\
+		\end{pmatrix} \begin{pmatrix}
+			\\\\
+		\end{pmatrix}\begin{pmatrix}
+			\\\\
+		\end{pmatrix}\begin{pmatrix}
+			u_{1n}\\\vdots\\u_{1n}
+		\end{pmatrix}\right)  \Rightarrow U$ невыр. $\Rightarrow \exists U^{-1} = \underset{\text{верхн. треуг.}}{R}\n 
+		\boxed{A = QR}$
+	\end{proof}
+	\begin{corollary}
+		$\forall$ невырожд. $A \Space \exists Q$ унит. (ортог.), $L\; \underset{\text{(левая)}}{\text{нижн. треугол.}}: \boxed{A = LQ}$ 
+	\end{corollary}
+	\begin{proof}
+		$A^T$ невыр. $\Rightarrow \begin{matrix}
+			\exists R \text{ верх. треуг.}\\
+			\exists Q_1 \text{ унит. (ортог.)}
+		\end{matrix} \n \underset{\stackrel{||}{A}}{(A^T)^T} = (Q_1 R)^T = \underbracket{R^T}_{\stackrel{\uparrow}{\text{нижн. треуг.}}}\cdot \underset{\stackrel{\uparrow}{\text{унит. (ортог.)}}}{Q^T_1} = LQ$
+	\end{proof}
+	\begin{examples}
+		$A = \begin{pmatrix}
+			3&0&1\\0&1&2\\4&0&3
+		\end{pmatrix} \Space A = QR \ ?\n 
+		A_1 = \begin{pmatrix}
+			3\\0\\4
+		\end{pmatrix} \Space A_2 = \begin{pmatrix}
+			0\\1\\0
+		\end{pmatrix} \Space A_3 = \begin{pmatrix}
+			1\\2\\3
+		\end{pmatrix}\n 
+		q_1 = b_1 = \underset{\stackrel{||}{b_1}}{\begin{pmatrix}
+			3\\0\\4
+		\end{pmatrix}} \frac{1}{5} = \begin{pmatrix}
+		3/5\\0\\4/5
+	\end{pmatrix}\n 
+	b_2 = A_2 - c_1 A_1 \Space c_1 = \mathlarger{\frac{(A_2, A_1)}{(A_1, A_1)}} = 0\n 
+	q_2 = \begin{pmatrix}
+		0\\1\\0
+	\end{pmatrix}\n
+	q_3 = b_3 = A_3 - c_1 b_1 - c_2 b_2 \slide{125px} c_1 = \mathlarger{\frac{(A_3, A_1)}{(A_1, A_1)}} = \frac{15}{25} = \frac{3}{5}\n 
+	b_3 = \begin{pmatrix}
+		1\\2\\3
+	\end{pmatrix} - \begin{pmatrix}
+		9/5\\0\\12/5
+	\end{pmatrix} - \begin{pmatrix}
+		0\\2\\0
+	\end{pmatrix} = \begin{pmatrix}
+		-4/5\\0\\3/5
+	\end{pmatrix} \Sspace c_2 = \mathlarger{\frac{(A_3, b_2)}{(b_2, b_2)}} = 2\n 
+	q_1 = \begin{pmatrix}
+		3/5\\0\\4/5
+	\end{pmatrix} = \frac{1}{5} A_1 \Space q_2 = A_2 \Space q_3 = -3/5 A_1 - 2 A_2 + A_3 \n 
+	U = \begin{pmatrix}
+		1/5 & 0 & -3/5\\ 0 & 1 & -2 \\0 & 0 & 1
+	\end{pmatrix} \Space R = U^{-1} = \begin{pmatrix}
+		5 & 0 & 3\\0 & 1 & 2\\0 & 0 & 1
+	\end{pmatrix}\n 
+	Q = (q_1 \ q_2 \ q_3) = \begin{pmatrix}
+		3/5 & 0 & -4/5\\ 0 & 1 & 0 \\ 4/5 & 0 & 3/5
+	\end{pmatrix}\n 
+	\overset{A}{\begin{pmatrix}
+			3 & 0 & 1\\0 & 1 & 2\\4 & 0 & 3
+		\end{pmatrix}} = \overset{Q}{\begin{pmatrix}
+			3/5 & 0 & -4/5\\0 & 1 & 0\\4/5 & 0 & 3/5
+		\end{pmatrix}} \overset{R}{\begin{pmatrix}
+			5 & 0 & 3\\0 & 1 & 2\\0 & 0 & 1
+		\end{pmatrix}}$
+	\end{examples}
+	\begin{theorem}[полярное разложение]\ \\
+		$A = (A_{ij})_{n\times n} \Space a_{ij} \in \mathbb C(\R) \n 
+		\forall A\; \;  \begin{matrix}
+			\exists U \text{ унит. (Q ортогональная) матрица}\n 
+			\exists ! H \text{ эрмитова (S - симметр.) матрица}
+		\end{matrix} \Space \boxed{\begin{matrix}
+				\boxed{A = HU}\n 
+				\boxed{A = SQ}
+			\end{matrix}}$\n 
+		Если, кроме того, $A$ \underline{невырожденная}, то и матрица $U(Q)$ определяется \underline{единственным образом}\\
+		\phantom{}\hrule\ \\
+		Мы будем доказывать теорему для операторов, матрицы из теоремы будут матрицами этих операторов в о.н.б.
+	\end{theorem}
+	\begin{theorem}[полярное разложение линейного оператора]
+		\ \\
+		$\A \in End(V) \Space (V, (\cdot , \cdot))$ унит. (евкл)\n 
+		$\forall \A \; \; \exists U \in End(V)$ \underline{изометрич}, $\exists ! H \in End(V)$ \underline{самосоряж}, т.ч. \[\boxed{\A = HU}\]
+		Если, кроме того, $\underline{\A \text{ невырожд}}$, то $U$ определяется \underline{однозначно}. 
+	\end{theorem}
+	\begin{stat}
+		$\forall \A \in End(V)$ о.п.с, т.ч. все с.ч. $\lambda \geq 0 \Rightarrow \n 
+		\Rightarrow \exists ! \B \in End(V) : \boxed{\B^2 = \A}$, т.ч. все с.ч. $\B$ неотриц. \n 
+		$\boxed{\B = \sqrt{\A}}$
+	\end{stat}
+	\begin{proof}(утверждения)
+		$\A$ о.п.с. $\Rightarrow V = \underset{\lambda \text{ с.ч.}}{\bigoplus} \underset{\text{собств. подпр.}}{V_\lambda} \Space \lambda \geq 0\n 
+		V = span(\begin{matrix}
+			\downarrow \text{ базис}\\
+			v_1 \ldots v_n\\
+			\text{с.в. }\A
+		\end{matrix}): \; \; \A v_i = \lambda _i v_i$\n 
+		\textbf{Определим:} $\B v_i = \sqrt{\lambda_i} v_i \Rightarrow$ очевидно, $\sqrt{\lambda_i}$ с.ч. $\B$ и $v_i$ с.ч. $\Space \underset{\text{все с.ч. }\B}{\sqrt{\lambda_i} \geq 0}\n 
+		\forall$ базисн. $v_i \; \; \; \B^2 v_i = \lambda_i v_i = \A v_i \Leftrightarrow \B^2 v = \A v \; \; \; \forall v \in V \Leftrightarrow \boxed{\B^2 = \A}$\n
+		\textbf{Единственность: } $\pu \underset{\text{о.п.с.}}{C} \in End(V)$ т.ч. $C^2 = \A$ и все с.ч. $C \geq 0\n 
+		C \A = C \cdot C^2 = C^2 \cdot C = \A C \Space \A$ и $C$ перестановочны $\Rightarrow (\A - \lambda \E)$ и $C$ перестановнчны\n 
+		$V = \bigoplus\limits_\lambda V_\lambda \Space \underset{\text{собств. подпр. }\A}{V_\lambda = Ker (\A - \lambda \E)}$ \underline{инвариантно отн-но} $C: \Space (\A - \lambda \E) (C V_\lambda) = C \underbracket{(\A - \lambda \E) V_\lambda}_\0 = \0$\n
+		\underline{Сужение:} $C|_{V_\lambda} \overset{?}{=} \B|_{V_\lambda}\n
+		\chi_C (t) \vdots \chi_{C|_{V_\lambda}}(t) \Rightarrow$ все с.ч. $C|_{V_\lambda}$ неотриц. \n 
+		т.к. $\underset{\stackrel{\Downarrow}{\exists \text{ базис из с.в.}}}{C \text{ о.п.с.}} \Rightarrow V_\lambda = span(\omega_1 \ldots \omega_k)\n 
+		V = \underset{\mu \text{ с.ч. }C}{\bigoplus} \underset{\text{собств. подпр. } C}{W_\mu} = span (\omega_1 \underset{\stackrel{\uparrow}{\text{с.в. }C}}{\ldots \omega_n})\n 
+		\omega_j$ с.ч. $C$ отвеч. $\mu_j \Rightarrow C \omega_j = \mu_j \omega_j \; \; \; \mu_j \geq 0\n 
+		\omega_j$ с.в. $\A$ отвеч. $\lambda \n 
+		\lambda \omega_j = \A \omega_j = C^2 \omega_j = \mu^2_j \omega_j \Rightarrow \lambda = \mu^2_j \Rightarrow \mu_j = \sqrt \lambda \n 
+		C\omega_j = \sqrt \lambda \omega_j = \B \underset{\in V_\lambda}{\omega_j} \Rightarrow C|_{V_\lambda} = B|_{V_\lambda} \Rightarrow C = B$ на $V$
+	\end{proof}
+	\begin{proof}
+		(Теоремы)\\
+		$\A \A^* \Space \A^* \A$ самосопряжен.\n 
+		$(\A \A^*)^* = (\A^*)^* \A^* = \A \A^* \Space$ аналогично $\A^* \A\n 
+		\A\A^* \geq 0 \Space \A^* \A \geq 0\n 
+		\forall u \neq \0 \; \; \; (\A \A^* u, u) = (\A^* u, \A^* u) \geq 0 \Leftrightarrow$ все с.ч. $\A \A^* \geq 0$\n
+		Аналогично все с.ч. $\A^* \A \geq 0 \n 
+		\begin{matrix}
+			\A^* \A \text{ самосопр.}\\
+			\A^* \A \geq 0
+		\end{matrix} \Rightarrow$ о.п.с., все с.ч. $\lambda \geq 0 \n 
+		\underset{\lambda\neq \mu}{V_\lambda \perp V_\mu} \Space V = \underset{\lambda \text{ с.ч. }\A^* \A}{\bigoplus} V_\lambda = span(\underset{\text{о.н.б. из с.в. }\A\A^*}{v_1 \ldots v_n})\n 
+		\begin{matrix}
+			(\A^* A v_i, v_j) &= (\A v_i, \A v_j)\\
+			||\\
+			(\lambda_i v_i, v_j) &= \lambda_i (\underset{\stackrel{||}{\delta_{ij}}}{v_i, v_j}) = \lambda_i \delta_{ij}\end{matrix}$ \n$ 
+			\lambda_i > 0 \rightarrow \A v_i \perp \A v_j \; \; i \neq j\n 
+			\lambda_i = 0 \rightarrow (\A v_i, \A v_j) = 0\n
+			(\A v_1, \ldots, \A v_n ) $ дополним до о.н.б. $V$\n 
+			Какие-то векторы -- $\0 (\lambda_i = 0)$, остальные попарно-ортогон.\n 
+			$z_1 \ldots z_n$ о.н.б. $V \Space \A v_i = \sqrt{\lambda_i} z_i \Space (z_i = \frac{1}{\sqrt{\lambda_i}} \A v_i)$\n 
+			\underline{Определим:} \\$H z_i:= \sqrt{\lambda_i} z_i \; \; \; i = 1\ldots n \n 
+			\begin{matrix}
+				U v_i = z_i \\
+				\text{о.н.б. } v \leadsto \text{ о.н.б. } z
+			\end{matrix} \Rightarrow \A v_i = \sqrt{\lambda_i} z_i = H z_i = H U v_i\n 
+			V = span(\underset{\text{базис}}{v_1 \ldots v_n}) \Rightarrow \A = HU\n 
+			U:$ о.н.б. $\leadsto$ о.н.б. $\underset{\text{(св-ва изометр.)}}{\Rightarrow} U$ \underline{изометр.}, т.е. $U^* = U^{-1}\n 
+			H:$ о.п.с. $\Space \underset{\text{\underline{самосопр.}}}{H = H^*}$ из $def \Space \sqrt{\lambda_i}$ с.ч. $H \geq 0, z_i$ о.н.с.в. $H \n 
+			\boxed{\A = HU}\n 
+			\A^* = U^* H^* = U^{-1} H \Space \A \A^* \geq 0 \n 
+			\A \A^* = HU U^{-1} H = H^2 \Rightarrow \boxed{H = \sqrt{\A \A^*}}$, все с.ч. $\geq 0$, определяется единственным образом из утверждения.\n 
+			$\pu \A$ невырожд. $\Rightarrow \A^*$ невырожд. $\Rightarrow H = \sqrt{\A \A^*}$ невырожд. $H^2 = \A \A^* \Rightarrow \n \Rightarrow \A = HU \Rightarrow U = H^{-1} \A \Rightarrow U$ ед. образом.
+	\end{proof}
+	\begin{corollary}
+		$\forall \A \in End(V) \; \; \; \begin{matrix}
+			\exists U \in End(V) \text{ \underline{изометр.}}\\
+			\exists ! H \in End(V) \text{ \underline{самосопр.}}
+		\end{matrix}$, т.ч. $\boxed{\A = UH}$\n 
+		Кроме того, если $\A$ невырожд, то $U$ определяется единственным образом.
+	\end{corollary}
+	\begin{proof}
+		$\A^* = \underset{\stackrel{\uparrow}{\text{самосопр.}}}{H_1} \cdot \underset{\stackrel{\uparrow}{\text{изометр.}}}{U_1} \Sspace 
+		\underset{\text{самосопр.}}{H_1} = \sqrt{\A^* (\A^*)^*} = \sqrt{\A^* \A}\n 
+		\Rightarrow \A = (\A^*)^* = (H_1 U_1)^* = U_1^* H_1^* = \underbrace{U_1^{-1}}_{\text{изометр.}}H_1 = UH$, где $\begin{matrix}
+			U = U_1^{-1}\\
+			\boxed{H = H_1 = \sqrt{\A^*} \A}
+		\end{matrix} \n 
+		\Rightarrow \A$ невыр. $\Rightarrow U = \A H^{-1}$ единств. обр. 
+	\end{proof}
+	\begin{defin}\ \\
+		$\sqrt{\A \A^*}$ \underline{левый модуль} оператора $\A$\n 
+		$\sqrt{\A^* \A}$ \underline{правый модуль} оператора $\A$
+	\end{defin}
+	\begin{remark}
+		$A_{n\times n} \Space \A \A^*$ диагонализируемая матрица, самосопряж. \n 
+		$v_1 \ldots v_n$ о.н.с.в. $\Space T = (v_1 \ldots v_n) \leftarrow$ унит. (ортог.)\n 
+		$T^{-1} (A A^*) T = \vec{T^T} (A A^* ) T = \Lambda = diag (\lambda _1 \ldots \lambda _n) \Space \lambda_i \geq 0 \n 
+		A A^* = T\Lambda T^{-1} \Space \sqrt{\Lambda} = diag (\sqrt{\lambda_1} \ldots \sqrt{\lambda_n})\n 
+		\sqrt{A A^*} = T \sqrt \Lambda T^{-1} = T \sqrt{\Lambda} \vec{T^T}$
+	\end{remark}
+	\section{Квадратичные формы}
+	\subsection{Основные понятия}
+	\begin{defin}
+		$f: \R^n \rightarrow R$, т.ч. $\n 
+		\forall x \in \R^n \; \; \boxed{f(x) = \sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij} x_i x_j}$, где $a_{ij} = a_{ji} \in \R$ --- \underline{Квадратичная форма}\n 
+		$\boxed{f(x) = \sum\limits_{i=1}^n a_{ii} x^2_i + 2 \sum\limits_{1 \leq i < j \leq n} a_{ij} x_i x_j}$\n 
+		\underline{Матричная форма записи}: $A \underset{\text{симметр.}}{= (a_{ij})_{n\times n}} \Space a_{ij} = a_{ji} \Space A^* = A^T = A\n 
+		\boxed{f(x) = x^T A x} = (x, Ax) = (A^* x, x) = (Ax)^T x = x^T A^T x \n 
+		\Gamma = E$ канонический базис.
+	\end{defin}
+	\begin{remark}\ 
+		\begin{mylist}
+			\item Другой подход к $def$ кв. ф. \n 
+			$\alpha: V \times V \rightarrow \R$ \underline{билинейная форма}\n 
+			$e_1 \ldots e_n$ базис $V \Space \begin{matrix}
+				x \in V \leftrightarrow x \in \R^n \n 
+				y \in V \leftrightarrow y \in \R^n
+			\end{matrix} \n 
+			\alpha(x, y) = \alpha(y, x)$ \underline{симметр.} $\forall x, y \in V \n 
+			\alpha(x, y) = \sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij} x_i y_j \Space a_{ij} = \alpha(e_i, e_j) = \alpha(e_j, e_i) = a_{ji} \Space \alpha$ симметрична
+			\begin{defin}
+				\underline{Квадратичная форма} \Space $f(x) = \alpha(x, x) \; \; \; \forall x \in V$
+			\end{defin}
+		\item В комплексном линейном пр-ве вводится объект подобный кв. ф. в $\R^n$
+		\begin{defin}
+			\underline{Эрмитова форма}: $\n \forall x \in \mathbb C^n \; \; \; 
+			\boxed{f(x) = \sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij} x_i \vec{x_j}\text{, где } a_{ij} = \vec{a_{ji}}}$\n 
+			Очевидно $\vec{f(x)} = f(x) \Rightarrow \forall x \in \mathbb C^n \; \; \; f(x) \in \R \; \; \; \boxed{f: \mathbb C^n \rightarrow \R}\n 
+			A = (a_{ij}) \Space A^* = \vec{A^T} = A \Space A$ \underline{эрмитова} матрица.
+		\end{defin}
+		\underline{Или} $\begin{matrix}
+			\alpha: V \times V \rightarrow \mathbb C\\
+			e_1 \ldots e_n
+		\end{matrix}\n 
+		\alpha$ \underline{полуторалинейная} эрмитова форма\n 
+		$\alpha$ линейна по 1 аргументу\\
+		$\alpha$ аддитивна по 2 аргументу\\
+		$\alpha$ \underline{псевдооднородна} по 2 аргументу \n 
+		$\forall x, y \in V \Space \alpha(x, y) = \vec{\alpha(x, y)} \Space \alpha(x, y) = \sum\limits_{i=1}^n \sum\limits_{j=1}^n a_{ij} x_i \vec y_j\n 
+		a_{ij} = \alpha(e_i, e_j) = \vec{\alpha (e_j, e_i)} = \vec{a_{ji}}\n 
+		\forall x, y \in V \; \; \; \alpha(x, \lambda y) = \vec \lambda(x, y)$
+		\begin{defin}
+			\underline{Эрмитова форма}: $\n
+			\forall x \in V \; \; \; f(x) = \alpha(x, x)\n 
+			\forall x, y \in V \; \; \; \alpha(x, y) = x^T A \vec y = (x, \vec A y) = (A^T x, y)$
+		\end{defin}
+		$\forall$ скал. пр-е в Евклидовом пространстве $\stolead \leadsto$ билинейная форма \n 
+		$\forall$ псевдоскалярное пр-е в унитарном пространстве $\stolead \leadsto$ полуторалинейная форма.
+		\end{mylist}
+	\end{remark}
+	\phantom{}\hrule\ \\
+	$\dunderline{\R} \Space  \underline{f(x) = x^T A x \Space A^T = A}$ --- Мы занимаемся такими.
+	\begin{defin}
+		$rg f = rg A\; \; \; $ \underline{ранг квадратичной формы}
+	\end{defin}
+	\begin{defin}
+		Будем говорить, что к кв. ф. применено \underline{линейное преоб.} $Q$, \n 
+		если $x_i \leadsto y_i$ по следующему правилу \n 
+		$\slide{140px} x = Q y \Space Q_{n\times n}\n 
+		\boxed{\text{Будем рассматривать только \underline{невырожд }} Q}\n 
+		f(x) = x^T A x = (Q y)^T A Q y = y^T \boxed{Q^T A Q} y = y^T B y = \underset{\text{кв. ф.}}{g(y)}\n 
+		B^T = Q^T A^T Q = Q^T A Q = B \Space B$ симметр.\n 
+		$\underset{\text{кв. ф.}}{f} \overset{Q}{\leadsto} \underset{\text{кв. ф.}}{g} \Sspace \boxed{B = Q^T A Q} \; \; \; Q$ \underline{невыр.} \n 
+		$rg B = rg A \Space$
+		\underline{$rg f$ инвариант} относительно невыр. лин. преобр. $Q$
+	\end{defin}
+\end{document}
