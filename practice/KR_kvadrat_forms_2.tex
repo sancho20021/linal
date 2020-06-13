@@ -1,0 +1,189 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{systeme}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{bbold}
+\usepackage{enumitem}
+\usepackage{collectbox}
+\usepackage{multicol}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{tabularx}
+\usepackage[scr=boondoxo,scrscaled=1.05]{mathalfa}
+\usepackage{stackengine}
+\usepackage{wrapfig}
+\usepackage{relsize}
+\usepackage{latexsym}
+\usepackage{caption}
+\usepackage{rotating}
+\usepackage{cancel}%strickeout%
+\usepackage{ulem}
+
+%\usepackage{pdfpages}
+
+\title{Оформленное 2 задание, КР по квадратичным формам}
+\author{Пак Александр}
+
+%----ENVIRONMENTS--------------%
+\newtheorem{theorem}{Теорема}[subsection]
+\renewcommand{\thetheorem}{\arabic{theorem}}
+\newtheorem{lemma}{Лемма}[subsection]
+\renewcommand{\thelemma}{\arabic{lemma}}
+\newtheorem{defin}{Определение}[subsection]
+\renewcommand{\thedefin}{\arabic{defin}}
+\newtheorem*{stat}{Утверждение}
+\newtheorem{corollary}{Следствие}[theorem]
+\renewcommand{\thecorollary}{\arabic{corollary}}
+
+\newenvironment{mylist}{\begin{enumerate}[noitemsep, nolistsep]}{\end{enumerate}}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Замечание}
+
+\theoremstyle{definition}
+\newtheorem*{examples}{Примеры}
+
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+%-------------------------------%
+
+%------COMMANDS-----------------%
+\newcommand{\N}{\numberset{N}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\0}{\mathbb{0}}
+\newcommand{\mybox}{
+	\collectbox{
+		\setlength{\fboxsep}{1pt}
+		\fbox{\BOXCONTENT}
+	}
+}
+\newcommand{\E}{\mathcal{E}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\J}{\mathcal{J}}
+\let\vec\overline
+\newcommand{\p}{\mathcal{P}}
+\newcommand{\pu}{\sqsupset}
+\def\dunderline#1{\underline{\underline{#1}}}
+\newcommand{\ns}{\\[1pt]}
+\newcommand{\nm}{\\[2pt]}
+\newcommand{\nb}{\\[4pt]}
+\newcommand{\nl}{\\[8pt]}
+\newcommand{\n}{\\[6pt]}
+\def\slide#1{\phantom{}\hspace{#1}}
+%-------------------------------%
+
+\setlength{\parindent}{0ex}
+\linespread{1.2}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	\section{Привести кв. форму $f$ к кв. форме $g$, \\используя метод Лагранжа:}
+	\[f(x) = x_1 x_2 + x_2 x_3 + x_3 x_4 + x_4 x_1\]
+	\[g(x) = x_2^2 - 3 x_4^2 - 2x_2 x_3 + 2 x_2 x_4 - 6 x_3 x_4\]
+	\subsection{Приведем $f$ к каноническому виду, найдем $Q_f$}
+	$f(x) = x_1 x_2 + x_2 x_3 + x_3 x_4 + x_1 x_4$\n 
+	Сделаем замену\n 
+	$y_1 + y_2 = x_1\\
+	y_1 - y_2 = x_2\\
+	y_3 = x_3\\
+	y_4 = x_4$\n 
+	$\tilde{f}(y) = y_1^2 - y_2^2 + y_1 y_3 - y_2 y_3 + y_3 y_4 + y_1 y_4 + y_2 y_4$\n
+	Занесем под один квадрат все множители с $y_1$\n 
+	$\tilde{f}(y) = (y_1 + \frac{y_3}{2} + \frac{y_4}{2})^2 - \frac{y_3^2}{4} - \frac{y_4^2}{4} - y_2^2 - y_2y_3 + \frac{y_3 y_4}{2} + y_2 y_4$\n
+	Занесем под квадрат все множители с $y_2\n 
+	\tilde{f}(y) = (y_1 + \frac{y_3}{2} + \frac{y_4}{2})^2 - (y_2 + \frac{y_3}{2} - \frac{y_4}{2})^2$\n
+	Сделаем замену\n 
+	$t_1 = y_1 + \frac{y_3}{2} + \frac{y_4}{2}\\
+	t_2 = y_2 + \frac{y_3}{2} - \frac{y_4}{2}\\
+	t_3 = y_3\\
+	t_4 = y_4\n
+	\tilde{\tilde{f}}(t) = t_1^2 - t_2^2 \slide{30px} \sigma = (1, 1, 2)$\n
+	\underline{Выразим $x$ через $t$}\n 
+	$
+	\left.
+	\begin{array}{rcl}
+		y_1 + \frac{y_3}{2} + \frac{y_4}{2} &=& t_1\\
+		y_2 + \frac{y_3}{2} - \frac{y_4}{2} &=& t_2\\
+		y_3 &=& t_3\\
+		y_4 &=& t_4
+	\end{array}\right\} \Rightarrow \left.\begin{array}{rcl}
+		y_1 &=& t_1 - \frac{t_3}{2} - \frac{t_4}{2}\\
+		y_2 &=& t_2 - \frac{t_3}{2} + \frac{t_4}{2}\\
+		y_3 &=& t_3\\
+		y_4 &=& t_4
+	\end{array}\right\}\n 
+	\left.
+	\begin{array}{rcl}
+		x_1 &=& t_1 + t_2 - t_3\\
+		x_2 &=& t_1 - t_2 -t_4\\
+		x_3 &=& t_3\\
+		x_4 &=& t_4
+	\end{array}\right\} \Rightarrow Q_f = \begin{pmatrix}
+		1 & 1 & -1 & 0\\
+		1 & -1 & 0 & -1\\
+		0 & 0 & 1 & 0\\
+		0 & 0 & 0 & 1
+	\end{pmatrix}$
+	\subsection{Приведем $g$ к каноническому виду, найдем $Q_g^{-1}$}
+	$g(x) = x_2^2 - 3 x_4^2 - 2x_2 x_3 + 2 x_2 x_4 - 6 x_3 x_4$\n 
+	Занесем под квадрат все множители с $x_2$\n
+	$g(x) = (x_2 - x_3 + x_4)^2 - x_3^2 - x_4^2 + 2x_3 x_4 - 3x_4^2 - 6x_3 x_4$\n
+	Занесем под квадрат все множители с $x_3$\n 
+	$g(x) = (x_2 - x_3 + x_4)^2 - (x_3 + 2 x_4)^2$\n 
+	Сделаем замену\n
+	$t_1 = x_2 - x_3 + x_4\\
+	t_2 = x_3 + 2x_4\\
+	t_3 = x_1\\
+	t_4 = x_4$\n 
+	$\tilde{g}(t) = t_1^2 - t_2^2 \slide{30px} \sigma = (1, 1, 2)\n$
+	Получили $Q^{-1}_g = \begin{pmatrix}
+		0 & 1 & -1 & 1\\
+		0 & 0 & 1 & 2\\
+		1 & 0 & 0 & 0\\
+		0 & 0 & 0 & 1
+	\end{pmatrix}$
+	\subsection{Найдем $Q$}
+	$\tilde{\tilde{f}}(t) = \tilde{g}(t)\n 
+	Q = Q_f \cdot Q^{-1}_g = \begin{pmatrix}
+	1 & 1 & -1 & 0\\
+	1 & -1 & 0 & -1\\
+	0 & 0 & 1 & 0\\
+	0 & 0 & 0 & 1
+	\end{pmatrix} \cdot \begin{pmatrix}
+	0 & 1 & -1 & 1\\
+	0 & 0 & 1 & 2\\
+	1 & 0 & 0 & 0\\
+	0 & 0 & 0 & 1
+	\end{pmatrix} = \begin{pmatrix}
+		-1 & 1 & 0 & 3\\0 & 1 & -2 & -2\\
+		1 & 0 & 0 & 0\\
+		0 & 0 & 0 & 1
+	\end{pmatrix}$\n 
+	\underline{Сделаем проверку}\n
+	$F = \begin{pmatrix}
+		0 & \frac{1}{2} & 0 & \frac{1}{2}\\
+		\frac{1}{2} & 0 & \frac{1}{2} & 0\\
+		0 & \frac{1}{2} & 0 & \frac{1}{2}\\
+		\frac{1}{2} & 0 & \frac{1}{2} & 0
+	\end{pmatrix}\; \; \; \; G = \begin{pmatrix}
+		0 & 0 & 0 & 0\\
+		0 & 1 & -1 & 1\\
+		0 & -1 & 0 & -3\\
+		0 & 1 & -3 & -3
+	\end{pmatrix}\n 
+	G = Q^T F Q$ --- верно.
+\end{document}
