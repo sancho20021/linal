@@ -259,6 +259,20 @@
 				0\\\vdots\\0
 			\end{pmatrix}
 		\end{array}\right. (3)\n 
-		\pu p<s \Space$ уравнений в системе: $p+l < s+l = rg f \leq n \Rightarrow$ число уравнений меньше, чем число неизвестных $\Rightarrow \exists$ нетривиальное СЛОУ решение $x_0$
+		\pu p<s \Space$ уравнений в системе: $p+l < s+l = rg f \leq n \Rightarrow$ число уравнений меньше, чем число неизвестных $\Rightarrow \exists$ нетривиальное СЛОУ решение $x_0$\n
+	Подставим $x_0$ в системы (1) и (2)\n 
+	$Q^{-1}_1 x_0 = y_0$ и $Q^{-1}_2 x_0 = z_0\n 
+	y_0 = \begin{pmatrix}
+	0_1\\0_2\\\vdots\\0_p\\ *\\ *\\ *
+	\end{pmatrix} \Space z_0 = \begin{pmatrix}
+	*\\ *\\ *\\0_1\\0_2\\\vdots\\0_l
+	\end{pmatrix}
+	\Sspace x_0$ нетривиально \Space $Q^{-1}_1 \; \; \; Q^{-1}_2$ невырожд. $\Rightarrow y_0 \neq \0$ и $z_0 \neq \0\n 
+	\begin{array}{l}
+	f(x^0) = g(y^0) = -\lambda_{p+1} {y_{p+1}^0}^2 - \ldots - \lambda_{p+k} {y^0_{p+k}}^2 < 0 \n 
+	||\n 
+	t(z^0) = \mu_1 {z_1^0}^2 + \ldots + \mu_s {z_s^0}^2 > 0
+	\end{array} \Rightarrow$ противоречие $\Rightarrow p \geq s$\n 
+	Аналогично: поменять ролями $g$ и $t \Space s \geq p \Rightarrow s = p \Rightarrow k = l$
 	\end{proof}
 \end{document}

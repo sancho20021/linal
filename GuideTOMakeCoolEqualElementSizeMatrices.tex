@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage{mathtools}
+\usepackage[margin=0.5in]{geometry}
+
+\setlength{\parindent}{0ex}
+\linespread{1.2}
+
+\begin{document}
+  \bgroup
+  \sbox0{$\begin{matrix}
+      \lambda-t & 0\\0 & \lambda - t
+    \end{matrix}$}% biggest entry
+  $\left(\begin{array}{c|c}
+                          \begin{matrix}
+                                  \lambda-t & 0\\0 & \lambda - t
+                          \end{matrix} & A^2\\
+                          \hline
+                          \rule[-\dp0]{0pt}{\dimexpr \ht0+\dp0}% create strut
+                          0 & \mathmakebox[\wd0]{A^3 - tE_{n-k}}
+   \end{array}\right)$
+  \egroup
+\end{document}
