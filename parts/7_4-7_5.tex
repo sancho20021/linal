@@ -153,13 +153,11 @@
 			\item Индукционный переход. Докажем, что верно для $m$\\
 			От противного. Пусть $\lambda_1\ldots \lambda_m $ попарно различные с.ч. $\A$,\\
 			а $v_1\ldots v_m$ линейно зависимы.\\
-			Пусть $v_m = \sum\limits_{i=1}^{m}\alpha_i v_i\\
+			Пусть $v_m = \sum\limits_{i=1}^{m-1}\alpha_i v_i\\
 			\begin{array}{l}
 			\A_{v_m} = \sum\limits_{i=1}^{m-1}\alpha_i \A_{v_i} = \sum\limits_{i=1}^{m-1} \alpha_i \lambda_i v_i\\
-			
-			||
-			\\
 			\lambda_m v_m = \sum\limits_{i=1}^{m-1} \alpha_i \lambda_i v_i
+			\lambda_m \sum\limits_{i=1}^{m-1}\alpha_i v_i = \sum\limits_{i=1}^{m-1} \alpha_i \lambda_i v_i
 			\end{array}$\\
 			$\sum\limits_{i=1}^{m-1}\alpha_i(\underset{\stackrel{0}{\nparallel}}{\lambda_i - \lambda_m})v_i = \0 \ \ v_i$ линейно независим по инд. предположению\\
 			$\Leftrightarrow \alpha_i = 0 \ \ \forall \ i=1\ldots m-1 \Rightarrow\\
